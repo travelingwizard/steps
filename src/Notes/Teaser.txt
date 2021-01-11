@@ -1,0 +1,19 @@
+So, if I was, almost completely hypothetically, a few weeks into making a character handler program that would be system agnostic, made to be relatively easily adaptable to all games using the CoreStep system, and relatively translation-friendly, what would the interest level be in this? 
+I find myself in need of someone to spar ideas with, and someone who would be willing to assist with data entry, plase PM me if you're interested. 
+
+
+Gentlebeings. 
+I am slowly inching my way towards producing a character editor that is going to be: 
+- System agnostic
+- Fairly simple to adapt to house rules (because I have a few)
+- Will do Earthdawn 4 and 1879 out of the box, comes prepared to accept adaption to other CoreStep games
+- Is translation friendly, 
+- And if you know html, you can make your own character sheet for use in it. 
+
+This is a slow burn project for reasons I don't feel like coming into here, so it's still months from even Beta time, but what I have now makes me feel rather confident that I can Do this thing (o: 
+
+I find myself in need of someone to spar ideas with, someone willing and able to wrangle data into json for it, and some beta testors down the line. 
+
+If you're interested, drop me a line, and please note that I'm not in a position to pay anything but gratitude and a namedrop for your time. 
+
+If you want to watch from the sidelines, pop by secondstep.dk/Steps from time to time. 

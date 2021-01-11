@@ -1,0 +1,466 @@
+@font-face 
+{
+     font-family: 'Requiem';
+     src: url('./Requiem.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face 
+{
+     font-family: 'fabrica';
+     src: url('./Fabrica.otf') format('opentype');
+}
+@font-face 
+{
+     font-family: 'Via Appia';
+     src: url('./Via Appia.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+@font-face 
+{
+     font-family: 'Willow';
+     src: url('./willow__.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
+
+* 
+{ 
+     margin:0; 
+     padding:0; 
+}
+
+*, *:before, *:after 
+{
+     box-sizing: border-box;
+     transition: left 0.2s ease-in-out, right 0.2s ease-in-out;
+}
+
+html
+{
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+
+     font-size: 1.15vw;
+
+     font-family: fabrica, Verdana, Sans-Serif;
+     vertical-align: middle;
+     line-height: 1.5;
+}
+
+body
+{
+     left: 0; 
+     right: 0;
+}
+
+#content
+{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: auto;
+}
+
+/* Control panel */
+#controls
+{
+     position: fixed;
+     top:  1vw;
+     left: 1vw;
+     width: auto;
+     height: auto;
+     background: white;
+     border: 1px solid black;
+     display: none;
+}
+
+/* Situationals panel */
+#situation
+{
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 80%;
+     background: #FAEBD7;
+     overflow-y: auto;
+
+     border-left: 1px solid black; 
+     margin-left: 2px; 
+     padding: 1em; 
+     line-height: 1.6em;
+
+     overflow-x: hide;
+     left : 100%;
+     width: 20%;
+
+     display: flex;
+     flex-flow: row wrap;
+     align-content: flex-start;
+}
+.situation-header
+{
+     font-size: 1.2em; 
+     font-weight: bold; 
+     width: 100%; 
+     text-align: center;
+}    
+
+.SituationDiv
+{
+     display: flex;
+     justify-content: space-between;  
+     align-items: stretch;
+     flex-basis: 100%;
+     margin: 1px 0;
+     height: 1.8vw;
+}
+
+.SituationNote
+{
+     display: flex;
+     justify-content: space-between;  
+     align-items: stretch;
+     flex-basis: 100%;
+     margin-top: : 0;
+     margin-bottom: 2px;
+     font-size: .8em;
+     line-height: 1;
+}
+
+#situation hr
+{
+     margin: 1em;
+
+     border: 0;
+     height: 1px;
+     background: #000;
+}
+
+.situationInput, .situationNumber, .situationSelect
+{
+     background: white;
+     border: 1px solid black;
+     width: 4vw;
+     height: 100%;
+}
+
+.SituationDiv .situationCheckbox
+{
+     position: relative;
+     top: .5vw;
+     right: .5vw;
+}
+
+.SituationNote .situationCheckbox
+{
+     position: relative;
+     right: .5vw;
+}
+
+.situationInputWide
+{
+     background: white;
+     border: 1px solid black;
+     width: 7vw;
+}
+
+.situationNumberWide
+{
+     width: 4vw;
+}
+
+.situationalButton
+{
+     padding: 0 .5vw;
+     border: 1px solid black;
+     border-radius: .7vw;
+     background-color: white;
+     cursor: pointer;
+}
+
+.situationalButton:hover,
+.situationalButton:focus
+{
+     background-color: rgba(0,0,0,0);
+     outline: 0;
+     opacity: 1;
+}
+
+
+.menuButton
+{
+     margin: .6vw;
+     padding: .3vw .8vw;
+     width: 7vw;
+     text-align: center;
+     text-decoration: none;
+     white-space: nowrap;
+     border-radius: .8vw;
+     border: 1px solid black;
+     cursor: pointer;
+     box-sizing: border-box;
+     font-size: 1.1em;
+     line-height: 1.6em;
+     background: white;
+
+     opacity: 0.6;
+}
+
+.menuButton:hover,
+.menuButton:focus
+{
+     background-color: #FAEBD7;
+     outline: 0;
+     opacity: 1;
+}
+
+#load_btn, #save_btn 
+{
+     display: none;
+}
+
+#burger
+{
+     position: fixed;
+
+     top: 2vw;
+     left: 2vw;
+     width: auto;
+     height: auto;
+     margin: 0;
+     padding:0;
+     cursor: pointer;
+
+     font-size: 2em;
+}
+
+#Overlay
+{
+     z-index: 1000;
+     position: fixed;
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0;
+
+     display: none;
+     cursor: pointer;
+     border: 2.1vw solid rgba(0,0,0,.6);
+}
+
+#OverlayContent
+{
+     position: fixed;
+     top:  2vw;
+     bottom: 2vw;
+     left:   2vw;
+     right:  2vw;
+     padding: 1vw;
+     border: 1px solid black;
+     overflow-y: auto;
+     background: rgba(255,255,255,.95);
+}
+
+.Logo
+{
+     font-size: 8vw;
+     line-height: 9vw;
+     font-family: Requiem;
+     -webkit-text-stroke-width: .1vw;
+     -webkit-text-stroke-color: #FFFF00;
+     text-shadow: 0 0 1vw #FFFF00;
+}
+
+.status
+{
+     position: fixed;
+     top:  4vw;
+     left:   2vw;
+     right:  22vw;
+     padding: 1vw;
+
+     border: 1px solid black;
+     border-radius: .7vw;
+     background: rgba(255,255,255,.95);
+
+     font-family: Requiem;
+     font-size: 12vw;
+     text-align: center;
+}
+
+#Log, #Plans
+{
+     overflow-y: auto;  
+     position: fixed;
+     top:  5vw;
+     bottom: 3vw;
+     padding: 1vw;
+     border: 1px solid black;
+     overflow-y: auto;
+     background: rgba(255,255,255,.95);
+     border-radius: .8vw;
+}
+
+#Log 
+{
+     left:   50.4vw;
+     right:  3vw;
+}
+
+#Plans 
+{
+     left:   3vw;
+     right:  50.4vw;
+}
+
+
+#Log h3, #Plans h3
+{
+     margin: none;
+     padding: none;
+     font-size: 1.2em;
+}
+#Log h4, #Plans h4
+{
+     margin: .5em 0 0 0 ;
+     padding: none;
+     font-size: 1em;
+}
+
+#Log li, #Plans li
+{
+     list-style-type: "- ";
+     list-style-position: inside;
+     text-indent: -1em;
+     padding-left: 1em;
+}
+
+#OverlayContent h3
+{
+     text-align: center;
+}
+
+#OverlayContent table
+{
+     width: auto;
+     border: 1px solid black;
+     margin: .2em;
+     border-radius: .7vw;
+}
+
+#OverlayContent caption
+{
+     border: 1px solid black;
+}
+
+#OverlayContent tr:nth-child(odd)
+{
+     background: rgba(100,100,100,.1);
+}
+
+#OverlayContent table tr td:nth-child(2) {width: 20%; text-align: right}
+
+#LpBreakdownWrapper
+{
+     display: flex;
+     justify-content: flex-start;
+     align-items: stretch;
+     flex-basis: 100%;
+}
+
+#LpBreakdownWrapper table
+{
+     padding: .3vw;
+     border-collapse: separate;
+}
+
+#LpBreakdownWrapper caption
+{
+     border: none;
+}
+
+/* Portrait select stuff */
+.portraitsLeftWrapper
+{
+     display: inline-block;
+     float:left;
+}
+
+.portraitsRightWrapper
+{
+     display: inline-block;
+     width: 25%;
+     float:right;
+     text-align: center;
+}
+
+.thumbsWrapper
+{
+     width: 100%vw;
+     display: flex;
+     flex-wrap: wrap;
+
+     position: fixed;
+     top: 12.5vw;
+     bottom: 3vw;
+     left: 3vw;
+     right: 25vw;
+     overflow-y: auto;
+}
+
+.portraitThumbnail 
+{
+     display: inline-block;
+     width: 10vw;
+     height: 10vw;
+     border: 1px solid black;
+     margin: 0.3vw;
+     padding: .5vw;
+     text-align: center;
+     vertical-align: middle;
+     border-radius: .7vw;
+
+     cursor: pointer;
+}
+
+.portraitThumbnail img
+{
+     max-width: 100%;
+     max-height: 100%;
+     vertical-align: middle;
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.portraitPreview
+{
+     width:20vw;
+     float: right;
+}
+
+.portraitPreview img
+{
+     width:100%;
+     height: auto;
+     border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+

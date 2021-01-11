@@ -1,0 +1,875 @@
+{
+      "ID" : "LarsGottlieb",
+      "Books" : "Lars Gottliebs campaigns",
+      "Description" : "Earthdawn 4 Custom data for the Steps project",
+      "version" : "1",
+      "by" : "Lars Gottlieb, 2018-20",
+      "Races" : 
+      [
+            {"ID" : "LGOgre", "Name" : "Ogre", "Dex" : "16", "Str" : "28", "Tou" : "22", "Per" : "8", "Wil" : "10", "Cha" : "5",  "Move" : "10",   "Karma" : "2", "1hdMin" : "2", "1hdMax" : "4", "2hdMin" : "5", "2hdMax" : "7", "Abilities":"Detect True Earth", "Modifiers" : {}, "Names" : ["Me", "you", "That one"], "Unofficial" : "True"}
+      ],
+      "Skills" : 
+      [
+            {"ID" : "NH4PowerLifting", "Name" : "Power Lifting", "Type" : "Social Combat", "Reference" : "-", "Step" : "Rank+STR", "Attribute" : "STR", "Action" : "Standard", "Strain" : "1", "Cost" : "Novice", "Category" : "General", "Effect" : ""} 
+      ],
+      "Spells" : 
+      [
+            {"ID" : "ED3WClean", "Name" : "Clean", "Reference" : "3ed",        "Type" : "Utility",  "Discipline" : "ED4Wizard",       "Circle" : "2", "Threads" : "2", "Weaving" : "5/13",  "Casting" : "TMD", "Range" : "Touch", "Duration" : "1 1 minute", "AoE" : "Effect square yards, see text", "Effect" : "WIL+4", "SuccessLevels" : "", "ExtraThreads" : "",  "Description" : "his spell removes visible stains, dirt, or foreign substances from objects. The magician makes wiping motions, then sprinkles water on the objects and makes a Spellcasting Test against the highest Spell Defense among the target objects. If successful, the magician makes an Effect Test. The Test Result is the number of square yards cleaned—3 square yards is sufficient to nicely clean a dwarf-sized character, 4 square yards is enough for a human or t’skrang, while 6 square yards is needed for an obsidiman or a troll. The spell does not clean substances that are not visible to the magician."},
+            {"ID" : "NHNClean",  "Name" : "Clean", "Reference" : "Unofficial", "Type" : "Utility",  "Discipline" : "ED4Elementalist", "Circle" : "2", "Threads" : "2", "Weaving" : "5/13",  "Casting" : "TMD", "Range" : "Touch", "Duration" : "1 1 minute", "AoE" : "Effect square yards, see text", "Effect" : "WIL+4", "SuccessLevels" : "", "ExtraThreads" : "",  "Description" : "his spell removes visible stains, dirt, or foreign substances from objects. The magician makes wiping motions, then sprinkles water on the objects and makes a Spellcasting Test against the highest Spell Defense among the target objects. If successful, the magician makes an Effect Test. The Test Result is the number of square yards cleaned—3 square yards is sufficient to nicely clean a dwarf-sized character, 4 square yards is enough for a human or t’skrang, while 6 square yards is needed for an obsidiman or a troll. The spell does not clean substances that are not visible to the magician."}
+      ],
+      "Disciplines" :
+      [
+            {
+                  "ID" : "ESFBeastmaster",
+                  "Name" : "Beastmaster*",
+                  "CountsAs" : "ED4Beastmaster",
+                  "Unofficial" : "True",
+                  "Durability" : "7",
+                  "ImportantAtt" : ["Cha", "Dex", "Wil"],
+                  "NoviceTalents" : ["ED4AcrobaticDefense", "ED4AnimalBond", "ED4AnimalTraining", "ED4BorrowSense", "ED4Climbing", "ED4CreatureAnalysis", "ED4DangerSense", "ED4EnhanceAnimalCompanion", "ED4Tracking", "ED4WildernessSurvival"],
+                  "JourneymanTalents" : ["ED4AnimalCompanionDurability", "ED4AnimalPossession", "ED4BattleBellow", "ED4CallAnimalCompanion", "ED4CobraStrike", "ED4IronConstitution", "ED4LionHeart", "ED4Sprint", "ED4SwiftKick", "ED4TigerSpring"],
+                  "WardenTalents" : ["ED4ArmorMount", "ED4BloodhoundForm", "ED4BurningVigor", "ED4Chameleon", "ED4DefensivePosture", "ED4EagleEye", "ED4GoringAttack", "ED4LifeCheck", "ED4ResistPain", "ED4SteelyStare"],
+                  "MasterTalents" : ["ED4AlleyCatApproach", "ED4AnimalLeadership", "ED4AuraArmor", "ED4Echolocation", "ED4LionSpirit", "ED4SecondChance", "ED4VitalStrike", "ED4VitalWard"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "DisciplineTalents" : ["ED4AvoidBlow", "ED4ClawShape", "ED4ThreadWeavingBeastWeaving", "ED4UnarmedCombat", "ED4StealthyStride"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4Awareness"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Recovery",
+                              "DisciplineTalents" : ["ED4DominateBeast"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4GreatLeap"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Cat’s Grace, Karma on unarmed damage",
+                              "DisciplineTalents" : ["ED4BloodShare"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4AnimalTalk"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4DownStrike"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"PhDef" : "+3"},
+                              "DisciplineTalents" : ["ED4ClawFrenzy"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Tough Hide, Karma on noncombat in the wild",
+                              "Modifiers" : {"Tgh" : "+3", "BldDam" : "+1"},
+                              "DisciplineTalents" : ["ED4RelentlessRecovery"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"SoDef" : "+2", "Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4CriticalHit"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Attack vs. target previously damaged",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4UnflinchingFortitude"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"PhDef" : "+4", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4MomentumAttack"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Bestial War Form",
+                              "Modifiers" : {"SoDef" : "+3", "KarmaStep" : "+1", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4Howl"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"PhDef" : "+5", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4ViciousWound"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "RecTest" : "+3"},
+                              "DisciplineTalents" : ["ED4Venom"]
+                        }
+                  ]
+            }
+      ],
+      "Equipment" :
+      [
+            {"ID" : "ESFPotionofEnvigoration", "Name" : "Potion of Envigoration", "Reference" : "",  "Type" : "Healing Aid", "Cost" : "50",  "Weight" : "2", "Availability" : "Unusual"},     
+            {"ID" : "ESFSkinshiftFend",        "Name" : "Skinshift Fend",         "Reference" : "",  "Type" : "Blood Charm", "Cost" : "500", "Weight" : "1", "Availability" : "Unusual", "BloodDamage" : "3", "Effect" : "1 Strain / rd: +5 My Defense vs the Skin Shift horror power; rechargeable"},
+            {"ID" : "ESFGirdleOfMelian", "Name" : "Girdle of Melian", "Reference" : "", "Type" : "Thread Item", "BaseType" : "Clothing", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "1300",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Str" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Str" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Str" : "3"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"Str" : "3"},
+                              "Effect" : "Trail of Sparkles: Simple action, 1 Strain. When the wearer moves at least half of their (or their mount’s) Movement Rate, sparkling light spills forth, leaving long contrails behind the wearer. The wearer gains +3 to any Knockdown Difficulties in close combat until the end of the turn"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"Str" : "3"},
+                              "Effect" : "Sparkle Strike: Simple action, 1 Strain. When the wearer moves at least half of their (or their mount’s) Movement Rate, sparkling light spills forth, leaving long contrails behind the wearer. The wearer gains +3 to any Knockdown Difficulties in close combat until the end of the turn, and the first attack of the users round gains +3 damage"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"Str" : "3"},
+                              "Effect" : "Sparkle Strike: Simple action, 1 Strain. When the wearer moves at least half of their (or their mount’s) Movement Rate, sparkling light spills forth, leaving long contrails behind the wearer. The wearer gains +3 to any Knockdown Difficulties in close combat until the end of the turn, and the first attack of the users round gains +3 damage <br/>Sparkle Shower: In addition to Sparkle Strike, +1 strain, the users first attack gains 2m radius AOE, dealing half the rolled damage to all eligible targets in the area with no separate hit roll"
+                        }
+                  ]
+            },
+            {"ID" : "NHJordvisKåben", "Name" : "Jordvis Kåben", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "5", "PhArm" : "3", "MyArm" : "1", "IniPen" : "0",
+                  "BaseLPCost" : "100",
+                  "SpellDefense" : "10",
+                  "Forgeable" : "Armor",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"PhDef" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "2"},
+                              "Modifiers" : {"PhDef" : "1"}
+                        }
+                  ]
+            },
+            {"ID" : "ESFPhedresHarlequinMask", "Name" : "Phèdre's Harlequin Mask", "Type" : "Thread Item", "BaseType" : "Clothing", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "1300",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Cha" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Cha" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Cha" : "3"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"Cha" : "3"},
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "1"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"Cha" : "3"},
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "2"},
+                              "Effect" : "1 strain: Produce a phantom image of a black rose dripping blood from its thorns from thin air. Gain +3 spellcasting and spell effect to their next spellcasting test"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"Cha" : "3"},
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "3"},
+                              "Effect" : "1 strain: Produce a phantom image of a black rose dripping blood from its thorns from thin air. Gain +3 spellcasting and spell effect to their next spellcasting test, and any Sensing tests the target(s) may take are at -5"
+                        }
+                  ]
+            },
+            {"ID" : "ESFArchimedes", "Name" : "Archimedes", "Type" : "Thread Item", "BaseType" : "Adventuring", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "11",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Skills" : [{"ID" : "ED4Alchemy", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Skills" : [{"ID" : "ED4Alchemy", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Skills" : [{"ID" : "ED4Alchemy", "Modifier" : "3"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"Skills" : [{"ID" : "ED4Alchemy", "Modifier" : "4"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"Skills" : [{"ID" : "ED4Alchemy", "Modifier" : "5"}]},
+                              "Effect" : "Will work like Upandal's Blessing (for alchemy tests)"
+                        }
+                  ]
+            },
+            {"ID" : "NHPsychopompSkarabæ", "Name" : "Psychopomp Skarabæ", "Type" : "Thread Item", "BaseType" : "Adventuring", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "11",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Frighten", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Frighten", "Modifier" : "1"}, {"ID" : "ED4SteelThought", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Frighten", "Modifier" : "1"}, {"ID" : "ED4SteelThought", "Modifier" : "1"}]},
+                              "Effect" : "Will work like a Horror Fend Blood Charm except for falling off"
+                        }
+                  ]
+            },
+            {"ID" : "ESFLavenderDragon", "Name" : "Lavender Dragon", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "15",
+                  "DmgStep" : "8", "StrMin" : "12", "Size" : "3",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "+1 to hit with this weapon"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "+2 to hit and Riposte with this weapon,"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "+3 to hit and Riposte with this weapon, will allow the user to use the Second Weapon Talent with this weapon"
+                        }
+                  ]
+            },
+            {"ID" : "ESFBlackDragonArmor", "Name" : "Black Dragon Armor", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "15",
+                  "PhArm" : "9", "MyArm" : "0", "IniPen" : "4",
+                  "Forgeable" : "Armor",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"IniPen" : "-4", "PhDef" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"IniPen" : "-4", "PhDef" : "2", "MyDef" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"IniPen" : "-4", "PhDef" : "3", "MyDef" : "3", "SoDef" : "3"}
+                        }
+                  ]
+            },
+            {"ID" : "ESFShieldofFlame", "Name" : "Shield of Flame", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "15",
+                  "PhRating" : "2", "MyRating" : "1",  "IniPen" : "1", "Shatter" : "19",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"PhRating" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"PhRating" : "1", "MyRating" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"PhRating" : "1", "MyRating" : "3"},
+                              "Effect" : "Gives the wearer 10 points of extra armor against Dragon Breath"
+                        }
+                  ]
+            },
+            {"ID" : "ESFRobesOfNight", "Name" : "Robes of Night", "Type" : "Thread Item", "BaseType" : "Clothing", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "15",
+                  "Description" : "This is a set of fine wizards robes blue to the point of being very nearly black, made from a smooth material that feels like silk",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "2"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "3"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "4"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "3"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "5"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "4"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "6"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "5"}]}
+                        }
+                  ]
+            },
+            {"ID" : "ESFBlackPanther", "Name" : "Black Panther", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "13",
+                  "PhArm" : "9", "MyArm" : "0", "IniPen" : "4",
+                  "Forgeable" : "Armor",
+                  "Ranks" :  
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"IniPen" : "-1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"IniPen" : "-2"} 
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"IniPen" : "-3"} 
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"IniPen" : "-4"} 
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"IniPen" : "-4", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"IniPen" : "-4", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "2"}]}
+                        }
+                  ]
+            },
+            {"ID" : "ESFShieldofZanjansSacrifice", "Name" : "Shield of Zanjans Sacrifice", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "15",
+                  "PhRating" : "2", "MyRating" : "1",  "IniPen" : "2", "Shatter" : "19",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"IniPen" : "-2"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"IniPen" : "-2", "PhRating" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"IniPen" : "-2", "PhRating" : "1", "MyRating" : "1", "Talents" : [{"ID" : "ED4Leadership", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"IniPen" : "-2", "PhRating" : "2", "MyRating" : "1", "Talents" : [{"ID" : "ED4Leadership", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"IniPen" : "-2", "PhRating" : "2", "MyRating" : "2", "Talents" : [{"ID" : "ED4Leadership", "Modifier" : "3"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"IniPen" : "-2", "PhRating" : "3", "MyRating" : "2", "Talents" : [{"ID" : "ED4Leadership", "Modifier" : "4"}]}
+                        }
+                  ]
+            },
+            {"ID" : "NHGrusommeSkæbne", "Name" : "Grusomme Skæbne", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "11",
+                  "DmgStep" : "2", "StrMin" : "4", "Size" : "1",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SurpriseStrike", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SurpriseStrike", "Modifier" : "1"}, {"ID" : "ED4StealthyStride", "Modifier" : "1"}]}
+                        }
+                  ]
+            },
+            {"ID" : "TstSpikedArmor", "Name" : "Spiked Armor", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "11",
+                  "DmgStep" : "2", "StrMin" : "4", "Size" : "1",
+                  "PhArm" : "5", "MyArm" : "5", "IniPen" : "0",
+                  "Forgeable" : "Both",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1", "PhArm" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "1", "PhArm" : "1", "MyArm" : "1"}
+                        }
+                  ]
+            },
+            {"ID" : "NHShieldofSleed", "Name" : "Shield of Sleed", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "14",
+                  "PhRating" : "2", "MyRating" : "0",  "IniPen" : "1", "Shatter" : "19",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"PhRating" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"PhRating" : "1", "MyRating" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"},
+                              "Effect" : "Call on Sleed, the Maker of Mountains, once per day, Standard action, range Touch: Cause a rune encrusted boulder roughly 2m tall to burst from the ground, displacing anyone and most anything in its way. Useable only outdoors or on the lowest floor of a building. The boulder is different each time, and brings with it the chill of the grave"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"},
+                              "Effect" : "Call on Sleed, the Maker of Mountains, once per day, Standard action, range Touch: Cause a rune encrusted boulder roughly 2m tall to burst from the ground, displacing anyone and most anything in its way. Useable only outdoors or on the lowest floor of a building. The boulder is different each time, and brings with it the chill of the grave. <br/>Call on Feitigh the Wind, 1 strain, Free action: If a Shield Bash target fails their knockdown test, before being knocked down, they stumble back a meter for every point they failed the knockdown test by. If they hit something rigid along the way, they suffer the remaining distance in physical damage, no armor"
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"},
+                              "Effect" : "Call on Sleed, the Maker of Mountains, once per day, Standard action, range Touch: Cause a rune encrusted boulder roughly 2m tall to burst from the ground, displacing anyone and most anything in its way. Useable only outdoors or on the lowest floor of a building. The boulder is different each time, and brings with it the chill of the grave. <br/>Call on Feitigh the Wind, 1 strain, Free action: If a Shield Bash target fails their knockdown test, before being knocked down, they stumble back a meter for every point they failed the knockdown test by. If they hit something rigid along the way, they suffer the remaining distance in physical damage, no armor. <br/>Call on Luid the Fire, free action, 3 strain: Shield Bash causes a lick of flame to emerge from the shield, adding step 7 (d12) rolled seperately to the damage dealt"
+                        }
+                  ]
+            },
+            {"ID" : "ESFSindreTattoos", "Name" : "Sindre's Tattoos", "Type" : "Thread Item", "BaseType" : "Tattoo", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "8",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The user is comfortable in almost any natural weather"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"MyArm" : "1"},
+                              "Effect" : "The user is comfortable in almost any natural weather"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"MyArm" : "2"},
+                              "Effect" : "The user is comfortable in almost any natural weather"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"MyArm" : "2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}]},
+                              "Effect" : "The user is comfortable in almost any natural weather"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"MyArm" : "2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"},{"ID" : "ED4Navigation", "Modifier" : "1"}]},
+                              "Effect" : "The user is comfortable in almost any natural weather"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"MyArm" : "2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}, {"ID" : "ED4Navigation", "Modifier" : "2"}]},
+                              "Effect" : "The user is comfortable in almost any natural weather. <br/ >For 1 point of strain, the user can reform the tattoo to show a simple map of the surrounding area on his torso. "
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"MyArm" : "2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}, {"ID" : "ED4Navigation", "Modifier" : "3"}, {"ID" : "ED4WildernessSurvival", "Modifier" : "1"}]},
+                              "Effect" : "The user is comfortable in almost any natural weather. <br/ >For 1 point of strain, the user can reform the tattoo to show a simple map of the surrounding area on his torso, The map is now greatly refined, still using broad lines and tribal signs for things like settlements and danger, but it will show detail down to 20m across."
+                        }
+                  ]
+            },
+            {"ID" : "ESFCrystalPlateOfHhuloon", "Name" : "Crystal Plate Of Hurloon", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "80",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "15",
+                  "PhArm" : "6", "MyArm" : "6", "IniPen" : "4",
+                  "Forgeable" : "Armor",
+                  "Description" : "This is a set of crystal plate armor, made from bright green crystal laced with inky black veins that seem to slosh around inside the crystals",
+                  "Ranks" :  
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"IniPen" : "-1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"IniPen" : "-2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "2"}, {"ID" : "ED4SurpriseStrike", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4StealthyStride", "Modifier" : "2"}, {"ID" : "ED4SurpriseStrike", "Modifier" : "1"}]},
+                              "Effect" : "1 Strain: Camouflage. The patterns flow and cover the armor, matching the surroundings to the point of making the character all but undetectable, +10 to the difficulty of all tests made to discover them by sight"
+                        }
+                  ]
+            },
+            {"ID" : "NHLormyrsBigBookofAuthority", "Name" : "Lormyr's Big Book of Authority", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "30",
+                  "BaseLPCost" : "1300",
+                  "SpellDefense" : "21",
+                  "PhRating" : "1", "MyRating" : "3",  "IniPen" : "2", "Shatter" : "12",
+                  "Description" : "This is a truly impressive looking black book, bound in leather worked with arcane symbols, with gilded fittings. Using it requires holding it open in one hand",
+                  "Ranks" :  
+                  [
+                        {
+                              "Rank" : "1",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "1"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "2",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "2"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "3"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "2"}, {"ID" : "ED4CuttingWords", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "4"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "2"}, {"ID" : "ED4CuttingWords", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "BonusTalent" : {"ID" : "ED4ArmoredMatrix", "Rank" : "5"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "2"}, {"ID" : "ED4CuttingWords", "Modifier" : "2"}, {"ID" : "ED4Leadership", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "BonusTalent" : {"ID" : "ED4ArmoredMatrix", "Rank" : "6"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "3"}, {"ID" : "ED4CuttingWords", "Modifier" : "2"}, {"ID" : "ED4Leadership", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "7",
+                              "BonusTalent" : {"ID" : "ED4ArmoredMatrix", "Rank" : "7"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "3"}, {"ID" : "ED4CuttingWords", "Modifier" : "2"}, {"ID" : "ED4Leadership", "Modifier" : "2"}]},
+                              "Effect" : "<br/>Throw the Book: When observing someone doing something that is against the local law, 2 strain to recite the Law in a booming voice from the book. The effects of Steely Stare is now expanded to preclude movement. The Target must understand what you are saying for the power to work. Does not work on Horrors or Horror Constructs; they don't give a rats ass about your laws"
+                        },
+                        {
+                              "Rank" : "8",
+                              "BonusTalent" : {"ID" : "ED4ArmoredMatrix", "Rank" : "8"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4SteelyStare", "Modifier" : "3"}, {"ID" : "ED4CuttingWords", "Modifier" : "2"}, {"ID" : "ED4Leadership", "Modifier" : "2"}]},
+                              "Effect" : "<br/>Throw the Book: When observing someone doing something that is against the local law, 2 strain to recite the Law in a booming voice from the book. The effects of Steely Stare is now expanded to preclude movement. The Target must understand what you are saying for the power to work. Does not work on Horrors or Horror Constructs; they don't give a rats ass about your laws. <br/>Last Word: When someone uses any action targeting Social Defence while out of combat on the owner, they can take two points of strain and make a Leadership test against the number rolled on the social power. Success negates the effect. An extra success turns the attack back on the attacker, as long as the result of the Leadership is higher than the attackers Social Defence, and they could plausibly be affected by it."
+                        }
+                  ]
+            },
+            {"ID" : "ESFCorrsWandOfPower", "Name" : "Corr's Wand Of Power", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "15",
+                  "DmgStep" : "1", "Size" : "2",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "+1 Spell Effect"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "+2 Spell Effect"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "+3 Spell Effect"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "+3 Spell Effect. The user can cast Clean at will, no spellcasting test required"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "+3 Spell Effect. The user can cast Clean at will, no spellcasting test required. <br/>Disease Theory: The user develops a sophisticated theory of how many diseases are caused by tiny living things he calls 'microbes', and can concuct a Cure Disease potion once per day"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "+3 Spell Effect. The user can cast Clean at will, no spellcasting test required. <br/>Disease Theory: The user develops a sophisticated theory of how many diseases are caused by tiny living things he calls 'microbes', and can concuct a Cure Disease potion once per day.<br/>The user can produce a potion making even the brutiest ork who drinks it appear as a sophisticated and well-spoken Elf for a day and a night, gaining +5 to all charisma based tests targeting Elves for the duration"
+                        }
+                  ]
+            },
+            {           
+                  "ID" : "ED4QuiverofBaistigh", "Name" : "Quiver of Baistigh", "Type" : "Thread Item", "BaseType" : "Arrows", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+                  "Description" : "This is an elegantly made quiver for Elven Warbow arrows, black with a lightning bolt pattern in silver",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +1 to Attack tests when they fire it"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +1 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +2 to Attack, +1 to Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +2 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +2 to Attack and Damage tests when they fire it. <br />Thunderclap (Free, maneuver): The adept can spend additional successes on an Attack test to inflict a -1 penallty per success to all of the target’s Action tests for Thread Rank rounds"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br />Thunderclap (Free, maneuver): The adept can spend additional successes on an Attack test to inflict a -1 penallty per success to all of the target’s Action tests for Thread Rank rounds"
+                        },
+                        {
+                              "Rank" : "7",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br />Thunderclap (Free, maneuver): The adept can spend additional successes on an Attack test to inflict a -1 penallty per success to all of the target’s Action tests for Thread Rank rounds.<br/>Lightning Bolt (maneuver): 1/rnd, 2 Strain, spend two additional successes on an Attack test to turn the arrow into a lightning bolt, destroying it, and attacking an additional target within 20 yards of the initial target. This is resolved as a separate attack with its own Attack and Damage tests."
+                        },
+                        {
+                              "Rank" : "8",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of Baistigh and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br />Thunderclap (Free, maneuver): The adept can spend additional successes on an Attack test to inflict a -1 penallty per success to all of the target’s Action tests for Thread Rank rounds. Thunderclap now affects all adjacent targets as well.<br />Lightning Bolt (maneuver): 1/rnd, 2 Strain, spend two additional successes on an Attack test to turn the arrow into a lightning bolt, destroying it, and attacking an additional target within 20 yards of the initial target. This is resolved as a separate attack with its own Attack and Damage tests."
+                        }
+                  ]
+            },
+            {"ID" : "ESFRathmarsChains", "Name" : "Rathmar's Chains", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "10",
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "12",
+                  "DmgStep" : "5", "StrMin" : "12", "Size" : "3",
+                  "Description" : "This is an length of heavy chain with a moon-shaped blade on one end. It is roughly made and blackened by fire and magic",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep": "+1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep": "+1"},
+                              "Effect" : "2 strain, target hit that round gets wrapped in an agonising ghostly chain, takes step 3 Dex penalty that relents slowly, one point at the end of each round. A character at zero Dex cannot take actions, dispel like a circle 8 spell"
+                        }
+                  ]
+            },
+            {"ID" : "ESFCrystalSpearShort", "Name" : "Crystal Spear (Short)", "Reference" : "C190 (Modified)", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+                  "DmgStep" : "4", "StrMin" : "12", "Size" : "3",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "3"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "3","Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "3","Ini" : "1"},
+                              "Effect" : "Crystal Defense (Simple action, 2 Strain): The spear glows a pale blue and the owner gains +2 to Physical and Mystic Defense until the end of the round."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "3","Ini" : "1"},
+                              "Effect" : "Crystal Defense (Simple action, 2 Strain): The spear glows a pale blue and the owner gains +2 to Physical and Mystic Defense until the end of the round.<br /> Crystal Attack ability (Free action, 1 Strain): The spear glows bright red and the owner gains a +3 bonus to Damage tests with the spear. The spear glows a bright red when this bonus is in effect."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "3","Ini" : "1"},
+                              "Effect" : "Crystal Defense (Simple action, 2 Strain): The spear glows a pale blue and the owner gains +2 to Physical and Mystic Defense until the end of the round.<br /> Crystal Attack ability (Free action, 1 Strain): The spear glows bright red and the owner gains a +3 bonus to Damage tests with the spear. The spear glows a bright red when this bonus is in effect.<br /> The spear now inflicts +3 damage points for each additional success on an Attack test."
+                        },
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "3","Ini" : "1"},
+                              "Effect" : "Crystal Defense (Simple action, 2 Strain): The spear glows a pale blue and the owner gains +2 to Physical and Mystic Defense until the end of the round.<br /> Crystal Attack ability (Free action, 1 Strain): The spear glows bright red and the owner gains a +3 bonus to Damage tests with the spear. The spear glows a bright red when this bonus is in effect.<br /> The spear now inflicts +3 damage points for each additional success on an Attack test.<br /> Crystal Command (Standard action), see Companion p192."
+                        }
+                  ]
+            },
+            {"ID" : "ESFSpecOpSpecs", "Name" : "Spec Op Specs", "Type" : "Thread Item", "BaseType" : "Adventuring", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "9",
+                  "Description" : "This is a pair of elegant sunglasses, rimmed in a titanium alloy, with lenses made of dark orange crystal. Even without a thread, wearing them will partially negate any penalties for sharp light",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"SoDef" : "+1", "Talents" : [{"ID" : "ED4Awareness", "Modifier" : "1"}]},
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"SoDef" : "+1", "Talents" : [{"ID" : "ED4Awareness", "Modifier" : "1"}, {"ID" : "ED4DisarmTrap", "Modifier" : "1"}]},
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"SoDef" : "+1", "Talents" : [{"ID" : "ED4Awareness", "Modifier" : "1"}, {"ID" : "ED4DisarmTrap", "Modifier" : "1"}]},
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light. Scan for Traps (1 strain, standard action): +3 when making an Awareness test to look for traps."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"SoDef" : "+2", "Talents" : [{"ID" : "ED4Awareness", "Modifier" : "1"}, {"ID" : "ED4DisarmTrap", "Modifier" : "1"}, {"ID" : "ED4DangerSense", "Modifier" : "1"}]},
+                              "Effect" : "The user never gets a negative modifier to sight-based tests due to bright light. Scan for Traps (1 strain, standard action): +3 when making an Awareness test to look for traps."
+                        }
+                  ]
+            },
+            {"ID" : "ESFWhiteHeron", "Name" : "White Heron", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "1",
+                  "BaseLPCost" : "100",
+                  "SpellDefense" : "8",
+                  "DmgStep" : "5", "StrMin" : "12", "Size" : "3",
+                  "Description" : "This is an incredibly beautiful Jian, obviously made by a true master of the trade. The blade is quite long at 110cm, flawless and mirror polished, except for a white heron etched on one bevel near the hilt, the words 'White Heron' in chinese on the opposite bevel, both repeated on the other side of the blade. The sword is very light, weighing perhaps a quarter of a broadsword of similar length, and is obviously made for fancy fencing moves",
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Effect" : "Glows like a Light Quartz at will"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Effect" : "Glows like a Light Quartz at will. Cutting the Red Tape (Sustained): +3 to any test against bureaucracy"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Effect" : "Glows like a Light Quartz at will. Cutting the Red Tape (Sustained): +4 to any test against bureaucracy, +4 to any test to catch a person lying"
+                        }
+                  ]
+            },
+            {"ID" : "ESFBulwarkofLandis", "Name" : "Bulwark of Landis", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "0",
+                  "BaseLPCost" : "800",
+                  "SpellDefense" : "14",
+                  "PhRating" : "2", "MyRating" : "2",  "IniPen" : "2", "Shatter" : "18",
+                  "Description" : "This is a 60cm diameter round shield, its main body made of smooth light green semitransparent living crystal which chages hue towards blue or yellow depending on the angle of light, rimmed in rune inscribed blued steel",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"IniPen" : "-1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"IniPen" : "-1", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "1"}]},
+                              "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "1"}]},
+                              "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}]},
+                              "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "+2"},
+                              "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "+2", "MyRating" : "+2"},
+                              "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
+                        }
+                  ]
+            }
+      ]
+}
+
+
+
+
+
+
+
+

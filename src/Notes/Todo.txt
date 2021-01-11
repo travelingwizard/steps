@@ -1,0 +1,80 @@
+Known issues: 
+- There are several weaknesses to browser caching I am not sure exactly what to do about, except asking the user to clear their cache, which is not really satisfying.
+- Resist Pain (Talent / Skill that allows to ignore the effect of Wounds) not implemented
+- Wholeness of Body talent (Monk) https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html
+- Journeyman is missing 
+- Morphism Talent (Journeyman Rank 5) not implemented
+- Multidisciplining. When an optional Talent, from a Discipline or Path moves to a Discipline Talent due to the character taking another Discipline, the cost of the existing ranks can change. Perhaps I can store the old cost when it gets updated? (Sebastian)
+- Wood Skin for Play mode
+
+Layout suggestions: 
+- The free points located in the bottom right corner of the window is the last place people look. I recommend moving the counter into the Header of the table. So it would say "25 Points" or "8 Free" and count down (Brett Bowen, same thought by Matthew Holtz)
+- Legend Points Award / misc spent interface like in 2step (Matthew Holtz)
+- Links to explanations for the more esotheric artisan skills (Jean-Baptiste Faure)
+
+Features underway: 
+- Questors: Questor UI done; Doctrine select and Rank select done. Devotion list done. LP Done. Devotion Abilities, Devotion points missing. 
+- Journeyman missing several special case functions to get implemented. 
+- Rules from non-core books - helpers already found who volounteer to enter the data, data import started (o:
+- Knacks that can be taken more than once ('Learn Improved Spells', 'Retakable'); part of Path logic. 
+- Legend Points Overlay: 65%. Wanted: Sums, Layout
+- Matrix Share
+Situational:
+- Social attack Modifiers
+- Base Attribute Modifiers - UI made but hidden. This feature will likely be postponed for later.
+- Range
+- An idea is to go through all Talents and Skills to determine if they're sight or movement based, ranged attack or ranged damage to successfully target those effects.
+
+Later versions:
+- Edit Equipment 
+- Edit Thread Items 
+- Questors 
+
+Planned features: 
+- Warden circle optional attribute increases - to be implemented like blood magic, with requirements?. 
+- Item weight _and size_ by race
+- Path infrastructure
+- Questors
+- Rules and content from other sources
+- Portrait
+- Validate
+- Editions
+- 1879
+- Random NPC
+- Some way for the user to create and modify contents; thread items, races, Disciplines etc, with an offer to volounteer those to the program
+- Hide talent step / dice for talents where rolling the dice would never happen. 
+- Compressed NPC sheet
+- Some place to jot down languages spoken and written
+- Checkmark for subtracting means when buying items (Matthew Holtz)
+- Masks
+- Language versions? German seems high on the request list; if nothing else for the names of in-game things =P
+
+Planned options:
+- Attribute Increase (Missing validate part)
+- AllTalentsToAdvance (Validate)
+- Options from the Panda blog
+- Defensive stance not penalising Avoid Blow 'and other defensive actions'. This one's really not well defined in the rulebook; I need a better definition of it to implement, or make Another option to give the user the ability to choose. It's also marred by some Talents being both defensive And offensive .. 
+- Is taking a Recovery test an action?
+
+Possible future features:
+- Craftsman skill like artisan & Knowledge?
+- LocalStorage system 
+- Some kind of shorthand instructions? 
+- Combos 
+- Default Skill Table (etherial, Svenn)
+- Half magic (Under hver Discipline?)
+- Sort Talents by name option
+- Stand alone downloadable version - https://github.com/jiahaog/nativefier looks promising. 
+- Dice roller
+- Locations for items
+- Translations. German: https://www.earthdawn-wiki.de/Wiki.jsp?page=EDGlossar
+- Adventure log, friends etc. text areas
+- First play mode - like a wizard, following the steps in the PG. First choose a Discipline, then choose a Race, etc. 
+- Info thinger for each Talent, Skill and basically anything that uses LP; show what LP are used on that item, and how the final step (if any) is calculated
+- Take out the steps on all Talents where they don't make any sense. 
+- LP log, meaning every single LP gain needs to be an entry that is justified in some way
+- Better printability, without the page structure. https://getfireshot.com/api.php, https://www.sitepoint.com/css-printer-friendly-pages/ - PDF JS library seems to be the way to go. https://www.codexworld.com/convert-html-to-pdf-using-javascript-jspdf/
+- BuyMoreOptionalMatrices Option  false // If true, allow a spellcaster to use as many of their talent options as they like to buy matrices.
+- Suggest for Passions, details and Traits
+- The option to excempt 'defensive actions' from the Defensive Stance steps penalty. Trouble is, it doesn't define what a 'defensive action' is other than mentioning Avoid Blow, and it's ambiguous. 
+

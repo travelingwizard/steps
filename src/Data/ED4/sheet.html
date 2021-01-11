@@ -1,0 +1,217 @@
+<div id="Earthdawn_Sheet">
+    <div id="Title" class="container">
+        <div class="title">Earthdawn</div>
+        <div class="title_subtext">Fourth edition</div>
+    </div>
+    <div id="Basic" class="container"> 
+        <div class="header_flow header">Basic</div>
+        <div class="statistics_subcontainer">
+            <div class="columns_1" style="display: flex;">
+                <div class="statistics_label label">Name:&nbsp;</div>
+                <input type="text" id="Name" class="basics value lockInPlay" value="" style="flex-grow:1;" />
+            </div> 
+            <div class="columns_1" style="display: flex;">
+                <div class="statistics_label label">Player:&nbsp;</div>
+                <input type="text" id="Player" class="basics value lockInPlay" value=""  style="flex-grow:1;" />
+            </div>
+            <div class="columns_1" style="display: flex;">
+                <div class="statistics_label label">Race:&nbsp;</div>
+                <select id="Race" class="value lockInPlay" style="flex-grow:1;"></select>
+            </div>
+        </div>
+    </div>
+    <div id="Details" class="container">
+        <div class="header_flow header">Details</div>
+        <div class="statistics_subcontainer">
+            <div class="columns_2">
+                <div class="statistics_label label">Gender:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Gender" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_2">
+                <div class="statistics_label label">Age:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Age" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_2">
+                <div class="statistics_label label">Hair:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Hair" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_2">
+                <div class="statistics_label label">Skin:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Skin" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_2">
+                <div class="statistics_label label">Eyes:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Eyes" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_2">
+                <div class="statistics_label label">Passion:&nbsp;</div>
+                <span class="value_flow"><input type="text" id="Passion" class="basics value lockInPlay" value=""></span>
+            </div>
+            <div class="columns_1">
+                <div class="statistics_label label">Traits:&nbsp;</div> 
+                <span class="value_flow"><input type="text" id="Traits" class="basics value lockInPlay" value=""></span>
+            </div> 
+        </div>
+    </div>
+    <div id="PortraitContainer" class="container">
+        <div id="PortraitWrapper"> 
+            <div class="header_flow header">Portrait</div>
+            <img id="Portrait" src="./img/portraits/Empty.jpg" alt="Portrait" class="portrait">
+            <div id="PortraitOverlay" class="hideInPlay button">Choose</div>
+        </div>
+    </div>
+    <div id="DescriptionContainer" class="container">
+        <div class="header_flow header">Description</div>
+        <div id="Description" class="basics" contentEditable="true"></div> 
+    </div>
+    <div id="Adventurer" class="container"> 
+        <div class="header_flow header">Adventurer</div>
+        <div class="statistics_subcontainer">
+            <div class="columns_1" style="display: flex;">
+                <div class="statistics_subheader">Legend Points<sup id="LPInfo"> 𝐢 </sup></div>
+            </div>
+            <div class="columns_2" style="display: flex;">
+                <div class="statistics_label label">Current:&nbsp;</div>
+                <input type="number" id="LpCurrent" class="lockInPlay" style="width: 8.5vw; border-bottom: 1px solid black;"/>
+            </div>
+            <div class="columns_2" style="display: flex;">
+                <div class="statistics_label label">Total:&nbsp;</div>
+                <input type="number" id="LpTotal" class="lockInPlay" style="width: 10vw; border-bottom: 1px solid black;"/>
+            </div>
+            <div class="columns_1">
+                <div class="statistics_subheader">Disciplines:&nbsp;</div>
+            </div>
+            <div id="Disciplines" class="columns_1"></div>
+            <div class="columns_1 hideInPlay">
+                <div id="AddDiscipline" class="AddButton">+</div>
+            </div>
+            <div id="Paths" class="columns_1"></div>
+            <div id="Questor" class="columns_1"></div>
+        </div>
+    </div>
+    <div id="Attributes" class="container">
+        <table id="AttributeTable" class="AttributeTable">
+            <caption class="header">Attributes</caption> 
+            <tr><th> </th><th class="hideInPlay">Race</th><th class="hideInPlay">Points</th><th class="hideInPlay">Increase</th><th class="hideInPlay">Bonus</th><th>Current</th><th>Step</th><th>Dice</th></tr>
+            <tr               ><td>Dexterity </td><td id="DexBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="DexPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="DexInc"></select></td><td class="hideInPlay" id="DexMod"></td><td><div id="DexVal">&nbsp;</div></td><td><div id="DexStep">&nbsp;</div></td><td><div id="DexDice">&nbsp;</div></td></tr>
+            <tr class="shaded"><td>Strength  </td><td id="StrBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="StrPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="StrInc"></select></td><td class="hideInPlay" id="StrMod"></td><td><div id="StrVal">&nbsp;</div></td><td><div id="StrStep">&nbsp;</div></td><td><div id="StrDice">&nbsp;</div></td></tr>
+            <tr               ><td>Toughness </td><td id="TouBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="TouPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="TouInc"></select></td><td class="hideInPlay" id="TouMod"></td><td><div id="TouVal">&nbsp;</div></td><td><div id="TouStep">&nbsp;</div></td><td><div id="TouDice">&nbsp;</div></td></tr>
+            <tr class="shaded"><td>Perception</td><td id="PerBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="PerPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="PerInc"></select></td><td class="hideInPlay" id="PerMod"></td><td><div id="PerVal">&nbsp;</div></td><td><div id="PerStep">&nbsp;</div></td><td><div id="PerDice">&nbsp;</div></td></tr>
+            <tr               ><td>Willpower </td><td id="WilBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="WilPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="WilInc"></select></td><td class="hideInPlay" id="WilMod"></td><td><div id="WilVal">&nbsp;</div></td><td><div id="WilStep">&nbsp;</div></td><td><div id="WilDice">&nbsp;</div></td></tr>
+            <tr class="shaded"><td>Charisma  </td><td id="ChaBase" class="hideInPlay">&nbsp;</td><td class="hideInPlay"><select id="ChaPts" class="attributeSelect"></select></td><td class="hideInPlay"><select class="attributeIncreases" id="ChaInc"></select></td><td class="hideInPlay" id="ChaMod"></td><td><div id="ChaVal">&nbsp;</div></td><td><div id="ChaStep">&nbsp;</div></td><td><div id="ChaDice">&nbsp;</div></td></tr>
+            <tr class="hideInPlay"><td colspan="8" style="text-align: right;">Attribute Points remaining: <span id="AttPtsRemainder">25</span></td></tr>
+        </table>
+    </div>
+    <div ID="Derived" class="container">
+        <table id="CharacteristicsTable" class="statistics_characteristics">
+            <caption class="header">Characteristics</caption>
+            <tr class="shaded"><td><div id="phDefLabel"       >Physical Defense:&nbsp;</div></td>  <td><div id="phDef"      class="value">&nbsp;</div></td></tr>
+            <tr               ><td><div id="myDefLabel"       >Mystic Defense :&nbsp;</div></td>   <td><div id="myDef"      class="value">&nbsp;</div></td></tr>
+            <tr class="shaded"><td><div id="soDefLabel"       >Social Defense :&nbsp;</div></td>   <td><div id="soDef"      class="value">&nbsp;</div></td></tr>
+            <tr               ><td><div id="phArmLabel"       >Physical Armor :&nbsp;</div></td>   <td><div id="phArm"      class="value">&nbsp;</div></td></tr>
+            <tr class="shaded"><td><div id="myArmLabel"       >Mystical Armor :&nbsp;</div></td>   <td><div id="myArm"      class="value">&nbsp;</div></td></tr>
+            <tr               ><td><div id="MoveLabel"        >Movement Rate :&nbsp;</div></td>    <td><div id="Move"       class="value">&nbsp;</div></td></tr>
+            <tr class="shaded"><td><div id="CarryLabel"       >Carrying Capacity :&nbsp;</div></td><td><div id="Carry"      class="value">&nbsp;</div></td></tr>
+            <tr               ><td><div>Initiative base:&nbsp;</div></td>                   <td><div id="Ini"        class="value">&nbsp;</div></td></tr>
+            <tr id="ModifiedIni" class="shaded"><td><div>Initiative modified:&nbsp;</div></td>               <td><div id="ArmoredIni" class="value">&nbsp;</div></td></tr>
+            <tr id="KarmaPointsLine" ><td><div id="karmaLabel">Karma :&nbsp;</div></td>            <td><div id="Karma"      class="value">&nbsp;</div></td></tr>
+            <tr id="DevotionPointsLine" class="shaded"><td><div id="DevotionPointsLabel">Devotion Points :&nbsp;</div></td><td><div id="DevotionPoints"      class="value">&nbsp;</div></td></tr>
+        </table>
+    </div>
+    <div id="Health" class="container">
+        <table id="HealthTable">
+            <caption class="header">Health</caption>
+            <tr><td class="label">Unconsciousness / Death<sup id="HealthInfo"> 𝐢 </sup>:</td>   <td id="Unc"      class="value">&nbsp;</td></tr>
+            <tr id="HealtWithBlood"><td class="label">- incorporating Blood Magic:</td>        <td id="ModHlth"  class="value">&nbsp;</td></tr>
+            <tr><td class="label">Wound Threshold:&nbsp;</td>                                  <td id="wndTh"    class="value" >&nbsp;</td></tr>
+            <tr><td class="label">Recovery tests per day:&nbsp;</td>                           <td id="recTst"   class="value" >&nbsp;</td></tr>
+            <tr><td class="label">Recovery Step / Dice:&nbsp;</td>                             <td id="recStp"   class="value">&nbsp;</td></tr>
+            <tr><td class="label">Blood Damage / Wounds:<sup id="BloodInfo"> 𝐢 </sup>&nbsp;</td><td id="bloodDmg" class="value">&nbsp;</td></tr>
+            <tr><td class="label">Current Damage / Wounds:&nbsp;</td>                          <td id="curDmg"   class="value">&nbsp;</td></tr>
+        </table>
+    </div>
+    <div id="Talents" class="container">
+        <table id="DiscTalentTable" class="talents_table">
+            <caption class="header">Discipline Talents</caption>
+        </table>
+        <table id="othrTalentTable" class="talents_table">
+            <caption class="header">Other Talents</caption>
+        </table>
+    </div>
+    <div id="Knacks" class="container">
+        <table id="KnackTable" class="Knack_table">
+            <caption class="header">Knacks</caption>
+        </table>
+    </div>
+    <div id="Devotions" class="container">
+        <table id="DevotionTable" class="devotion_table">
+            <caption class="header">Questor</caption>
+        </table>
+    </div>
+    <div id="Skills" class="container">
+        <table id="SkillTable" class="skill_table">
+            <caption class="header">Skills</caption>
+        </table>
+    </div>
+    <div id="Equipment" class="container">
+        <table id="EquipmentTable">
+            <caption class="header">Equipment</caption>
+        </table>
+    </div>
+    <div id="Magic" class="container">
+        <table id="MagicTable">
+            <caption class="header">Thread and Blood Magic</caption>
+        </table>
+    </div>
+    <div id="Spells" class="container">
+        <table id="SpellTable">
+            <caption class="header">Spells</caption>
+        </table>
+    </div>
+    <div id="AdventureLog" class="container">
+        <div class="header_flow header">Log</div>
+        <div id="LogText" class="basics" contentEditable="true"></div> 
+    </div>
+    <div id="Abilities" class="container">
+        <table id="AbilityTable" class="ability_table">
+            <caption class="header">Abilities</caption>
+        </table>
+    </div>
+    <div id="StepDice" class="container">
+        <table id="StepDiceTable" class="stepdice_table">
+            <caption class="header">Step / Dice</caption>
+       </table>
+    </div>
+    <div id="Matrix" class="container"> 
+        <div id="MatrixCardsWrapper">
+            <div class="header" style="text-align: center;">Matrices</div>
+        </div>
+    </div><!-- Languages, footer? -->
+    <br /><br />
+    <br /><br />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

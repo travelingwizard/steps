@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Steps</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta property="og:url"                content="http://www.secondstep.dk/Steps/index.html" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Steps 1β08" />
+    <meta property="og:description"        content="The Earthdawn Character Creator" />
+    <meta property="og:image"              content="http://www.secondstep.dk/Steps/Logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script-->
+    <!--<script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>-->
+    <script src="./js/lib/jquery-3.5.1.min.js"></script>
+    <script src="./js/lib/uuidv4.min.js"></script>
+    <script src="./js/lib/jquery.autocomplete.min.js"></script>
+    <script src="./js/lib/lodash.js"></script>
+    <script src="./js/lib/FileSaver.js"></script>
+    <script src="./js/lib/bowser.js"></script>
+    <script src="./js/Character.js"></script>
+    <script src="./js/CharacterManager.js"></script> 
+    <script src="./js/Library.js"></script>
+    <script src="./js/IO.js"></script>
+    <script src="./js/UI.js"></script>
+    <script src="./js/UIEvents.js"></script>
+    <script src="./js/UIUtilities.js"></script>
+    <script src="./js/UISituational.js"></script>
+    <script src="./js/Popup.js"></script>
+    <script src="./js/Dialogue.js"></script>
+    <script>
+        var Character;
+        var version = "1β08"
+
+        var Settings = new function()
+        {
+            this.Game = "ED4";
+            this.debug = true;
+        } 
+
+        function pageLoad()
+        {
+            document.title = "Steps " + version;
+            IO.StartLoading();
+        }
+        window.onload = pageLoad;
+    </script>
+</head>
+<body>
+    <div id="content"></div>
+    <div id="Overlay"><div id="OverlayContent"></div></div>
+    <div id="burger">
+        <svg viewBox="0 0 30 30" style="width: 1.5vw; height: 1.5vw; display: block;">
+            <title>Menu</title>
+            <path d="M5,0 h20 a5,5 0 0 1 5,5 h-30 a5,5 0 0 1 5,-5 z" fill="black" stroke="black" stroke-width="1" />
+            <rect x="0" y="11" width="30" height="5" stroke="black" fill="black" stroke-width="1"/>
+            <path d="M5,27 h20 a5,5 0 0 0 5,-5 h-30 a5,5 0 0 0 5,5 z" fill="black" stroke="black" stroke-width="1" />
+        </svg>    
+    </div>
+    <div id="controls">
+        <div class="menuButton" id="swapButton">Play</div>
+        <div class="menuButton new_load_Btn" id="LoadButton">Load</div>
+        <input id="load_btn" type='file'/> 
+        <div class="menuButton" id="OptionsButton">Options</div>
+        <div class="menuButton" id="SaveButton">Save</div>
+        <div class="menuButton" id="newButton">New</div>
+        <div class="menuButton" id="aboutButton">About</div>
+        <!-- <div class="menuButton" id="pregenButton">Pregens</div> -->
+    </div>
+    <div id="situation">
+        <div class="situation-header">Situation</div>
+        <hr  class="SituationDiv" />
+        <div class="SituationDiv"><span>Damage</span><div id="SituationDamageWrapper"></div></div>
+        <div class="SituationDiv"><span>Wounds</span><div id="SituationWoundWrapper"></div></div>
+        <div class="SituationDiv"><span>Health Buff</span><div><span id="SituationUncBuffWrapper"></span> / <span id="SituationDthBuffWrapper"></span></div></div>
+        <hr  class="SituationDiv" />
+        <div class="SituationDiv"><span>Apply Damage</span><div id="SituationalDamageApplierWrapper"></div></div>
+        <div class="SituationDiv"><div>Subtract</div><div id="SubtractArbitraryWrapper"></div></div>
+        <div class="SituationDiv"><div id="DamageButton" class="situationalButton">Direct</div><div id="PhysicalDamageButton" class="situationalButton">Physical</div><div id="MysticalDamageButton" class="situationalButton">Mystical</div></div>
+        <div class="SituationDiv"><label class="custom-label" for="ApplyWounds">Apply Wound if damage &gt; <span id="SituationalWndThLabel"></span></label><input type="checkbox" class="situationCheckbox" id="ApplyWounds" checked="true" disabled="true"></div>
+        <hr  class="SituationDiv" />
+        <div class="SituationDiv"><span>Stance </span><select id="Stance" class="situationInputWide situationSelect" disabled="true"><option>Normal</option><option>Aggressive</option><option>Defensive</option></select></div>
+        <div class="SituationDiv"><label class="custom-label" for="Knockeddown">Knocked down</label><input type="checkbox" class="situationCheckbox" id="Knockeddown" disabled="true"></div>
+        <div class="SituationNote"><label class="custom-label" for="KDAppliesSocial">- Applies to Social Defense</label><input type="checkbox" class="situationCheckbox" id="KDAppliesSocial" disabled="true"></div>
+        <div class="SituationDiv"><label class="custom-label" for="Harried"    >Harried     </label><input type="checkbox" class="situationCheckbox" id="Harried" disabled="true">    </div>
+        <div class="SituationDiv"><label class="custom-label" for="Surprised"  >Surprised   </label><input type="checkbox" class="situationCheckbox" id="Surprised" disabled="true">  </div>
+        <div class="SituationNote"><label class="custom-label" for="SurpriseAppliesSocial">- Applies to Social Defense</label><input type="checkbox" class="situationCheckbox" id="SurpriseAppliesSocial" disabled="true"></div>
+        <div class="SituationDiv"><span>Darkness </span><select id="Darkness" class="situationInputWide situationSelect" disabled="true"><option>Normal</option><option>Partial</option><option>Full</option></select></div>
+        <p   class="SituationNote">* Darkness penalties should only be selected when making sight-based tests</p>
+        <hr  class="SituationDiv" />
+        <div id="SituationKarmaDialogueWrapper" style="width: 100%">
+            <p   class="SituationDiv">Karma</p>
+            <div class="SituationDiv"><div>Points</div><div id="SpendKarmaButton" class="situationalButton">Spend 1</div><div id="KarmaPointsWrapper"></div></div>
+            <div class="SituationDiv"><select style="width: 6vw;" id="KarmaType" class="situationSelect" disabled="true"><option value="Bonus">Bonus</option><option value="Replace">Replace</option></select><div id="SituationKarmaWrapper"></div></div>
+            <div class="SituationDiv"><span></span><div id="ResetKarmaButton" class="situationalButton">Reset</div><span></span></div>
+            <hr  class="SituationDiv" />
+        </div>
+        <div id="SituationDevotionWrapper" style="width: 100%">
+            <p   class="SituationDiv">Devotion</p>
+            <div class="SituationDiv"><div>Points</div><div id="SpendDevotionButton" class="situationalButton">Spend 1</div><div id="DevotionPointsWrapper"></div></div>
+            <hr  class="SituationDiv" />
+        </div>
+        <div class="SituationDiv" ><span>Target number </span><div id="TargetNumberWrapper"></div></div>
+        <div class="SituationDiv" ><span>Roll </span><div id="RolledNumberWrapper"></div></div>
+        <div class="SituationDiv"><span>To Hit result over TN</span><select id="HitSuccessSelect" class="situationSelect situationNumberWide">
+            <option value="0" >0-4</option>
+            <option value="1" >5-9</option>
+            <option value="2" >10-14</option>
+            <option value="3" >15-19</option>
+            <option value="4" >20-24</option>
+            <option value="5" >25-29</option>
+            <option value="6" >30-34</option>
+            <option value="7" >35-39</option>
+            <option value="8" >40-44</option>
+            <option value="9" >45-49</option>
+            <option value="10">50-54</option>
+            <option value="11">55-59</option>
+            <option value="12">60-64</option>
+            <option value="13">65-69</option>
+            <option value="14">70-74</option>
+            <option value="15">75-79</option>
+        </select></div>
+        <div class="SituationDiv"><span>Extra successes to hit </span><div id="HitSuccessNumberWrapper"></div></div>
+        <hr  class="SituationDiv" />
+        <hr  class="SituationDiv" style="display:none;" />
+        <p   class="SituationDiv" style="display:none;">Attribute modifiers:</p>
+        <div class="SituationDiv" style="display:none;"><span>Dexterity </span><div id="DexterityModWrapper" ></div></div>
+        <div class="SituationDiv" style="display:none;"><span>Strength  </span><div id="StrengthModWrapper"  ></div></div>
+        <div class="SituationDiv" style="display:none;"><span>Toughness </span><div id="ToughnessModWrapper" ></div></div>
+        <div class="SituationDiv" style="display:none;"><span>Perception</span><div id="PerceptionModWrapper"></div></div>
+        <div class="SituationDiv" style="display:none;"><span>Willpower </span><div id="WillpowerModWrapper" ></div></div>
+        <div class="SituationDiv" style="display:none;"><span>Charism   </span><div id="CharismaModWrapper"  ></div></div>
+        <hr  class="SituationDiv" style="display:none;"/>
+        <p   class="SituationDiv">Misc modifiers</p>
+        <div class="SituationDiv"><div>Physical Armor</div><div id="PhysArmorModWrapper"></div></div>
+        <div class="SituationDiv"><div>Mystical Armor</div><div id="MystArmorModWrapper"></div></div>
+        <div class="SituationDiv"><span>Physical Defense</span><div id="PhysDefModWrapper"        ></div></div>
+        <div class="SituationDiv"><span>Mystic Defense  </span><div id="MystDefModWrapper"        ></div></div>
+        <div class="SituationDiv"><span>Social Defense  </span><div id="SociDefModWrapper"        ></div></div>
+        <div class="SituationDiv"><span>Initiative      </span><div id="InitiativeModWrapper"     ></div></div>
+        <div class="SituationDiv"><span>Action          </span><div id="MiscActionModWrapper"     ></div></div>
+        <div class="SituationDiv"><span>Attack          </span><div id="MiscAttackModWrapper"     ></div></div>
+        <div class="SituationDiv"><span>Damage          </span><div id="MiscDamageModWrapper"     ></div></div>
+        <div class="SituationDiv"><span>Spellcasting    </span><div id="MiscSpellCastModWrapper"  ></div></div>
+        <div class="SituationDiv"><span>Spell Effect    </span><div id="MiscSpellEffectModWrapper"></div></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

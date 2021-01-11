@@ -1,0 +1,449 @@
+{
+      "ID" : "Iopos",
+      "Books" : "Earthdawn 4th Edition Iopos",
+      "Description" : "Earthdawn 4 Iopos data for the Steps project",
+      "version" : "1",
+      "by" : "João Isidro & Lars Gottlieb 2020",
+      "Equipment" :
+      [
+            {"ID" : "LivingMetal",            "Name" : "Living Metal",                "Reference" : "IO214",  "Type" : "Armor",          "Cost" : "NA",      "Weight" : "50",       "Availability" : "NA",        "PhArm" : "9", "MyArm" : "6", "IniPen" : "2", "BloodDamage" : "6"},
+            {"ID" : "Oathstar",               "Name" : "Oathstar",                    "Reference" : "IO214",  "Type" : "Armor",          "Cost" : "5000",    "Weight" : "25",       "Availability" : "Very Rare", "PhArm" : "4", "MyArm" : "1", "IniPen" : "1"},
+            {"ID" : "BloodSurvival",          "Name" : "Blood Survival",              "Reference" : "IO215",  "Type" : "Blood Charm",    "Cost" : "600",     "Weight" : "1",        "Availability" : "Unusual",   "BloodDamage" : "5", "Bonus" : "Reduces food intake for a limited period of time. Iopos - Lair of Deceit pg. 215"},
+            {"ID" : "CropDiverBloodCharm",    "Name" : "Crop Diver, Blood charm",     "Reference" : "IO215",  "Type" : "Blood Charm",    "Cost" : "650",     "Weight" : "1",        "Availability" : "Rare",      "BloodDamage" : "3", "Bonus" : "Allows limited underwater breathing. Iopos - Lair of Deceit pg. 215"},
+            {"ID" : "CropDiver",              "Name" : "Crop Diver",                  "Reference" : "IO215",  "Type" : "Magic",          "Cost" : "650",     "Weight" : "1",        "Availability" : "Rare",      "Bonus" : "Allows limited underwater breathing. Iopos - Lair of Deceit pg. 215"},
+            {"ID" : "Crystal Skin",           "Name" : "Crystal Skin",                "Reference" : "IO215",  "Type" : "Blood Charm",    "Cost" : "850",     "Weight" : "3",        "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "When activated for 2 Strain, the character gains +4 Physical Armor and +2 Mystic Armor for 5 rounds. This protection is cumulative with worn armor. Iopos - Lair of Deceit pg. 215"},
+            {"ID" : "FireHandler",            "Name" : "Fire Handler",                "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "700",     "Weight" : "1",        "Availability" : "Rare",      "BloodDamage" : "3", "Bonus" : "When activated for 1 Strain, the character gains limited fire resistance. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "FireHandlerAdv",         "Name" : "Fire Handler, Advanced",      "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "1100",    "Weight" : "2",        "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "When activated for 2 Strain, the character gains limited fire resistance and forging bonuses. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "LimberLimbs",            "Name" : "Limber Limbs",                "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "700",     "Weight" : "2",        "Availability" : "Rare",      "BloodDamage" : "3", "Bonus" : "When activated for 1 Strain, the character gains +5 bonus to tests where flexibility is beneficial,such as escaping from a grapple or restraints. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "MaleableBody",           "Name" : "Maleable Body",               "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "700",     "Weight" : "1",        "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "When activated for 1 Strain, the character gains +3 bonus to Disguise and Disguise Self tests for 1 hour. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "SensitiveEars",          "Name" : "Sensitive Ears",              "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "400",     "Weight" : "0",        "Availability" : "Unusual",   "BloodDamage" : "2", "Bonus" : "When activated for 1 Strain, the character gains Enhanced Sense [Hearing] (2) for 1 minute. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "SensitiveEarsAdv",       "Name" : "Sensitive Ears, Advanced",    "Reference" : "IO216",  "Type" : "Blood Charm",    "Cost" : "1000",    "Weight" : "0",        "Availability" : "Very Rare", "BloodDamage" : "4", "Bonus" : "When activated for 2 Strain, the character gains Enhanced Sense [Hearing] (4) for 1 minute. Iopos - Lair of Deceit pg. 216"},
+            {"ID" : "Swimming",               "Name" : "Swimming",                    "Reference" : "IO218",  "Type" : "Blood Charm",    "Cost" : "350",     "Weight" : "2",        "Availability" : "Unusual",   "BloodDamage" : "3", "Bonus" : "+3 Swimming tests. When activated for 2 Strain, the character doubles their swimming Movement Rate for 1 minute. Iopos - Lair of Deceit pg. 218"},
+            {"ID" : "Librarycard",            "Name" : "Library card",                "Reference" : "IO219",  "Type" : "Magic",          "Cost" : "450+",    "Weight" : "-",        "Availability" : "NA"},
+            {"ID" : "MaskofAthabanCommon",    "Name" : "Mask of Athaban (Common)",    "Reference" : "IO219",  "Type" : "Magic",          "Cost" : "170",     "Weight" : "1",        "Availability" : "Rare"},
+            {"ID" : "MaskofAthabanExquisite", "Name" : "Mask of Athaban (Exquisite)", "Reference" : "IO219",  "Type" : "Magic",          "Cost" : "700+",    "Weight" : "1",        "Availability" : "Rare"},
+            {"ID" : "ED4AstendarsTears", "Name" : "Astendar's Tears", "Reference" : "IO p221", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "10",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"SoDef" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"SoDef" : "1"},
+                              "Effect" : "The owner gains +1 to Interaction tests for Favors, Insight, and Make an Impression (see Gamemaster’s Guide, p.144). Make an Impression includes talents that increase the target’s Attitude, such as First Impression or Conversation. If this bonus is used, the owner applies the bonus as a penalty to Interaction tests for Deceit and Intimidation (and similar talents) for 24 hours."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"SoDef" : "2"},
+                              "Effect" : "The owner gains +1 to Interaction tests for Favors, Insight, and Make an Impression (see Gamemaster’s Guide, p.144). Make an Impression includes talents that increase the target’s Attitude, such as First Impression or Conversation. If this bonus is used, the owner applies the bonus as a penalty to Interaction tests for Deceit and Intimidation (and similar talents) for 24 hours."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"SoDef" : "2"},
+                              "Effect" : "The owner gains +2 to Interaction tests for Favors, Insight, and Make an Impression (see Gamemaster’s Guide, p.144). Make an Impression includes talents that increase the target’s Attitude, such as First Impression or Conversation. If this bonus is used, the owner applies the bonus as a penalty to Interaction tests for Deceit and Intimidation (and similar talents) for 24 hours."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"SoDef" : "2"},
+                              "Effect" : "The owner gains +2 to Interaction tests for Favors, Insight, and Make an Impression (see Gamemaster’s Guide, p.144). Make an Impression includes talents that increase the target’s Attitude, such as First Impression or Conversation. If this bonus is used, the owner applies the bonus as a penalty to Interaction tests for Deceit and Intimidation (and similar talents) for 24 hours.<br/>Give information based on previous owners. Iopos, pg222"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"SoDef" : "2"},
+                              "Effect" : "The owner gains +3 to Interaction tests for Favors, Insight, and Make an Impression (see Gamemaster’s Guide, p.144). Make an Impression includes talents that increase the target’s Attitude, such as First Impression or Conversation. If this bonus is used, the owner applies the bonus as a penalty to Interaction tests for Deceit and Intimidation (and similar talents) for 24 hours.<br/>Give information based on previous owners. Iopos, pg222"
+                        }
+                  ]
+            },
+            {"ID" : "ED4BladesofMoralyalynnEfritti", "Name" : "Blades of Moralyalynn - Efritti", "Reference" : "IO p223", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "16",
+                  "DmgStep" : "5", 
+                  "StrMin" : "11", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests made with Furi."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "The owner gains +1 to Attack tests made with Furi."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "The owner gains +2 to Attack tests made with Furi."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"},
+                              "Effect" : "The owner gains +2 to Attack tests made with Furi."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"},
+                              "Effect" : "The owner gains +2 to Attack tests made with Furi.<br />The owner can spend a Karma Point on Initiative tests. This Karma Point must come from Furi."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +3 to Attack tests made with Furi.<br />The owner can spend a Karma Point on Initiative tests. This Karma Point must come from Furi."
+      			},
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "2"},
+                              "Effect" : "The owner gains +3 to Attack tests made with Furi.<br />The owner can spend a Karma Point on Initiative tests. This Karma Point must come from Furi."
+                        }
+                  ]
+            },
+            {"ID" : "ED4BladesofMoralyalynnFuri", "Name" : "Blades of Moralyalynn - Furi", "Reference" : "IO p223", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "16",
+	          "DmgStep" : "5", 
+                  "StrMin" : "11", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +1 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte)."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +1 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +2 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +2 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability.<br/>For 2 Strain, the owner can use the Soul Split ability as a Standard action. This replicates the Phantom Warrior spell (Player’s Guide, p.304), though no test is required, and lasts for thread rank rounds."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +2 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability.<br/>For 2 Strain, the owner can use the Soul Split ability as a Standard action. This replicates the Phantom Warrior spell (Player’s Guide, p.304), though no test is required, and lasts for thread rank rounds.<br/>The owner can spend a Karma Point on active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte). This Karma Point must come from Furi."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +2 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability.<br/>For 2 Strain, the owner can use the Soul Split ability as a Standard action. This replicates the Phantom Warrior spell (Player’s Guide, p.304), though no test is required, and lasts for thread rank rounds.<br/>The owner can spend a Karma Point on active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte). This Karma Point must come from Furi.<br/>For 1 Strain per image affected and as a Simple action, an image created through Soul Split gains autonomy and no longer remains near the owner. Instead, it follows the impulse given by the owner when this effect is first used, such as “run,” “draw attention,” etc. While the illusion cannot interact with the environment, those observing it believe it can like a typical illusion. Interacting with the illusion allows a Sensing test as normal (Difficulty 22)."
+      			},
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1"},
+                              "Effect" : "The owner can store Karma Points up to their thread rank in the sword and transfer Karma between their normal Karma pool and the sword as a Standard action. The owner can spend Karma Points from the sword as if they were in their Karma Pool.<br/>The owner gains +2 to active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte).<br/>For 1 Strain, the owner can use the Furi’s Gambit ability as a Free action. After a successful Attack test with Furi, the sword switches places with Efritti, which is used to make the Damage test instead of Furi. Efritti must be within 10 yards to use this ability.<br/>For 2 Strain, the owner can use the Soul Split ability as a Standard action. This replicates the Phantom Warrior spell (Player’s Guide, p.304), though no test is required, and lasts for thread rank rounds.<br/>The owner can spend a Karma Point on active defense tests against attacks that affect Physical Defense (e.g., Avoid Blow and Riposte). This Karma Point must come from Furi.<br/>For 1 Strain per image affected and as a Simple action, an image created through Soul Split gains autonomy and no longer remains near the owner. Instead, it follows the impulse given by the owner when this effect is first used, such as “run,” “draw attention,” etc. While the illusion cannot interact with the environment, those observing it believe it can like a typical illusion. Interacting with the illusion allows a Sensing test as normal (Difficulty 22)."
+                        }
+                  ]
+            },
+
+            {"ID" : "ED4DarkHeart", "Name" : "Dark Heart", "Reference" : "IO p225", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "18",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions."
+                        },
+                        {
+                              "Rank" : "2",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions."
+                        },
+                        {
+                              "Rank" : "3",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead)."
+                        },
+                        {
+                              "Rank" : "4",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn."
+                        },
+                        {
+                              "Rank" : "5",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected."
+                        },
+                        {
+                              "Rank" : "6",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}, {"ID" : "ED4LifeCheck", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected."
+                        },
+                        {
+                              "Rank" : "7",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}, {"ID" : "ED4LifeCheck", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected.<br/>The owner gains the Hidden Heart power, any attempt to learn about the owner through magic has Difficulty Number increased by the Thread Rank, such as using magic to find the owner or learn their state of mind."
+      			},
+                        {
+                              "Rank" : "8",
+      			      "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}, {"ID" : "ED4LifeCheck", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected.<br/>The owner gains the Hidden Heart power, any attempt to learn about the owner through magic has Difficulty Number increased by the Thread Rank, such as using magic to find the owner or learn their state of mind.<br/>For 1 Strain, the owner can use Terror (see Gamemaster’s Guide, p. 466) with CHA+Thread Rank as the Action Step."
+                        },
+                        {
+                              "Rank" : "9",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}, {"ID" : "ED4LifeCheck", "Modifier" : "1"}]},
+      			      "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected.<br/>The owner gains the Hidden Heart power, any attempt to learn about the owner through magic has Difficulty Number increased by the Thread Rank, such as using magic to find the owner or learn their state of mind.<br/>For 1 Strain, the owner can use Terror (see Gamemaster’s Guide, p. 466) with CHA+Thread Rank as the Action Step.<br/>The heart replaces the owner’s previous heart and functions otherwise as normal. Characters with threads attached to Dark Heart gain access to all the appropriate effects even when not in contact with the heart, though must convince the character with it in their chest to sit still for the process for any Thread Weaving activities. Only one character can have this Thread Rank at a time. If the owner’s Current Damage exceeds their Unconscious Rating (this includes their Death Rating) through injury by a Horrorspawn, the owner can make a Life Check test and spend Karma Points up to their Thread Rank. If the owner does not have Recovery Tests remaining, they may spend Karma Points, healing their Karma Die result."
+                        },
+                        {
+                              "Rank" : "10",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4LionHeart", "Modifier" : "1"}, {"ID" : "ED4LifeCheck", "Modifier" : "1"}]},
+      			      "Effect" : "The owner gains True Heart power, a resistance to unnatural influences, such as the Oath of Affirmation or the questor devotion Incite Rate. This is a +10 bonus to the appropriate Defense and tests to resist the influence, and grants a test to resist (typically Willpower-based, but up to gamemaster discretion) even if there is not normally a test allowed (typical Difficulty Number is 20). This effect does not apply to illusions.<br/>For 1 Strain, the owner gains +3 to their next Attack or Spellcasting tests against a Horrorspawn (Horrors, Horror constructs, and undead).<br/>For 1 Strain, the owner gains +3 to their next Damage or Effect test against a Horrorspawn.<br/>True Heart extends to everyone within 10 yards of the owner.During the Festival of Faces, True Heart can randomly affect anyone within Iopos, however those within 100 yards are more commonly affected.<br/>The owner gains the Hidden Heart power, any attempt to learn about the owner through magic has Difficulty Number increased by the Thread Rank, such as using magic to find the owner or learn their state of mind.<br/>For 1 Strain, the owner can use Terror (see Gamemaster’s Guide, p. 466) with CHA+Thread Rank as the Action Step.<br/>The heart replaces the owner’s previous heart and functions otherwise as normal. Characters with threads attached to Dark Heart gain access to all the appropriate effects even when not in contact with the heart, though must convince the character with it in their chest to sit still for the process for any Thread Weaving activities. Only one character can have this Thread Rank at a time. If the owner’s Current Damage exceeds their Unconscious Rating (this includes their Death Rating) through injury by a Horrorspawn, the owner can make a Life Check test and spend Karma Points up to their Thread Rank. If the owner does not have Recovery Tests remaining, they may spend Karma Points, healing their Karma Die result.<br/>The owner can use Harvest Energy (see Gamemaster’s Guide, p. 462) when a target questions their beliefs or a Horror experiences fear or pain. These Karma Points are stored in Dark Heart, up to the Thread Rank, and can be spent as normal Karma Points. The owner gains +3 to their Karma Step when spending these Karma Points."
+                        }
+                  ]
+            },
+
+
+            {"ID" : "ED4TheMalachiteSeat", "Name" : "The Malachete Seat", "Reference" : "IO p228", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "16",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427)."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Standard Matrix of rank equal to the owner’s thread rank."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Standard Matrix of rank equal to the owner’s thread rank.<br/>The owner gains +1 rank to Dragonspeech (Gamemaster’s Guide, p. 426)."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Standard Matrix of rank equal to the owner’s thread rank.<br/>The owner gains +1 rank to Dragonspeech (Gamemaster’s Guide, p. 426).The owner gains +1 rank to Regeneration (Gamemaster’s Guide, p. 427)."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Standard Matrix of rank equal to the owner’s thread rank.<br/>The owner gains +1 rank to Dragonspeech (Gamemaster’s Guide, p. 426).The owner gains +1 rank to Regeneration (Gamemaster’s Guide, p. 427).<br/>The owner gains +1 rank to Fear (Gamemaster’s Guide, p. 426)."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Enhanced Spell Matrix of rank equal to the owner’s thread rank.<br/>The owner gains +1 rank to Dragonspeech (Gamemaster’s Guide, p. 426).The owner gains +1 rank to Regeneration (Gamemaster’s Guide, p. 427).<br/>The owner gains +1 rank to Fear (Gamemaster’s Guide, p. 426)."
+      			},
+                        {
+                              "Rank" : "8",
+                              "Effect" : "The owner can communicate telepathically with any other owner within their thread rank in miles. This means one owner could talk to another who cannot reply. The effects of the seat can be used as long as the owner is within their thread rank in miles from the seat.<br/>The room the seat is installed in is considered a lair for the owner. The owner gains +1 to Lair Sense (Gamemaster’s Guide, p. 427).<br/>The seat holds a Enhanced Spell Matrix of rank equal to the owner’s thread rank.<br/>The owner gains +1 rank to Dragonspeech (Gamemaster’s Guide, p. 426).The owner gains +1 rank to Regeneration (Gamemaster’s Guide, p. 427).<br/>The owner gains +1 rank to Fear (Gamemaster’s Guide, p. 426).<br/>The owner gains the Seat of Power ability: the owner gains their thread rank as a bonus to any tests to influence, deceive, or sense motives, emotions, lies, etc., against an owner with a lower thread rank. Owners with a lower thread rank have all Difficulty Numbers to deceive or act against the owner with Seat of Power increased by that owner’s thread rank."
+                        }
+                  ]
+            },
+
+            {"ID" : "ED4SilveredHorn", "Name" : "Silvered Horn", "Reference" : "IO p229", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "100",
+                  "SpellDefense" : "10",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "For 1 Strain, the owner can project any sound they make twice as far. This makes it louder, never deafening, but louder in proportion to the distance. Each thread rank doubles this distance (e.g., Rank Two is four times further)."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "For 1 Strain, the owner can project any sound they make twice as far. This makes it louder, never deafening, but louder in proportion to the distance. Each thread rank doubles this distance (e.g., Rank Two is four times further).<br/>For 1 Strain, the owner gains Enhanced Senses [Hearing] (2) for minutes equal to the thread rank."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "For 1 Strain, the owner can project any sound they make twice as far. This makes it louder, never deafening, but louder in proportion to the distance. Each thread rank doubles this distance (e.g., Rank Two is four times further).<br/>For 1 Strain, the owner gains Enhanced Senses [Hearing] (2) for minutes equal to the thread rank.<br/>The owner gains +1 rank to Heartening Laugh, which is used by sounding the silvered horn. Heartening Laugh is replaced by Battle Bellow for silvered horns harvested from corrupted hoop horns."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "For 1 Strain, the owner can project any sound they make twice as far. This makes it louder, never deafening, but louder in proportion to the distance. Each thread rank doubles this distance (e.g., Rank Two is four times further).<br/>For 1 Strain, the owner gains Enhanced Senses [Hearing] (2) for minutes equal to the thread rank.<br/>The owner gains +3 rank to Heartening Laugh, which is used by sounding the silvered horn. Heartening Laugh is replaced by Battle Bellow for silvered horns harvested from corrupted hoop horns."
+                        }
+                  ]
+            },
+
+            {"ID" : "ED4Stormfury", "Name" : "Stormfury", "Reference" : "IO p230", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0", 
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "14",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 4/D6 Lightning Die with the weapon’s next Damage test."
+                        },
+                        {
+                              "Rank" : "2",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 5/D8 Lightning Die with the weapon’s next Damage test."
+                        },
+                        {
+                              "Rank" : "3",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 5/D8 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit."
+                        },
+                        {
+                              "Rank" : "4",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 6/D10 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit."
+                        },
+                        {
+                              "Rank" : "5",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 6/D10 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack."
+                        },
+                        {
+                              "Rank" : "6",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 7/D12 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack."
+                        }
+                  ]
+            },
+            {"ID" : "ED4StormfuryCorrupted", "Name" : "Stormfury - Corrupted", "Reference" : "IO p230", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0", 
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "14",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 4/D6 Lightning Die with the weapon’s next Damage test.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day."
+                        },
+                        {
+                              "Rank" : "2",
+      	     		      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 5/D8 Lightning Die with the weapon’s next Damage test.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day."
+                        },
+                        {
+                              "Rank" : "3",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 5/D8 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect."
+                        },
+                        {
+                              "Rank" : "4",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 6/D10 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect.<br/>It is not an air elemental but a stormwraith, whether it started that way or was corrupted later. The sword’s creator can use its powers on the owner from any range. It typically wants to aid the owner and bind them further to it."
+                        },
+                        {
+                              "Rank" : "5",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 6/D10 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect.<br/>It is not an air elemental but a stormwraith, whether it started that way or was corrupted later. The sword’s creator can use its powers on the owner from any range. It typically wants to aid the owner and bind them further to it.<br/>If the owner used Stormfury in the conflict, they must succeed at a Willpower test against a Difficulty equal to the thread rank to do anything other than drive against their enemies. This can negate magical compulsions that force them to do otherwise, in which case they make a WIL + Thread Rank test against the Step of the effect. The owner is aware of this effect."
+                        },
+                        {
+                              "Rank" : "6",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 7/D12 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect.<br/>It is not an air elemental but a stormwraith, whether it started that way or was corrupted later. The sword’s creator can use its powers on the owner from any range. It typically wants to aid the owner and bind them further to it.<br/>If the owner used Stormfury in the conflict, they must succeed at a Willpower test against a Difficulty equal to the thread rank to do anything other than drive against their enemies. This can negate magical compulsions that force them to do otherwise, in which case they make a WIL + Thread Rank test against the Step of the effect. The owner is aware of this effect.<br/>The owner’s life is bound to the creator the thread to the sword cannot be severed or unwoven without permission from the creator. Killing the creator means the owner also perishes, a fact the owner knows to be true."
+                        },
+                        {
+                              "Rank" : "7",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 7/D12 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack.<br/>Stormfury reduces an opponent’s Wound Threshold by the Lightning Die result for attacks affected by Stormfury. This does not allow for additional Wounds but does not prevent other abilities which do allow for additional Wounds.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect.<br/>It is not an air elemental but a stormwraith, whether it started that way or was corrupted later. The sword’s creator can use its powers on the owner from any range. It typically wants to aid the owner and bind them further to it.<br/>If the owner used Stormfury in the conflict, they must succeed at a Willpower test against a Difficulty equal to the thread rank to do anything other than drive against their enemies. This can negate magical compulsions that force them to do otherwise, in which case they make a WIL + Thread Rank test against the Step of the effect. The owner is aware of this effect.<br/>The owner’s life is bound to the creator the thread to the sword cannot be severed or unwoven without permission from the creator. Killing the creator means the owner also perishes, a fact the owner knows to be true."
+                        },
+                        {
+                              "Rank" : "8",
+      			      "Effect" : "The owner can use the Stormfury ability as a Free Action. For 1 Strain, the electricity leaps from within the blade, surrounding it in blue lightning and gives the owner a separate Step 9/2D8 Lightning Die with the weapon’s next Damage test.<br/>When the owner uses Stormfury in a round, the Aggressive Attack combat option does not cause the owner Strain. Stormfury must be activated when Aggressive Attack is declared to benefit.<br/>The owner can use Stormfury on any melee weapon. The owner gains an additional +1 to Close Combat Attack and Damage tests (typically +4), and suffers an additional -1 to Physical Defense and Mystic Defense (typically -4) when using Aggressive Attack.<br/>Stormfury reduces an opponent’s Wound Threshold by the Lightning Die result for attacks affected by Stormfury. This does not allow for additional Wounds but does not prevent other abilities which do allow for additional Wounds.<br/>The entity who created the sword is aware of where it is, who owns it, and what it is doing if the owner uses Stormfury and for the remainder of the day.<br/>The owner must succeed a Willpower test against a Difficulty equal to the thread rank to resolve a situation in a method other than violence, if violence is a viable solution. This does not mean fighting over every little thing, but forgoing parlay in favor of melee, for instance. The owner is aware of this effect.<br/>It is not an air elemental but a stormwraith, whether it started that way or was corrupted later. The sword’s creator can use its powers on the owner from any range. It typically wants to aid the owner and bind them further to it.<br/>If the owner used Stormfury in the conflict, they must succeed at a Willpower test against a Difficulty equal to the thread rank to do anything other than drive against their enemies. This can negate magical compulsions that force them to do otherwise, in which case they make a WIL + Thread Rank test against the Step of the effect. The owner is aware of this effect.<br/>The owner’s life is bound to the creator the thread to the sword cannot be severed or unwoven without permission from the creator. Killing the creator means the owner also perishes, a fact the owner knows to be true."
+                        }
+                  ]
+            },
+            {"ID" : "ED4ThystoniusSpears", "Name" : "Thystonius’s Spears", "Reference" : "IO p232", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0", 
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "12",
+                  "DmgStep" : "4", 
+                  "StrMin" : "9", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above)."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above).<br/>After being thrown, the spear automatically returns to its owner’s hand as a streak of lightning."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above).<br/>After being thrown, the spear automatically returns to its owner’s hand as a streak of lightning."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above).<br/>After being thrown, the spear automatically returns to its owner’s hand as a streak of lightning.<br/>For 1 Strain, the owner takes on a fearsome mein and gains a +3 bonus to their next test to cause fear or intimidation."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above).<br/>After being thrown, the spear automatically returns to its owner’s hand as a streak of lightning.<br/>For 1 Strain, the owner takes on a fearsome mein and gains a +3 bonus to their next test to cause fear or intimidation.<br/>For 2 Strain, the spear transforms into a lightning bolt when thrown. It gains +3 to the Attack test and associated Damage test, and gains the air—electricity keyword."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "3"},
+                              "Effect" : "The spear automatically resizes to the owner (see the description above).<br/>After being thrown, the spear automatically returns to its owner’s hand as a streak of lightning.<br/>For 1 Strain, the owner takes on a fearsome mein and gains a +3 bonus to their next test to cause fear or intimidation.<br/>For 2 Strain, the spear transforms into a lightning bolt when thrown. It gains +3 to the Attack test and associated Damage test, and gains the air—electricity keyword."
+                        }
+                  ]
+            },
+            {"ID" : "ED4WeddingBandsofAstendar", "Name" : "Wedding Bands of Astendar", "Reference" : "IO p234", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "The owner gains +1 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"SoDef" : "1"},
+                              "Effect" : "The owner gains +1 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"SoDef" : "1"},
+                              "Effect" : "The owner gains +2 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "The owner gains +2 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "The owner gains +2 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence.<br/>The owner gains +1 rank to Blood Sworn."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "The owner gains +2 to tests related to de-escalating a conflict; this can never involve violence directed a party, but can involve the threat of violence.<br/>The potency of any blood oaths sworn by the owner increase in duration, effect, and penalty. Such oaths last for at least twice as long and can be up to ten times as long with Blood Wounds lasting for a similar duration (and unable to be healed by a healing potion). The benefits provided also increase, such as +1 to the bonus from Blood Promise, or +1 to an Attribute Value from Blood Sworn (this bonus applies retroactively to Blood Sworn). Blood Wounds from violating a Blood Sworn oath can never be healed by either party."
+                        }
+                  ]
+            }
+      ],
+      "Spells":
+      [
+            {"ID" : "ED4BreakItUp",           "Name" : "Break It Up",                 "Reference" : "IO220",  "Type" : "Utility",        "Discipline" : "ED4Illusionist", "Circle" : "2", "Threads" : "1",  "Weaving" : "6/11",  "Casting" : "TMD",  "Range" : "20 yards",  "Duration" : "Rank rounds",  "Effect" : "Targets forget their conflict",  "SuccessLevels" : "Increase Duration (+2 rounds)",  "ExtraThreads" : "Increase Duration (+2 rounds), Increase Range (+10 yards), Increase Area (+2-yards), Additional Target (+1)",  "Description" : "Illusion. The magician whistles sharply in the direction of two targets engaged in a conflict within the area, making a Spellcasting test against the highest Mystic Defense. If successful, bright lights and sounds play, briefly distracting the targets and causing them to forget their conflict with the other target for the duration. Attempts to return a target’s attention back or aggression against them gives the target an appropriate Sensing test. If either target is successful in a Sensing test, the effect ends for both targets."},
+            {"ID" : "ED4ComeBetween",         "Name" : "Come Between",                "Reference" : "IO220",  "Type" : "Utility",        "Discipline" : "ED4Wizard",      "Circle" : "3", "Threads" : "0",  "Weaving" : "7/12",  "Casting" : "TMD",  "Range" : "20 yards",  "Duration" : "Rank rounds (see text)",  "Effect" : "WIL+5",  "SuccessLevels" : "Increase Effect (+2)",  "ExtraThreads" : "Increase Effect (+2), Increase Range (+10 yards)",  "Description" : "The magician spreads their arms wide and claps their hands loudly, making a Spellcasting test against the highest Mystic Defense of two adjacent targets. If successful, a thundering boom and bright flash throws each target back 2 yards and forces them to make a Knockdown test against the Effect Step. If the magician concentrates each round, the targets must make a Strength (8) test to close within 4 yards of the other target. If successful, the magician stops concentrating, or the duration expires, the targets are no longer separated."}
+      ],
+      "Knacks":
+      [
+            {"ID" : "ED4PatterncraftED4AlterLife[Flora]", "Name" : "Alter Life [Flora]", "Reference" : "IO238", "Talent" : "ED4Patterncraft", "RequiredRank" : "5",  "Requirements" : [], "Restrictions" : [{"Type" : "Talent", "ID" : "ED4ThreadWeavingElementalism", "Rank" : "5"}],                                                       "Step" : "Rank+PER", "Attribute" : "PER", "Description" : "The adept can use Patterncraft to create altered plantlife."},
+            {"ID" : "ED4PatterncraftED4AlterLife[Fauna]", "Name" : "Alter Life [Fauna]", "Reference" : "IO239", "Talent" : "ED4Patterncraft", "RequiredRank" : "5",  "Requirements" : [], "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4Nethermancer", "Circle" : "5"}, {"Type" : "Discipline", "ID" : "ED4Shaman", "Circle" : "5"}], "Step" : "Rank+PER", "Attribute" : "PER", "Description" : "The adept can use Patterncraft to create altered plantlife."}
+      ]
+}

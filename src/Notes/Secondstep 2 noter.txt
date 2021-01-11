@@ -1,0 +1,40 @@
+Secondstep 2 noter:
+
+Funktionslaget: Kald starter funktion som switcher ud fra options 
+For eksempel: 
+
+ListSkills()
+{
+switch (settings->skillMethod)
+	{
+	case "1st edition"
+		ListSkills_1stEd();
+		break;
+	}
+}
+
+Editor: 
+Dropbox med edition, bog, knap til oprette begge
+Liste med elementer i bogen, knap til at oprette
+Panel med skiftende indhold ud fra elementets klasse (skill, talent, knack etc); de data trukket ud fra settingsfiler. Description feltet multiline. Suggest feature? Liste med eksisterende termer, måde at suggeste dem med?
+Separat fil med alle default indstillinger for et element (Name, Description etc)
+Fil for hver klasse med indstillinger for den klasse. 
+Discipline panelet har Circles også. 
+
+------
+
+- Vælge spil / edition ved opstart
+- Kun loade de relevante data
+- Elementer på karakteren skal ha' en pointer til liste elementer. 
+
+- ListTalent
+{
+	// Basisdata på talentet virker - ID, Edition, Name beskrivelse, strain, action etc. 
+}
+
+- CharTalent 
+{
+	// Data specifikt for denne karakter - rank, freerank, pointer til List elementet, ListElementID, 
+}
+
+Javascript? Json filer til alle data. 

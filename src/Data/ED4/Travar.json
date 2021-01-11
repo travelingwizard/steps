@@ -1,0 +1,374 @@
+{
+      "ID" : "Travar",
+      "Books" : "Earthdawn 4th Edition Travar",
+      "Description" : "Earthdawn 4 Travar data for the Steps project",
+      "version" : "1",
+      "by" : "João Isidro & Lars Gottlieb 2020",
+      "Equipment" :
+      [
+            {"ID" : "BoundaryStones",      "Name" : "Boundary Stones",       "Reference" : "TR274, 275",  "Type" : "Magic",          "Cost" : "175",                    "Weight" : "-",                 "Availability" : "Rare"},
+            {"ID" : "DiviningRods",        "Name" : "Divining Rods",         "Reference" : "TR274, 275",  "Type" : "Magic",          "Cost" : "100",                    "Weight" : "-",                 "Availability" : "Unusual"},
+            {"ID" : "HomingCompass",       "Name" : "Homing Compass",        "Reference" : "TR275",       "Type" : "Magic",          "Cost" : "200",                    "Weight" : "-",                 "Availability" : "Rare"},
+            {"ID" : "Monocculeeyesmall",   "Name" : "Monocculeeye, Small",   "Reference" : "TR275",       "Type" : "Magic",          "Cost" : "150",                    "Weight" : "-",                 "Availability" : "Rare"},
+            {"ID" : "Monocculeeyelarge",   "Name" : "Monocculeeye, Large",   "Reference" : "TR275",       "Type" : "Magic",          "Cost" : "500",                    "Weight" : "-",                 "Availability" : "Rare"},
+            {"ID" : "TreadLightlyBoots",   "Name" : "Tread Lightly Boots",   "Reference" : "TR275",       "Type" : "Magic",          "Cost" : "200",                    "Weight" : "-",                 "Availability" : "Rare"},
+            {"ID" : "FlamingStride",       "Name" : "Flaming Stride",        "Reference" : "TR277, 279",  "Type" : "Blood Ink",      "Cost" : "150",                    "Weight" : "NA",                "Availability" : "Very Rare", "BloodDamage" : "2", "Bonus" : "Travar - The Merchant City pg. 277"},
+            {"ID" : "Conflagration",       "Name" : "Conflagration",         "Reference" : "TR277, 279",  "Type" : "Blood Ink",      "Cost" : "300",                    "Weight" : "NA",                "Availability" : "Very Rare", "BloodDamage" : "2", "Bonus" : "Travar - The Merchant City pg. 277"},
+            {"ID" : "HeatShield",          "Name" : "Heat Shield",           "Reference" : "TR277, 279",  "Type" : "Blood Ink",      "Cost" : "200",                    "Weight" : "NA",                "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "Travar - The Merchant City pg. 277"},
+            {"ID" : "BlisteringFlesh",     "Name" : "Blistering Flesh",      "Reference" : "TR277, 279",  "Type" : "Blood Ink",      "Cost" : "250",                    "Weight" : "NA",                "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "Travar - The Merchant City pg. 277"},
+            {"ID" : "BloodThorns",         "Name" : "Blood Thorns",          "Reference" : "TR278, 279",  "Type" : "Blood Charm",    "Cost" : "250",                    "Weight" : "NA",                "Availability" : "Very Rare", "BloodDamage" : "3", "Bonus" : "Travar - The Merchant City pg. 278"},
+            {"ID" : "LastGrasp",           "Name" : "Last Grasp",            "Reference" : "TR278, 279",  "Type" : "Blood Charm",    "Cost" : "100",                    "Weight" : "NA",                "Availability" : "Rare",      "BloodDamage" : "3", "Bonus" : "Travar - The Merchant City pg. 278"},
+            {"ID" : "Thick Skin",          "Name" : "Thick Skin",            "Reference" : "TR279",       "Type" : "Blood Charm",    "Cost" : "150",                    "Weight" : "NA",                "Availability" : "Rare",      "BloodDamage" : "-", "Bonus" : "Travar - The Merchant City pg. 279"},
+
+            {"ID" : "ED4DumorjensRubyBlade", "Name" : "Dumorjen’s Ruby Blade", "Reference" : "TR p283", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+	            "DmgStep" : "4", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "2", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "2"}]},
+      			      "Effect" : "for 1 Strain they grant the owner of the Dumorjen’s Emerald Blade a bonus to Physical Defense equal to their penalty from Distract."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "3", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "2"}]},
+                              "Effect" : "for 1 Strain they grant the owner of the Dumorjen’s Emerald Blade a bonus to Physical Defense equal to their penalty from Distract."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "3", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "3"}], "PhDef" : "1"},
+                              "Effect" : "for 1 Strain they grant the owner of the Dumorjen’s Emerald Blade a bonus to Physical Defense equal to their penalty from Distract."
+      			},
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "4", "Talents" : [{"ID" : "ED4Distract", "Modifier" : "3"}], "PhDef" : "2"},
+                              "Effect" : "for 1 Strain they grant the owner of the Dumorjen’s Emerald Blade a bonus to Physical Defense equal to their penalty from Distract."
+                        }
+                  ]
+            },
+            {"ID" : "ED4DumorjensEmeraldBlade", "Name" : "Dumorjen’s Emerald Blade", "Reference" : "TR p283", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+		      "DmgStep" : "4", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "2", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "2"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "2"}]},
+      			      "Effect" : "The owner of Dumorjen’s Emerald Blade can use Blood Share 3 on the owner of the Ruby Blade range Thread Rank x 5 yards, only shift damage to themselves. If owner already has Blood Share, +3 bonus instead on this."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "3", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "2"}]},
+                              "Effect" : "The owner of Dumorjen’s Emerald Blade can use Blood Share 3 on the owner of the Ruby Blade range Thread Rank x 5 yards, only shift damage to themselves. If owner already has Blood Share, +3 bonus instead on this."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "3", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "3"}], "PhDef" : "1"},
+                              "Effect" : "The owner of Dumorjen’s Emerald Blade can use Blood Share 3 on the owner of the Ruby Blade range Thread Rank x 5 yards, only shift damage to themselves. If owner already has Blood Share, +3 bonus instead on this."
+      			},
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "4", "Talents" : [{"ID" : "ED4Maneuver", "Modifier" : "3"}], "PhDef" : "2"},
+                              "Effect" : "The owner of Dumorjen’s Emerald Blade can use Blood Share 3 on the owner of the Ruby Blade range Thread Rank x 5 yards, only shift damage to themselves. If owner already has Blood Share, +3 bonus instead on this."
+                        }
+                  ]
+            },
+            {"ID" : "ED4BroochofYieldingThreadVersion", "Name" : "Brooch of Yielding, Thread Item", "Reference" : "TR p285", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "13",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"PhDef" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1", "PhArm" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1", "PhArm" : "1", "MyArm" : "1"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1", "PhArm" : "1", "MyArm" : "1"},
+      			      "Effect" : "2 Strain: gain +2 Physical and Mystic Defense against Horrors and Horror constructs for thread rank rounds."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"PhDef" : "1", "MyDef" : "1", "PhArm" : "1", "MyArm" : "1"},
+      			      "Effect" : "+1 Physical Armor and +1 Mystic Armor against Horrors and Horror constructs. 2 Strain: gain +2 Physical and Mystic Defense against Horrors and Horror constructs for thread rank rounds."
+                        }
+                  ]
+            },
+            {"ID" : "ED4Soulbinder", "Name" : "Soulbinder", "Reference" : "TR p287", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "13",
+                  "DmgStep" : "3", 
+                  "StrMin" : "7", 
+                  "DexMin" : "7", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+      			      "Effect" : "+2 bonus to Intimidate tests if the whip is displayed."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "+2 bonus to Intimidate tests if the whip is displayed. No longer needs an additional success to entangle."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "+2 bonus to Intimidate tests if the whip is displayed. No longer needs an additional success to entangle. The whip strengthens and cannot be cut. An entangled target may not add a weapon’s Damage Step to escape."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "+2 bonus to Intimidate tests if the whip is displayed. No longer needs an additional success to entangle. The whip strengthens and cannot be cut. An entangled target may not add a weapon’s Damage Step to escape. Entangling Difficulty is 12, reach is thread rank in yards."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "+2 bonus to Intimidate tests if the whip is displayed. No longer needs an additional success to entangle. The whip strengthens and cannot be cut. An entangled target may not add a weapon’s Damage Step to escape. Entangling Difficulty is 12, reach is thread rank in yards. Targets entangled by the whip may not use, or benefit from, talents and abilities that prevent or resist fear or intimidation, offer encouragement, or increase Social Defense. Spend extra successes on Attack to reduce the target’s Social Defense by 1 per success while entangled + thread rank in minutes after release. "
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "+2 bonus to Intimidate tests if the whip is displayed. No longer needs an additional success to entangle. The whip strengthens and cannot be cut. An entangled target may not add a weapon’s Damage Step to escape. Entangling Difficulty is 12, reach is thread rank in yards. Targets entangled by the whip may not use, or benefit from, talents and abilities that prevent or resist fear or intimidation, offer encouragement, or increase Social Defense. Spend extra successes on Attack to reduce the target’s Social Defense by 1 per success while entangled + thread rank in minutes after release. Misery Loves Company: 3 Strain, entangle up to thread rank targets."
+                        }
+                  ]
+            },
+            {"ID" : "ED4EarthGates", "Name" : "Earth Gates", "Reference" : "TR p288", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "18",		  
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+            		      "Effect" : "Link to another Earth Gate, allowing travel."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "Link to another Earth Gate, allowing travel. At will: Deactivate the Earth Gate."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "Link to another Earth Gate, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "Link to up to two other Earth Gates, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "Link to up to two other Earth Gates, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is. Surface Merge: Hide the Earth Gate on an appropriate surface. Allows concealment inside the Earth Gate. "
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "Link to up to three other Earth Gates, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is. Surface Merge: Hide the Earth Gate on an appropriate surface. Allows concealment inside the Earth Gate. "
+      			},
+      			{
+                              "Rank" : "7",
+                              "Effect" : "Link to up to three other Earth Gates, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is. Surface Merge: Hide the Earth Gate on an appropriate surface. Allows concealment inside the Earth Gate. Master Gate: Travel to and Scry from any Gate in the Network"
+      			},
+      			{
+                              "Rank" : "8",
+                              "Effect" : "Link to up to four other Earth Gates, allowing travel. At will: Deactivate the Earth Gate. Scrying Eyes: Look through the Earth Gate to where another active Earth Gate is. Surface Merge: Hide the Earth Gate on an appropriate surface. Allows concealment inside the Earth Gate. Master Gate: Travel to and Scry from any Gate in the Network"
+      			}
+                  ]
+            },
+            {"ID" : "ED4GiftofJaspre", "Name" : "Gift of Jaspree", "Reference" : "TR p291", "Type" : "Thread Item", "BaseType" : "Misc", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",		  
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "Create a freezing area."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "Create a freezing area. Thread Rank times per day, 3 Strain: Inflict a fast-acting wasting disease by touch; see text."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "Create a freezing area. Thread Rank times per day, 3 Strain: Inflict a fast-acting wasting disease by touch; see text. Once a week, flash grow plants, turning nasty during full moon, see text. "
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "Create a freezing area. Thread Rank times per day, 3 Strain: Inflict a fast-acting wasting disease by touch; see text. Once a week, flash grow plants, turning nasty during full moon, see text. Once a month, regrow an amputated limb, but there's a slight drawback, see text."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "Create a freezing area. Thread Rank times per day, 3 Strain: Inflict a fast-acting wasting disease by touch; see text. Once a week, flash grow plants, turning nasty during full moon, see text. Once a month, regrow an amputated limb, but there's a slight drawback, see text. Summon corrupted wood spirit, see text. "
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "Create a freezing area. Thread Rank times per day, 3 Strain: Inflict a fast-acting wasting disease by touch; see text. Once a week, flash grow plants, turning nasty during full moon, see text. Once a month, regrow an amputated limb, but there's a slight drawback, see text. Summon corrupted wood spirit, see text. Animate Dead, see text"
+      			}
+                  ]
+            },
+            {"ID" : "ED4DaggeroftheThornedVine", "Name" : "Dagger of the Thorned Vine", "Reference" : "TR p293", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "14",
+                  "DmgStep" : "2", 
+                  "StrMin" : "4", 
+                  "DexMin" : "0", 
+                  "Size" : "1", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"BldDam" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf."
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"BldDam" : "1", "SoDef" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"BldDam" : "1", "SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"BldDam" : "1", "SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf. +1 Interaction tests."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"BldDam" : "1", "SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf. +1 Interaction tests. 2 Strain, blend seamlessly into a crowd."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"BldDam" : "1", "SoDef" : "1", "MyDef" : "1"},
+                              "Effect" : "A blood elf owner can withdraw their thorns beneath their skin, causing them to appear as a normal elf. +1 Interaction tests. 2 Strain, blend seamlessly into a crowd. 2 Strain: +2 fear or Intimidation, +3 instead if Blood Elf."
+                        }
+                  ]
+            },
+            {"ID" : "ED4TheEdgeofTravar", "Name" : "The Edge of Travar", "Reference" : "TR p294", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0", 
+                  "BaseLPCost" : "500",
+                  "SpellDefense" : "16",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "1"},
+                              "Effect" : "Store thread rank Karma."
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round. Frostfire: 2 strain, each extra success reduces target's Physical Defense by 1 until end of next round."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round. Frostfire: 2 strain, each extra success reduces target's Physical Defense by 1 until end of next round. Spirit Ally: Immune to Blinded, Blindsided, ignores first Harried, Horrors, Horror constructs cannot surprise (see text)."
+                        },
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round. Frostfire: 2 strain, each extra success reduces target's Physical Defense by 1 until end of next round. Spirit Ally: Immune to Blinded, Blindsided, ignores first Harried, Horrors, Horror constructs cannot surprise (see text). +2 to Mystic and Social Defense against Horrors and Horror constructs. If Edge of Travar power active, successful attacks against Horrors, Horror constructs +1 Wound if damaging."
+                        },
+                        {
+                              "Rank" : "9",
+                              "Modifiers" : {"DmgStep" : "2"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round. Frostfire: 2 strain, each extra success reduces target's Physical Defense by 1 until end of next round. Spirit Ally: Immune to Blinded, Blindsided, ignores first Harried, Horrors, Horror constructs cannot surprise (see text). +2 to Mystic and Social Defense against Horrors and Horror constructs. If Edge of Travar power active, successful attacks against Horrors, Horror constructs +1 Wound if damaging. +2 to Attack and Damage tests against Horrors, Horror constructs. If Frostfire active, penalty expanded to Horror or construct’s Mystic and Social Defense."
+                        },
+                        {
+                              "Rank" : "10",
+                              "Modifiers" : {"DmgStep" : "3"},
+                              "Effect" : "Store thread rank Karma. Double Karma. Edge of Travar: 2 strain, +1 damage pr. extra success to hit for the round. Frostfire: 2 strain, each extra success reduces target's Physical Defense by 1 until end of next round. Spirit Ally: Immune to Blinded, Blindsided, ignores first Harried, Horrors, Horror constructs cannot surprise (see text). +2 to Mystic and Social Defense against Horrors and Horror constructs. If Edge of Travar power active, successful attacks against Horrors, Horror constructs +1 Wound if damaging. +2 to Attack and Damage tests against Horrors, Horror constructs. If Frostfire active, penalty expanded to Horror or construct’s Mystic and Social Defense. If Edge of Travar and Frostfire both active ignore Horror, Horror construct armor."
+                        }
+                  ]
+            }
+      ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

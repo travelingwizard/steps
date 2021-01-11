@@ -1,0 +1,1067 @@
+p 
+{
+    margin: 0;
+    padding: 0;
+}
+
+*:disabled 
+{
+    color: inherit;
+    border: inherit;
+    opacity: 1;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select.value,
+.numberSelect
+{
+    text-align: center;
+    text-align-last:center;
+}
+
+.numberSelect:disabled
+{
+    width: 3vw !important;
+}
+
+#Earthdawn_Sheet
+{
+    margin: 2px;
+    padding: .5vw;
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 30% 3% auto 8% 25%;
+    grid-template-rows: auto 11.2vw;
+    grid-area: collapse;
+}
+
+.container
+{
+    padding: .8vw;
+}
+
+#Title
+{
+    grid-column: 1 / 6;
+
+    border: 1px solid black;
+}
+
+#Basic
+{
+    grid-column: 1 / 3;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+#Details
+{
+    grid-column: 3 / 5;
+
+/*    border-left: 1px solid black;
+    border-right: 1px solid black;*/
+    border-bottom: 1px solid black;
+}
+
+#DescriptionContainer
+{
+    grid-column: 1 / 5;
+
+    border-left: 1px solid black;
+/*    border-right: 1px solid black;*/
+    border-bottom: 1px solid black;
+
+    display:flex;
+    flex-direction: column;
+}
+#PortraitContainer
+{
+    grid-column: 5 / 6;
+    grid-row: span 2;
+
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+#Adventurer
+{
+    grid-column: 1 / 2;
+    grid-row: span 2;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+#Attributes
+{
+    grid-column: 2 / 5;
+    border-bottom: 1px solid black;
+}
+
+#Derived
+{
+    grid-column: 5 / 6;
+    grid-row: span 2;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#Health
+{
+    grid-column: 2 / 5;
+
+/*    border-right: 1px solid black;*/
+    border-bottom: 1px solid black;
+}
+
+#Talents
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#Knacks
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#Devotions
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#Skills
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#Equipment
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#Magic
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#Spells
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#AdventureLog
+{
+    grid-column: 1 / 4;
+
+    border-left: 1px solid black;
+/*    border-right: 1px solid black;*/
+    border-bottom: 1px solid black;
+
+    display:flex;
+    flex-direction: column;
+}
+
+#Abilities
+{
+    grid-column: 4 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#StepDice
+{
+    grid-column: 1 / 6;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#Matrix
+{
+    grid-column: 1 / 6;
+}
+
+#DiscTalentTable
+{
+    border-bottom: 1px solid black;
+}
+
+.title, .title_subtext
+{
+    font-family: Requiem;
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.title
+{
+    font-size: 10vw;
+    line-height: .8;
+}
+.title_subtext
+{
+    font-style: italic;
+    font-size: 2vw;
+}
+
+.header_flow
+{
+    display: inline-block;
+    padding: .2vw;
+    text-align: center;
+}
+
+.statistics_subcontainer
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.columns_1
+{
+    flex-basis: 100%;
+}
+.columns_2
+{
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.disciplineWrapper
+{
+    padding: .5vw 0;
+}
+
+#Description, #LogText
+{
+    border: 1px solid black;
+    bottom: .5vw;
+
+    flex-basis: 100%;
+    white-space: pre-wrap;
+}
+
+.statistics_discipline_value
+{
+    flex-basis: 76.5%;
+}
+
+#DisciplineSelect0
+{
+    width: 60%;
+}
+.disciplineCircle, .disciplineStartedAt
+{
+    width: 3vw;
+}
+
+.pathWrapper
+{
+    display: table;
+    width: 100%; 
+    padding: .5vw 0;
+}
+
+.killPath
+{
+    display: table-cell; 
+    vertical-align: middle; 
+    padding: 0 .5vw;
+    cursor: pointer;
+}
+
+.pathSelectorsWrapper
+{
+    display: inline-block; 
+    width: 100%;
+}
+
+.pathSelect
+{
+    width: 60%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-align-last: center;
+}
+
+.pathRank
+{
+    width: 20%;
+    border-bottom: 1px solid black;
+}
+
+.pathDiscipline
+{
+    width: 50%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-align-last: center;
+}
+
+#QuestorPassionSelect, #QuestorRank
+{
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-align-last: center;
+}
+
+.AddButton
+{
+    margin: 5px auto;
+    border: 1px solid black;
+    text-align: center;
+    width: 4vw;
+    border-radius: 20px;    
+    cursor: pointer;
+}
+
+.AddButton:hover, .button:hover
+{    
+    background-color: #FAEBD7;
+}
+
+.button
+{
+    margin: 5px auto 0;
+    border: 1px solid black;
+    text-align: center;
+    width: 8vw;
+    border-radius: 20px;    
+    cursor: pointer;
+}
+
+.statistics_label
+{
+    float:left;
+}
+
+.value_flow
+{
+    display: block;
+    margin-right: .5vw;
+    overflow: hidden;
+}
+
+.value_flow input
+{ 
+    width: 100%; 
+
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.value_flow select 
+{
+    width: 100%; 
+    background: none;
+
+    text-align: center;
+    text-align-last: center;
+
+    font-size: inherit; 
+    font-family: inherit;
+}
+
+input
+{
+    font-size: inherit; 
+    font-family: inherit;
+    background: inherit;
+    border: none; 
+    text-align: center;
+    text-align-last: center;
+}
+
+select
+{
+    font-size: inherit; 
+    font-family: inherit;
+    background: inherit;
+    border: none; 
+    padding: inherit;
+}
+
+.value_flow select,
+.value_flow select option
+{
+    text-align: center;
+    text-align-last:center
+}
+
+.value_flow input[type=number]::-webkit-inner-spin-button, 
+.value_flow input[type=number]::-webkit-outer-spin-button
+{ 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.value_flow input[type=number]
+{
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+.header
+{
+    font-family: Requiem;
+    font-weight: bold;
+    font-size: 1.4em;
+    width: 100%;
+}
+.label
+{
+    /*font-variant: small-caps*/
+}
+.value
+{
+    border: none;
+    text-align: center;
+}
+.statistics_subcontainer .value
+{
+    border-bottom: 1px solid black;
+}
+
+.tiny
+{
+    font-size: .6em;
+    margin-right: .5vw;
+
+    display: inline-block;
+    padding: .2vw;
+    text-align: center;
+}
+
+.statistics_subheader
+{
+    margin: 1vw auto 0;
+
+    text-align: center;
+    padding-top: .2vw;
+    padding-bottom: .2vw;
+
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+table
+{
+    width : 100%;
+}
+
+table, tr, td, th
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}        
+
+.AttributeTable td
+{
+    text-align: center;
+}
+
+.AttributeTable td:first-child
+{
+    text-align: left;
+}
+
+.attributeSelect,
+.attributeIncreases
+{
+    background: inherit;
+    border: none;
+    font-size: inherit;
+}
+
+#CharacteristicsTable td
+{
+    width : auto;
+}
+
+.steps_container
+{
+    border-top: 1px solid black
+}
+
+.shaded,
+#AttributeTable tr:first-child,
+/*#HealthTable tr:nth-child(odd),*/
+.ability_table tr:nth-child(odd), 
+.stepdice_table tr:nth-child(odd), 
+.talents_table tr:nth-child(odd), 
+.skill_table tr:nth-child(odd), 
+.eqOdd, 
+#EquipmentTable tr:first-child,
+.description_item:nth-child(odd), 
+#MagicTable tr:nth-child(odd),
+#SpellTable tr:nth-child(odd)
+{
+    background: rgba(100,100,100,.1);
+}
+
+.stepdice_table tr td:nth-child(odd)
+{
+    text-align: right;
+    padding-right: 1vw;
+}
+
+#AttributeTable tr:first-child,
+.talents_table tr:first-child,
+.Knack_table tr:first-child,
+.skill_table tr:first-child,
+#SpellTable tr:first-child,
+#EquipmentTable tr:first-child
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.talents_table tr td, .Knack_table tr td {text-align: center}
+.talents_table tr th:first-child {width: 20%; text-align: left}
+.talents_table tr td:first-child {width: 20%; text-align: left}
+
+.devotion_table td {text-align: center}
+.devotionLine td:nth-child(2) {width: 20%; text-align: left}
+.devotionAbilityLine td:first-child {width: 20%; text-align: left}
+.devotionAbilityInput {width: 100%; border-bottom: 1px solid black; text-align: left; text-align-last : left;} 
+
+.skill_table tr td {text-align: center}
+.skill_table tr th:first-child {width: 3%;}
+.skill_table tr td:first-child {width: 3%;}
+
+.skill_table tr th:nth-child(2) {width: 20%; text-align: left}
+.skill_table tr td:nth-child(2) {width: 20%; text-align: left}
+
+.skill_table tr td:nth-child(4),
+.skill_table tr td:nth-child(7),
+.skill_table tr td:nth-child(8)
+ {width: 5%;}
+
+.skill_table tr td:nth-child(5),
+.skill_table tr td:nth-child(6),
+.skill_table tr td:nth-child(9),
+.skill_table tr td:nth-child(10),
+.skill_table tr td:nth-child(11)
+ {width: 10%;}
+
+#MagicTable tr th {text-align: center}
+#MagicTable tr td {text-align: center}
+#MagicTable tr th:nth-child(6) {text-align: left}
+#MagicTable tr td:nth-child(6) {text-align: left}
+
+
+/*.TalentFreeRankInput, .TalentRankInput*/
+/*{*/
+    /*width: 50px; max-width: 50px;*/
+/*}*/
+
+.killSkill, .killKnack, .killSpell, .killEq, .killDiscipline, .killMagic
+{
+    cursor: pointer;
+}
+
+/*.talentSlim {width: 75px; max-width: 75px}*/
+/*.talentMedium {width: 125px; max-width: 125px}*/
+
+/*.Knack_table tr th:nth-child(1) {width: 3%}
+.Knack_table tr td:nth-child(1) {width: 3%}
+
+.Knack_table tr th:nth-child(2) {width: 25%; text-align: left;}
+.Knack_table tr td:nth-child(2) {width: 25%; text-align: left;}
+.Knack_table tr th:nth-child(3) {width: 5%;}
+.Knack_table tr td:nth-child(3) {width: 5%;}
+.Knack_table tr th:nth-child(4) {width: 15%;}
+.Knack_table tr td:nth-child(4) {width: 15%;}
+.Knack_table tr th:nth-child(5) {width: 10%;}
+.Knack_table tr td:nth-child(5) {width: 10%;}
+.Knack_table tr th:nth-child(6) {width: 5%;}
+.Knack_table tr td:nth-child(6) {width: 5%;}
+.Knack_table tr th:nth-child(7) {width: 10%;}
+.Knack_table tr td:nth-child(7) {width: 10%;}
+.Knack_table tr th:nth-child(8) {width: 5%;}
+.Knack_table tr td:nth-child(8) {width: 5%;}
+.Knack_table tr th:last-child   {width: 15%;}
+.Knack_table tr td:last-child   {width: 15%;}*/
+
+
+.SkillInput
+{
+    text-align: left;
+    text-align-last: left;
+}
+.skillCategorySelect
+{
+    text-align: center;
+    text-align-last: center;
+}
+
+.ability_table td:first-child
+{
+    white-space: nowrap;
+}
+
+.ability_table td:first-child
+{
+    padding-right: .3vw;
+}
+.ability_table td:last-child
+{
+    padding-left: .3vw;
+}
+
+#SpellTable th,
+#SpellTable td
+{
+    width: auto;
+    text-align: center;
+}
+#SpellTable th:nth-child(2),
+#SpellTable td:nth-child(2)
+{
+    text-align: left;
+}
+
+#EquipmentTable tr th,
+#EquipmentTable tr td
+{
+    text-align: center;
+}
+#EquipmentTable th:nth-child(2),
+#EquipmentTable td:nth-child(2)
+{
+    width: 7%;
+}
+#EquipmentTable th:nth-child(3),
+#EquipmentTable td:nth-child(3)
+{
+    width: 15%;
+}
+#EquipmentTable th:nth-child(4),
+#EquipmentTable td:nth-child(4)
+{
+    width: 25%;
+    text-align: left;
+}
+#EquipmentTable th:nth-child(5),
+#EquipmentTable td:nth-child(5)
+{
+    width: auto;
+    text-align: left;
+}
+
+#EquipmentTable .eqAdd
+{
+    text-align: left;
+    padding-left: 1vw;
+    font-size: .8em;
+}
+
+.knackAdd { font-size: .8em; text-align: left;}
+
+.eqName
+{
+    width: 100%;
+    text-align: left;
+    text-align-last: left;
+}
+.eqCount
+{
+    width: 5vw;
+    min-width: 30px;
+}
+
+.eqRank, .eqForge, .eqPhForge, .eqMyForge
+{
+    width: 2.5vw;
+    display: inline-block;
+    padding: 0;
+}
+
+
+#MagicTable td:nth-child(6),
+
+#Magic Select, 
+#Magic Input
+{
+    display: inline-block;
+    width: auto;
+    
+}
+
+.portrait
+{
+    width: 100%;
+    height : auto;
+    border: 1px solid black;
+    display: block;
+
+    position: relative;
+}
+
+#PortraitOverlay
+{
+}
+
+#MatrixCardsWrapper
+{
+    display: flex;
+    flex-wrap:  wrap;
+    width: 100%;
+    overflow: scroll;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.MatrixCard
+{
+    display: flex;
+    flex-wrap:  wrap;
+    flex-direction: column;
+    flex-basis: auto;
+    width: 31%;
+    min-height: 45vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 2px solid black;
+    border-radius: 20px;    
+    position: relative;
+    margin: 10px;
+}
+.MatrixCardName
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    background: #FAEBD7;
+}
+.MatrixCardRank
+{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid black;
+    background: #FAEBD7;
+}
+.MatrixCardSelect
+{
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+
+    text-align: center;
+    text-align-last: center;
+}
+.MatrixCardSelect option
+{
+    text-align: center;
+}
+
+.SpellCard
+{
+    display: flex;
+    flex-wrap:  wrap;
+
+    flex-basis: auto;
+    width: 100%;
+    height: 42vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px solid black;
+    border-radius: 20px;    
+    padding: 10px 10px 22px 0;
+    position: relative;
+}
+
+.SpellCardCircle
+{
+    border: 1px solid black;
+    border-radius: 100px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 1;
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 1.5em;
+}
+.SpellCardName
+{
+    text-align: center;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Requiem;
+}
+
+.SpellCardThreads,
+.SpellCardWeaving,
+.SpellCardCasting,
+.SpellCardDuration,
+.SpellCardRange,
+.SpellCardAoE,
+.SpellCardEffect,
+.SpellCardDescription,
+.SpellCardExtraThreads,
+.SpellCardSuccessLevels
+{
+    line-height: 1.1em;
+    margin-left: 10px;
+}
+.SpellCardType
+{
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+}
+.SpellCardReference
+{
+    position: absolute;
+    bottom: 2px;
+    left: 3px;
+    right: 3px;
+    text-align: center;
+}
+.SpellCardDiscipline
+{
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    text-align: right;
+}
+
+/* styles for '...' */ 
+.SpellCardDescription 
+{
+    overflow: hidden;
+    position: relative; 
+    line-height: 1.2em;
+    max-height: 14.4em; 
+    text-align: justify;  
+    margin-right: -1em;
+    padding-right: 1em;
+}
+/* create the ... */
+.SpellCardDescription:before 
+{
+    /* points in the end */
+    content: '…';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of block */
+    right: 0;
+    bottom: 0;
+}
+
+/* hide ... if we have text, which is less than or equal to max lines */
+.SpellCardDescription:after 
+{
+    /* points in the end */
+    content: '';
+    /* absolute position */
+    position: absolute;
+    /* set position to right bottom corner of text */
+    right: 0;
+    /* set width and height */
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    /* bg color = bg color under block */
+    background: white;
+}
+
+#LPInfo, #HealthInfo, #BloodInfo
+{
+  cursor: pointer;
+}
+
+#AboutBody, #WelcomeBody
+{
+    text-align: center;
+}
+
+.legalese
+{
+    font-size: .8em;
+}
+
+.maillink:hover
+{
+    text-decoration: underline;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: rgba(255,255,255,0.9); overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.dialogue
+{
+    position:fixed; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+    padding: 1vw; 
+    background: rgba(255,255,255,.95); 
+    border: 2.3vw solid rgba(0,0,0,.6);
+    overflow-y: auto;
+}
+
+.optionsWrapper
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 3vw auto;
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+
+.bookWrapper, .themeWrapper
+{
+    grid-column: 1 / 2;
+}
+
+.bookWrapper li
+{
+    padding-left: 2vw;
+    list-style-type: none;
+}
+
+.dialogueTableWrapper
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
+
+.dialogueButtonWrapper
+{
+    grid-column: 2 / 3;
+    text-align: right;
+    margin-top: 2vw;
+}
+
+.bookWrapper, .dialogueTableWrapper, .themeWrapper
+{
+    padding: .5vw;
+    border: 1px solid black;
+    border-radius: .7vw;
+}
+.themeWrapper
+{
+    height: 3vw;
+}
+
+.themeSelect
+{ 
+    width: 80%;
+}
+
+.dialogueHeader
+{
+    font-family: Requiem;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: .1em;
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+/* Themes */
+.themed #Earthdawn_Sheet
+{
+    background-repeat: repeat;
+    grid-template-rows: auto 13vw;
+}
+
+.themed .container
+{
+    margin: .5vw;
+    border: 1px solid black;
+    border-radius: .7vw;
+}
+
+.roman .title, .roman .title_subtext, .roman .header, .roman .dialogueHeader, .roman .SpellCardName, .roman th, .roman .MatrixCardName
+{
+    font-family: Via Appia; font-weight: normal;
+}
+
+.willow .title, .willow .title_subtext, .willow .header, .willow .dialogueHeader, .willow .SpellCardName, .willow th, .willow .MatrixCardName
+{
+    font-family: Willow; font-weight: normal;
+}
+
+
+.beige .menuButton:hover, .beige .AddButton:hover, .beige .MatrixCardName, .beige .MatrixCardRank,  .beige #situation { background: #FAEBD7; }
+.grey  .menuButton:hover, .grey  .AddButton:hover, .grey  .MatrixCardName, .grey  .MatrixCardRank,  .grey  #situation { background: #D2D0D0; }
+.blue  .menuButton:hover, .blue  .AddButton:hover, .blue  .MatrixCardName, .blue  .MatrixCardRank,  .blue  #situation { background: #8CCCF7; }
+.green .menuButton:hover, .green .AddButton:hover, .green .MatrixCardName, .green .MatrixCardRank,  .green #situation { background: #b4cf7e; }
+.dark  .menuButton:hover, .dark  .AddButton:hover, .dark  .MatrixCardName, .dark  .MatrixCardRank,  .dark  #situation { background: #B0B0B8; }
+.teal  .menuButton:hover, .teal  .AddButton:hover, .teal  .MatrixCardName, .teal  .MatrixCardRank,  .teal  #situation { background: #d7eded; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

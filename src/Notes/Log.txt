@@ -1,0 +1,277 @@
+Recently completed things:
+β08:
+- Fixed an issue where free Talents were not counted correctly when checking if a character qualifies for a Knack or Path
+- Fixed a slew of bugs in the library integrity check. *sigh*
+- Sebastian's custom data imported 
+- Health Buff fields added
+
+β07:
+- Poked a little at the layout of this dev log page 
+- Play mode: Lots of things corrected; penalties and bonuses should apply correctly now
+- Tab of the browser now dispays the name of the character 
+- Damage & wounds interface running update 
+- Play mode: Karma modifier / replacement
+- Play mode: Initiative Modifiers, Action modifier massaged.
+- Fixed a bug with Special Spell access Knacks
+- Fixed a bug with Knack Restricting by Talent or Skill rank
+- Fixed a slew of data integrity problems
+- General skills sorted by Cost, Cost added as categories in the General Skill dropdown
+- Official / Unofficial categories added to Discipline dropdowns, if unofficial ones exists in the current selection. 
+- Ulk-Men given the bit of work they needed to work. 
+- Made the Path dialogue select box setup check if a Discipline has the required Threadweaving rank to be linked with a Path too. 
+- Changed the way Initiative is looked up to make Initiative Base modified by Discipline, but not gear. 
+- Changed Initiative Unarmored to 'Modified', and made it hidden if they're identical
+- Fixed how Discipline and Path bonuses work when a Discipline has more than one Path associated with it
+- Fixed an issue where selecting Talent Freeranks and Ranks didn't correctly set up the Path granted Talent select event
+- Races now have categories in the select, but only when unofficial ones are available
+- In several iterations, made a function that tests the data files for several types of integrity. Fixed a fair number of inconsistencies found with it =P
+- Started importing Morgans Races!
+- Imported Travar data! 
+- Fixed a bug where the script crashed when removing certain books from the Library via the Options dialogue. 
+
+β06 (20/10 2020):
+- Fixed a bug where CheckPaths() checked the Path ID against the Knack ID linked to the Path instead of looking the Knack ID up, resulting in Paths getting removed all the time, leading to script crashes ...
+- Versatility dropdowns sorted by the circle the Talent is available at, and limited to Free, Optional and Disciplinary Talents
+- Fixed an issue in the timing of when Paths and Knacks are removed when the Character no longer qualifies (Sebastian)
+- Started importing Morgans Disciplines!
+- Fixed a bug where selecting an item of Equipment then moving it back to (Not Selected) would cause the script to crash (Sebastian)
+- There are now 30 different themes 
+- The way Discipline stat bonuses work completely rewritten; the option to have all stat bonuses from Disciplines and Paths stack added
+- Fixed several bugs and problems that arose from taking stuff linked to Disciplines, then removing that Discipline. Any Knacks, Spells and Paths the Character is no longer qualified for should be removed automatically
+- In the third attempt fixed (I hope) an issue where sometimes the add discipline click event was bound more than once, triggering multiple Disciplines being added when it was clicked ..
+- Fixed an issue where Thread Items with Karma point bonuses were applied wrong or not at all
+- In a related issue, fixed a bug in the function that figures out what weapon sizes the user can use. 
+- Body Control Talent has the users 1hd weapon size as a bonus. This bonus now taken into account (o: (Sebastian)
+- Only merge Talents if they're both Disciplinary or Free; otherwise free the optional slot (Sebastian). There are still issues with the Cost of those merged Talents. 
+- Better script crash handling. It's not pretty, but it works =P
+- Paths! Yes, really. Journeyman still missing though. Basic structure done. sheet stuff done, CharacterManager functions Mostly ok, Talent structure OK, Talent Verify OK, UI Talents OK. Talents Cost OK, Knacks Cost OK
+- Knacks overhaul done. 
+- Showing Disciplines jiggled around a little 
+- Themes now selectable on the Options screen 
+- Knacks system reworked, in order to accomodate Paths and fix a bug Jonathan reported.
+
+β05 (2/10 2020):
+- Bonus Talent removed from the Gauntlet. Sebastian suitably mortified =P
+- If a character doesn't have a name assigned, the save file is not just called .json, which could lead to Trouble, but Unnamed.json (BTL)
+- Warning for iOS users not on Safari added (Sebastian). 
+- Thread items can now provide a blanket bonus to Threadweaving (all styles)
+- A few more variant themes added, with a rudimentary theme system. And suddenly there were twenty-four of the things =P
+- An insidious little bug that meant the script would occasionally crash when a Talent was unassigned squashed.
+- Modifiers to Talents column. 
+- Options Implemented: Books OK, StepDice OK, Attributepoints OK, Talentpoints OK, KnowledgeSkillpoints OK, ArtisanSkillpoints OK, SpeakSkillpoints OK, ReadSkillpoints OK, FreeSkillpoints OK, SkillFreeRanksLimit OK, Spellpoints OK, FreeMatricesStack OK, CasterCircle5Bonus OK, SpellsCostLP OK!, FirstWoundFree OK, Durability OK, MaxAttributeIncrease OK,  
+- Free Spell Circles counter OK
+- Width on Rank field in Play. OK!
+- 'Casting' the artisan skill is a little bit ambiguous; it needs to be clearer that I'm not talking about SPELLcasting (Matthew Holtz) - split into metal & plaster casting.
+- Thread Items that give a bonus to Thread Weaving crash the script for nonadepts - aka characters that don't already have a Thread Weaving Talent OK
+- Fixing a bug where the skill Freerank was pushed to the skill Rank field
+- Fixing a bug where Redraw() stripped the suggest feature (Sebastian, Svenn, Matthew)
+- Fixing a bug where selecting a skill Name from the list didn't trigger the event that saves said Name (Sebastian, Svenn)
+- Options dialogue
+- Finished rolling in Core data.
+- Bug in PushSkills where the skill rank select were given the class for skill free ranks instead fixed
+- Fixed a couple small things in the Elven Nations file
+- Group Patterns: Atm, you can bind twice to the same thing. That's not right. You'll get both bonuses, too! Fixed.
+
+β04 (12/9 2020):
+- Bit of improvement in the error handling when loading a character file
+- Input Validation poked a little at. Perhaps this is enough =P
+- When switching away from a spellcaster discipline, don't leave 'dead' spells lying around. Same with Knacks no longer qualified for. OK
+- For some reason, Matrices don't show? Do now; it was a couple self-closed tags (o:
+- Astral-sensitive Eye and other blood charms seem to not show their modifiers right. Now I wonder if they calculate =P (Jonathans's player) OK
+- Categories for spells, equipment optional Talents and Knacks
+- Suggest feature for Artisan and Knowledge skills; I've rounded out the lists a lot. 
+- Swapped input fields for select fields in all the places I could think of. I was worried it would impact response time, but it seems to not have. 
+- A bug that meant an empty Knack precluded adding spells has been squashed. 
+
+β03 (4/9 2020):
+- Threead armors: Forging didn't apply
+- Something dies when changing ranks on a threaded shield? No? It was the specific shield that had a mistake in the data file
+- Taking a second Spellcasting Discipline suddenly gives you an extra matrix again. OK
+- Fixed script fail when the character has an empty Discipline and puts ranks in Versatility 
+- Spell Matrix Objects go to Rank 15. 
+- Spell Selection now checks for the Threadweaving talent, not the Discipline, to allow for human multicasters. 
+- -1 Recovery test racial modifier (Blood Elf)
+- Sorting data by name in the Library after book selection. 
+- Mystic Paths and Elven Nations data entry started.
+- Something was very wrong in the adding Disciplines logic. Analyzed, sorted out and told very sternly to behave. 
+- Swapped all the var statements to let. This revealed a fair number of undeclared variables being used and other underlying problems that would have broken logic eventually. OK
+- Air Sailor Circle 15 Talent fixed (Sebastian)
+- Dwarven carry capacity doesn't work (reported by someone =P) OK
+- Matrices gained from Thread Items don't show their rank correctly in the Talents list. They DO show it correctly on the Matrix card, and the card  seems to work. Was a curly brackets issue - Fixed. Oddly enough, Other Talents gained through Items do Not seem to register the rank right? No; other Talents gained through Items have a modifier to the talent Step, not a Rank per se. I now wonder if I should include a bonus column too, and add even More numbers to the sheet =P
+
+β02 (13/8 2020):
+- Poison Ivy: The text should probably be shortened a little. OK
+- A proper set of starting equipment added to the blank character
+- Free matrices don't work if they're not on the first Discipline taken - OK
+- Description changes weren't getting properly registered on edit OK
+- Skill free ranks should be limited to what the new Option says (Default Novice) OK
+- Ran the JS code through a js lint code checker. Winced a lot. 
+- Optional Talents don't give access to Knacks as they should? (Jonathan)
+- Thread Item Ranks, Weapon and Armor forging and item Names no longer carry over when the item ID is changed =P 
+- Blood Damage somehow misses blood charms? Nope; just only counted the very last one. OK, and Blood Damage / Wounds breakdown added.
+- Group Patterns don't adjust the Defenses or Health values (Brett Bowen) - Probably related to the one Joel reported - it was. OK
+- Group patterns don't seem to save Ranks right (Joel Fowler) OK
+- Starting characters can have Circle 2 spells (should be set free or follow the correct Talent rank) (Brett Bowen) - Limit on Circle for spell selection removed
+- Knacks not pickable over #6? (Jonathan Barrette) OK!
+- Thread Items targeting Threadweaving accounted for. 
+- Added spells don't get into the matrices until something else triggers a full refresh() (Matthew, Brett Bowen, others) OK
+- Bracers of Aras has two Rank 4's (Jonathan) OK
+- First wound for free should be correctly moved to options OK
+
+β01 (7/8 2020):
+- Input fields need validation OK
+- Welcome splash OK
+- New Character OK
+- Thread Armors forging don't take effect. Fixed
+- 'Something weird' happens when you take an item with a talent modifier when not having that talent, especially if you then get the talent from a Discipline OK
+- Split weapon damage by type to figure out thread item bonuses OK
+- About page OK
+- Changing attributes needs to affect Equipment damage steps etc OK
+- MyRating and PhRating for thread shields, not MyDef, PhDef OK
+- Optional rules json, splicing OK
+- Some way to select what books to load, and GrabBooks() to take it into account OK. 
+- Try disabling the situation fields when hidden: Implemented. Let's see what happens - it seems to have fixed the random modifiers problem! Yay!
+- LP for Magic threads OK
+- Legend Points Overlay OK for now.
+- Menu burger rework OK
+- If circles are taken in an empty Discipline, A lot of small things break. OK
+- Equipment If one armor / shield is chosen as in use, any others should be unselected OK
+- Equipment If armor / shield added, it should automatically be in use OK
+- Rework Save / Load to work like the rest of the functions, and to rebind the event. Kinda repaired, in a sense. Works, anyway =P
+- Equipment type selection is broken OK
+- Circle bonus options: Stacking, not stacking. Atm, I Believe they stack. They DID. Need to make this an option. 
+- Making the damn thing editable, so people can, yanno, Do what this is intended to make easier, like, at all =P OK! Apart from little tweaks!
+- Durability work like in RAW. OK
+- Format in the Character object for Group Patterns and other choose your own attachment-y stuff. OK
+- Pattern / Blood Magic OK
+- Talent/skill bonus need implemented to show - some sort of logic to get the right Artisan / Knowledge skill =P OK! Guids to the Rescue!
+- CharacterManager.GetSpentLegendPoints() update: OK! Sheesh that one's getting Complicated =P
+- Thread Items rank select OK!
+- Forgable items selects OK!
+- UI.PushTalents Logic for more than one discipline for free talent rank - Mainly for free Matrices with multidiscipline casters OK!
+- KillDiscipline() and interface for changing 'StartedAt' OK
+- UI.Redraw() murders play mode OK
+- Overlay basic functionality OK
+- Go through bonus gatherers and check for inUse OK!
+- Basic editing infrastructure: Boxes for Race, Legend Points, Discipline, Circle, Attribute Points, Attribute Increasses, Talent Freeranks and ranks, Skill Freeranks and Ranks, select boxes for equipment in use OK! 
+- Movning stuff around on that sheet to make more sense OK (But probably an ongoing thing =P )! 
+- CharacterManager.RebuildTalentList() OK
+- Remaining Attribute points to karma OK
+- Freeranks to Racial Talents OK
+- Try out grid layout - Tried out, and I Like it! 
+- Defense modifiers split out OK
+- Points Remaining logic: OK
+- Claw Shape should take the Damage modifier OK! 
+- Play / Edit logic and buttons: OK, for now
+- Matrix contents UI created
+- Moved Unc/death rating calculation to the charactermanager, added blood damage/wounds
+- Added Talent & skill bonus system
+- Added spell / matrix card system for print. Probably going to go away again later =P - Aaand gone. 
+- Added an abbreviation lookup system
+- Added a space for Abilities, and the UI function to pull it out of the data
+
+Caught a bug where whenever an attribute step was looked up, the program returned Dex step
+Reformed the way Attributes are looked up in the Character object, gave the CharacterManager a buffer object
+Situational modifiers panel - latest: Spell Effects, and Spellcasting mod to Spellcasting Knacks
+Knacks! Data, structure, sheet, legendpoints. 
+Thread items can now affect defenses, armour and initiative. 
+IO: 
+- Swap between specific characters via QS. OK
+- CharacterManager OK
+- Lookup extended to include circle modifiers OK
+- Lookup functions format established, basic functions defined and written OK
+- Character save method established OK
+
+Character object! UI Object! OK! Sheesh I was excitable that day (o:
+- Interaction with dynamic sheet established!
+- Basic character data entered, updating correctly from the object to the sheet. 
+- Attributes ”, mod postponed till getmod functions exist
+- Sheet cleanup, a bit of spit and polish
+- Step/Dice table from json to sheet
+- Talents
+- Skills
+- Spells
+- Fix the old Shield behavior in the sheet OK
+
+
+Establish datastructure: 
+- Fibonacci table OK
+- JSON tested and chosen OK
+- Implement the first table - StepDice? OK! OMG!
+- GetDice(step) OK!
+- AttributeCost OK
+- Attributes OK
+- Races OK
+- Skills (Artisan, Knowledge, General) OK
+- Disciplines OK
+- Spells OK
+- CircleAbilities ? Probably not needed - Nope (o:
+- Creatures ? Perhaps in V2
+- Equipment - Armor, Melee, Missile, MissileWpn, Shields, Throwing OK 
+- Talents OK
+- Knacks OK
+- Player's Guide data - Complete! 
+
+Tagging system?
+
+Loading not just one defined file into the Library object; rather look through the folder and fold any tables found into the Library. OK
+
+Data consolidated into a book file OK
+Folder structure for file types OK
+
+Datafile for old 2step data created OK
+
+Names - ED3 NameGivers of Barsaive names included
+
+Professions - v2, with the character generator
+
+Loader objekt? Sure, why not; makes the index page simpler (o:
+- Expand to loop over book files - OK
+- Discipline Expansion loader - Scrapped; the data rolled into Core.json
+
+Settings object 
+- Load settings via qstring
+- Request setting
+Options: 
+- First wound is for free 
+- Step tables 
+- Load by book, official/unofficial
+- Book / Page reference
+
+Character object
+- Load, save, lookup, edit
+- Recalculate(what changed) / Recalculate(everything)
+- Calculate LP spent
+- Cookie persistence in addition to local saving? 
+- Money
+- Functions in a seperate object to the data, for ease of jsoning.
+
+Library object:
+- Lookup functions - OK
+
+Interface functions object
+- Push data from the various objects to the sheet
+- Pull data from the sheet to the correct object(s)
+
+- Split the code into logical files
+
+- OnChange handlers
+
+- Choose edition splash, 
+- load sheet async OK! 
+- 'In game mode' - lock editing, modifiers: Knocked down, agressive/defensive, wounded, colour coding actions, lock rank editing OK
+- Random Character. V2? 
+- Name generator, by race?
+
+
+
+
+
+
+
+
+
+
+
+
+

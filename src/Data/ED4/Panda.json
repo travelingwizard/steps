@@ -1,0 +1,846 @@
+{
+      "ID" : "Panda",
+      "Books" : "Panda Gaming Grove",
+      "Description" : "Data from the Panda Gaming Grove, adapted for the Steps project",
+      "version" : "Under development. Version .1β",
+      "by" : "Lars Gottlieb and Sebastian Kahrs, 2020",
+
+      "Races" : 
+      [
+            {"ID" : "ED4Jubruq",     "Name" : "Jubruq",           "Dex" : "9",  "Str" : "8",  "Tou" : "9",  "Per" : "12", "Wil" : "12", "Cha" : "9",  "Move" : "10", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Horror Resistant, So Tired",                            "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Leafers",    "Name" : "Leafers",          "Dex" : "9",  "Str" : "9",  "Tou" : "12", "Per" : "10", "Wil" : "11", "Cha" : "19", "Move" : "10", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Rudimentary Nervous System, Plant Biology",             "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Jackalman",  "Name" : "Jackalman",        "Dex" : "11", "Str" : "11", "Tou" : "11", "Per" : "9",  "Wil" : "11", "Cha" : "8",  "Move" : "12", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Bite Attack, Enhanced Sense [Hearing & Smell]: 2",      "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4UlkMan",     "Name" : "Ulk-Man",          "Dex" : "9",  "Str" : "13", "Tou" : "13", "Per" : "9",  "Wil" : "10", "Cha" : "8",  "Move" : "10", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Horror-ish, Horror Powers (C4, C6, C8, C10)",           "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Talo",       "Name" : "Talo",             "Dex" : "12", "Str" : "10", "Tou" : "11", "Per" : "11", "Wil" : "8",  "Cha" : "8",  "Move" : "14", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Low-Light Vision, Natural Climber, Quick Healer",       "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4DwarfS",     "Name" : "Dwarf (Standard)", "Dex" : "9",  "Str" : "12", "Tou" : "13", "Per" : "10", "Wil" : "11", "Cha" : "8",  "Move" : "10", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Heat Sight, Toxin Resistance",                          "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Koborokuru", "Name" : "Koborokuru",       "Dex" : "9",  "Str" : "12", "Tou" : "13", "Per" : "10", "Wil" : "11", "Cha" : "8",  "Move" : "12", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Toxin Resistance",                                      "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Menehune",   "Name" : "Menehune",         "Dex" : "9",  "Str" : "11", "Tou" : "14", "Per" : "10", "Wil" : "11", "Cha" : "8",  "Move" : "10", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Heat Sight, Toxin Resistance",                          "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Wakyambi",   "Name" : "Wakyambi",         "Dex" : "11", "Str" : "10", "Tou" : "8",  "Per" : "11", "Wil" : "12", "Cha" : "11", "Move" : "14", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Low-Light Vision",                                      "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4NightOne",   "Name" : "The Night One",    "Dex" : "13", "Str" : "10", "Tou" : "8",  "Per" : "11", "Wil" : "11", "Cha" : "11", "Move" : "14", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Low-Light Vision, Sunlight,Allergy",                    "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Dryad",      "Name" : "Dryad",            "Dex" : "12", "Str" : "7",  "Tou" : "8",  "Per" : "11", "Wil" : "11", "Cha" : "12", "Move" : "12", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "5", "Abilities":"Low-Light Vision, Max Two-Handed  Size 5",              "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Hobgoblin",  "Name" : "Hobgoblin",        "Dex" : "10", "Str" : "12", "Tou" : "11", "Per" : "10", "Wil" : "9",  "Cha" : "9",  "Move" : "12", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Gahad (Modified), Low-Light vision",                    "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Oni",        "Name" : "Oni",              "Dex" : "10", "Str" : "12", "Tou" : "11", "Per" : "10", "Wil" : "10", "Cha" : "8",  "Move" : "14", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Gahad, Low-Light Vision",                               "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Satyr",      "Name" : "Satyr",            "Dex" : "9",  "Str" : "13", "Tou" : "11", "Per" : "10", "Wil" : "10", "Cha" : "8",  "Move" : "14", "Karma" : "5", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Low-Light Vision",                                      "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Cyclops",    "Name" : "Cyclops",          "Dex" : "10", "Str" : "16", "Tou" : "12", "Per" : "9",  "Wil" : "11", "Cha" : "10", "Move" : "14", "Karma" : "3", "oneHdMin" : "2", "oneHdMax" : "4", "twoHdMin" : "5", "twoHdMax" : "7", "Abilities":"One Eye (-2 to all tests requiring vision and range)",  "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Fomori",     "Name" : "Fomori",           "Dex" : "10", "Str" : "13", "Tou" : "11", "Per" : "10", "Wil" : "11", "Cha" : "11", "Move" : "14", "Karma" : "3", "oneHdMin" : "2", "oneHdMax" : "4", "twoHdMin" : "5", "twoHdMax" : "7", "Abilities":"Heat Vision",                                           "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Giant",      "Name" : "Giant",            "Dex" : "9",  "Str" : "15", "Tou" : "12", "Per" : "9",  "Wil" : "11", "Cha" : "10", "Move" : "14", "Karma" : "3", "oneHdMin" : "2", "oneHdMax" : "4", "twoHdMin" : "5", "twoHdMax" : "7", "Abilities":"Heat Vision",                                           "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"},
+		{"ID" : "ED4Minotaur",   "Name" : "Minotaur",         "Dex" : "10", "Str" : "13", "Tou" : "12", "Per" : "10", "Wil" : "11", "Cha" : "10", "Move" : "14", "Karma" : "3", "oneHdMin" : "2", "oneHdMax" : "4", "twoHdMin" : "5", "twoHdMax" : "7", "Abilities":"Heat Vision",                                           "BonusTalent" : "", "Modifiers" : {}, "Mature" : "", "Lifespan" : "", "Height" : "", "Weight" : "", "Names" : [""], "Unofficial" : "True"}
+      ],
+	  "Talents" : 
+      [
+            {"ID" : "ED4ThreadWeavingAnimalWeaving",       "Name" : "Thread Weaving (Animal Weaving)",     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Thread Weaving for MotH",                   "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "No", "CountsAs" : "ED4ThreadWeaving","CountsAsName" : "Thread Weaving"},
+            {"ID" : "ED4SecondCommand",                    "Name" : "Second Command",                      "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Second AC Attack, limited by Step",         "Step" : "Rank+CHA", "Attribute" : "CHA", "Action" : "Simple",         "Strain" : "2",  "Skill Use" : "No"},
+            {"ID" : "ED4PreysWeakness",                    "Name" : "Prey's Weakness",                     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Increase AC attack per success",            "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Simple",         "Strain" : "1",  "Skill Use" : "No"},
+            {"ID" : "ED4LightningCommand",                 "Name" : "Lightning Command",                   "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Compare Initiative and increase AC Attack", "Step" : "Rank+DEX", "Attribute" : "DEX", "Action" : "Free",           "Strain" : "2",  "Skill Use" : "No"},
+            {"ID" : "ED4GrislyStrike",                     "Name" : "Grisly Strike",                       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Additional AC TOU to Damage",               "Step" : "Rank+TOU", "Attribute" : "TOU", "Action" : "Free",           "Strain" : "2",  "Skill Use" : "No"},
+            {"ID" : "ED4MultiCommand",                     "Name" : "Multi-Command",                       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>", "Type" : "Multi-Attack for AC",                       "Step" : "Rank+CHA", "Attribute" : "CHA", "Action" : "Simple",         "Strain" : "1",  "Skill Use" : "No"},
+            {"ID" : "ED4ThreadWeavingSpiritWeaving",       "Name" : "Thread Weaving (Spirit Weaving)",     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",        "Type" : "Thread Weaving for Spirit Rider",           "Step" : "Rank+PER", "Attribute" : "DEX", "Action" : "Free",           "Strain" : "1+", "Skill Use" : "No", "CountsAs" : "ED4ThreadWeaving","CountsAsName" : "Thread Weaving"},
+            {"ID" : "ED4EnhanceBoundSpirit",               "Name" : "Enhance Bound Spirit",                "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",        "Type" : "Improve Spirit Mount",                      "Step" : "Rank+WIL", "Attribute" : "WIL", "Action" : "Sustained (8h)", "Strain" : "0",  "Skill Use" : "No"},
+            {"ID" : "ED4SpiritDevelopment",                "Name" : "Spirit Development",                  "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",        "Type" : "Train Spirit Mount",                        "Step" : "Rank+WIL", "Attribute" : "WIL", "Action" : "Sustained (8h)", "Strain" : "0",  "Skill Use" : "No"},
+            {"ID" : "ED4SpiritDurability",                 "Name" : "Spirit Durability",                   "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",        "Type" : "Increase Spirit Mount Durability",          "Step" : "-",        "Attribute" : "",    "Action" : "NA",             "Strain" : "0",  "Skill Use" : "No"},
+            {"ID" : "ED4ThreadWeavingShadowWeaving",       "Name" : "Thread Weaving (Shadow Weaving)",     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-35.html'>Shadow</a>",             "Type" : "Thread Weaving for Shadow",                 "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "No", "CountsAs" : "ED4ThreadWeaving","CountsAsName" : "Thread Weaving"},
+            {"ID" : "ED4ShadowBlades",                     "Name" : "Shadow Blades",                       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-35.html'>Shadow</a>",             "Type" : "Conjure Shadow-copies of weapon",           "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Simple",         "Strain" : "1",  "Skill Use" : "No"},
+            {"ID" : "ED4NoShadowThrow",                    "Name" : "No-Shadow Throw",                     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-35.html'>Shadow</a>",             "Type" : "Multi-Attack Talent",                       "Step" : "Rank+DEX", "Attribute" : "DEX", "Action" : "Simple",         "Strain" : "",   "Skill Use" : "No"},
+            {"ID" : "ED4ThreadWeavingMeditationWeaving",   "Name" : "Thread Weaving (Meditation Weaving)", "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html'>Monk</a>",               "Type" : "Thread Weaving for Monk",                   "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "No", "CountsAs" : "ED4ThreadWeaving","CountsAsName" : "Thread Weaving"},
+            {"ID" : "ED4WholenessOfBody",                  "Name" : "Wholeness of Body",                   "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html'>Monk</a>",               "Type" : "Armor increasing Talent",                   "Step" : "Rank+3",   "Attribute" : "",    "Action" : "Special",        "Strain" : "1",  "Skill Use" : "No", "Conflicts" : "All Armors"},
+            {"ID" : "ED4SnapKick",                         "Name" : "Snap Kick",                           "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html'>Monk</a>",               "Type" : "Fast extra Attack",                         "Step" : "Rank+DEX", "Attribute" : "DEX", "Action" : "Free",           "Strain" : "2",  "Skill Use" : "No"},
+            {"ID" : "ED4ThreadWeavingRaidWeaving",         "Name" : "Thread Weaving (Raid Weaving)",       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-34.html'>Raiders</a>",            "Type" : "Thread Weaving for Raiders",                "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "No", "CountsAs" : "ED4ThreadWeaving","CountsAsName" : "Thread Weaving"},
+            {"ID" : "ED4CorruptKarma",                     "Name" : "Corrupt Karma",                       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2017/07/earthdawn-4e-anatomy-of-namegiver-05.html'>Ulk-Men</a>",             "Type" : "Horror Power",                              "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "Absolutely not"},
+            {"ID" : "ED4AnimateDead",                      "Name" : "Animate Dead",                        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2017/07/earthdawn-4e-anatomy-of-namegiver-05.html'>Ulk-Men</a>",             "Type" : "Horror Power",                              "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "Absolutely not"},
+            {"ID" : "ED4Terror",                           "Name" : "Terror",                              "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2017/07/earthdawn-4e-anatomy-of-namegiver-05.html'>Ulk-Men</a>",             "Type" : "Horror Power",                              "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Standard",       "Strain" : "0",  "Skill Use" : "Absolutely not"},
+            {"ID" : "ED4CursedLuck",                       "Name" : "Cursed Luck",                         "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2017/07/earthdawn-4e-anatomy-of-namegiver-05.html'>Ulk-Men</a>",             "Type" : "Horror Power",                              "Step" : "Rank+PER", "Attribute" : "PER", "Action" : "Free",           "Strain" : "0",  "Skill Use" : "Absolutely not"}
+      ], 
+      "Knacks":
+      [
+            {"ID" : "ED4SpiritMountBindSpirit",                        "Name" : "Bind Spirit",                          "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",                         "Talent" : "ED4SpiritMount",                                 "Type" : "", "RequiredRank" : "1",  "Requirements" : [],                                                                                                                         "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4SpiritRider", "Circle" : "1"}],  "Action" : "Sustained (8 hour)"},
+            {"ID" : "ED4DevelopSpiritSmarterThantheAverageBearSpirit", "Name" : "Smarter Than the Average Bear Spirit", "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",                         "Talent" : "ED4SpiritDevelopment",                           "Type" : "", "RequiredRank" : "3",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4SpiritMountBindSpirit"}, {"Type" : "Talent", "ID" : "ED4SpiritMount", "Rank" : "3"}],        "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4SpiritRider", "Circle" : "3"}],  "Action" : "NA"},
+            {"ID" : "ED4EnhanceBoundSpiritAmplifyBoundSpiritsForm",    "Name" : "Amplify Bound Spirit’s Form",          "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",                         "Talent" : "ED4EnhanceBoundSpirit",                          "Type" : "", "RequiredRank" : "5",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4SpiritMountBindSpirit"}],                                                                    "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4SpiritRider", "Circle" : "5"}],  "Action" : "Sustained (8 hours)"},
+            {"ID" : "ED4EnhanceBoundSpiritBoostBoundSpiritsForm",      "Name" : "Boost Bound Spirit’s Form",            "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",                         "Talent" : "ED4EnhanceBoundSpirit",                          "Type" : "", "RequiredRank" : "9",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4SpiritMountBindSpirit"}],                                                                    "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4SpiritRider", "Circle" : "9"}],  "Action" : "Sustained (8 hours)"},
+            {"ID" : "ED4EnhanceBoundSpiritHeightenBoundSpiritsForm",   "Name" : "Heighten Bound Spirit’s Form",         "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",                         "Talent" : "ED4EnhanceBoundSpirit",                          "Type" : "", "RequiredRank" : "13", "Requirements" : [{"Type" : "Knack", "ID" : "ED4SpiritMountBindSpirit"}],                                                                    "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4SpiritRider", "Circle" : "13"}], "Action" : "Sustained (8 hours)"},
+            {"ID" : "ED4AnimalBondBindAnimalCompanion",                "Name" : "Bind Animal Companion",                "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalBond", "Retakable" : "Yes",             "Type" : "", "RequiredRank" : "1",  "Requirements" : [],                                                                                                                         "Restrictions" : [],                                                                  "Action" : "Sustained (8 hours)"},
+            {"ID" : "ED4AnimalBondMenagerie",                          "Name" : "Menagerie",                            "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalBond", "Retakable" : "Yes",             "Type" : "", "RequiredRank" : "5",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4AnimalBondTransferBond",                       "Name" : "Transfer Bond",                        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalBond",                                  "Type" : "", "RequiredRank" : "5",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4AnimalTrainingEncouragement",                  "Name" : "Encouragement",                        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalTraining",                              "Type" : "", "RequiredRank" : "4",  "Requirements" : [],                                                                                                                         "Restrictions" : [],                                                                  "Action" : "Free)", "Strain" : "1"},
+            {"ID" : "ED4AnimalTrainingFasterPussycatKK",               "Name" : "Faster, Pussycat! Kill! Kill!",        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalTraining",                              "Type" : "", "RequiredRank" : "7",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalTrainingEncouragement"}],                                                              "Restrictions" : [],                                                                  "Action" : "Free",  "Strain" : "2"},
+            {"ID" : "ED4AnimalTrainingSmarterAverageBear",             "Name" : "Smarter Than the Average Bear",        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4AnimalTraining", "Retakable" : "Yes",         "Type" : "", "RequiredRank" : "3",  "Requirements" : [{"Type" : "Talent", "ID" : "ED4AnimalBond", "Rank" : "4"}, {"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}], "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionAmplifyACForm",          "Name" : "Amplify Animal Companion’s Form",      "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion", "Retakable" : "Yes", "Type" : "", "RequiredRank" : "5",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionAmplifyACSense",         "Name" : "Amplify Animal Companion’s Sense",     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion",                      "Type" : "", "RequiredRank" : "5",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionBoostACForm",            "Name" : "Boost Animal Companion’s Form",        "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion", "Retakable" : "Yes", "Type" : "", "RequiredRank" : "9",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionBoostACSense",           "Name" : "Boost Animal Companion’s Sense",       "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion",                      "Type" : "", "RequiredRank" : "9",  "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionHeightenACForm",         "Name" : "Heighten Animal Companion’s Form",     "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion", "Retakable" : "Yes", "Type" : "", "RequiredRank" : "13", "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"},
+            {"ID" : "ED4EnhanceAnimalCompanionHeightenACSense",        "Name" : "Heighten Animal Companion’s Sense",    "Reference" : "<a target='_blank' href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-rules-variant-09-animal.html'>Rules Variant 09 - Animal Companions</a>", "Talent" : "ED4EnhanceAnimalCompanion",                      "Type" : "", "RequiredRank" : "13", "Requirements" : [{"Type" : "Knack", "ID" : "ED4AnimalBondBindAnimalCompanion"}],                                                            "Restrictions" : [],                                                                  "Action" : "NA"}
+      ],
+      "Disciplines" :
+      [
+            {
+                  "ID" : "ED4MasterOfTheHunt",
+                  "Name" : "Master of the Hunt",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-23.html'>Master of the Hunt</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "5",
+                  "ImportantAtt" : ["Cha", "Dex", "Per"],
+                  "NoviceTalents" : ["ED4AnticipateBlow", "ED4AvoidBlow", "ED4Awareness", "ED4Climbing", "ED4DangerSense", "ED4MeleeWeapons", "ED4MissileWeapons", "ED4Navigation", "ED4StealthyStride", "ED4ThrowingWeapons"],
+                  "JourneymanTalents" : ["ED4AnimalPossession", "ED4BattleBellow", "ED4BorrowSense", "ED4ColdPurify", "ED4Distract", "ED4LionHeart", "ED4SpotArmorFlaw", "ED4SurpriseStrike", "ED4TigerSpring", "ED4WoundBalance"],
+                  "WardenTalents" : ["ED4DefensivePosture", "ED4EagleEye", "ED4Echolocation", "ED4GracefulExit", "ED4IronConstitution", "ED4Lifesight", "ED4LionSpirit", "ED4PerfectFocus", "ED4ResistTaunt", "ED4SteelyStare"],
+                  "MasterTalents" : ["ED4Howl", "ED4LifeCheck", "ED4RelentlessRecovery", "ED4ResistPain", "ED4SecondChance", "ED4SoulAegis", "ED4UnflinchingFortitude", "ED4ViciousWound"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "FreeTalents" : ["ED4CreatureAnalysis"],
+                              "Ability" : "Karma on non-violent interaction with an animal",
+                              "DisciplineTalents" : ["ED4AnimalBond", "ED4AnimalTraining", "ED4ThreadWeavingAnimalWeaving", "ED4Tracking", "ED4WildernessSurvival"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4EnhanceAnimalCompanion"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma once/rnd on Animal Companion Action test",
+                              "DisciplineTalents" : ["ED4DominateBeast"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4CallAnimalCompanion"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Leader of Animals, Karma on Animal Companion Damage test",
+                              "DisciplineTalents" : ["ED4AnimalCompanionDurability"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"SoDef" : "+2"},
+                              "DisciplineTalents" : ["ED4AnimalTalk"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4BloodShare"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"SoDef" : "+3"},
+                              "DisciplineTalents" : ["ED4SecondCommand"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Blood Bound, Karma on Recovery",
+                              "DisciplineTalents" : ["ED4GoringAttack"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"PhDef" : "+2", "Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4PreysWeakness"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma when adjacent to an ally",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4LightningCommand"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"SoDef" : "+4", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4Rally"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Shared Spirit",
+                              "Modifiers" : {"PhDef" : "+3", "MyArm" : "+1", "KarmaStep" : "+1"},
+                              "DisciplineTalents" : ["ED4AnimalLeadership"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"SoDef" : "+5", "Ini" :"+2" },
+                              "DisciplineTalents" : ["ED4GrislyStrike"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "RecTest" : "+3"},
+                              "DisciplineTalents" : ["ED4MultiCommand"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4Monk",
+                  "Name" : "Monk",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html'>Monk</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "5",
+                  "ImportantAtt" : ["Dex", "Per", "Wil"],
+                  "NoviceTalents" : ["ED4AcrobaticDefense", "ED4AnticipateBlow", "ED4BookMemory", "ED4GreatLeap", "ED4ItemHistory", "ED4Maneuver", "ED4ReadandWriteLanguage", "ED4SpeakLanguage", "ED4Sprint", "ED4TigerSpring"],
+                  "JourneymanTalents" : ["ED4Disarm", "ED4EvidenceAnalysis", "ED4GlidingStride", "ED4LionHeart", "ED4ResistTaunt", "ED4Riposte", "ED4SecondWeapon", "ED4SwiftKick", "ED4TrueSight", "ED4WaterfallSlam"],
+                  "WardenTalents" : ["ED4ChillingStrike", "ED4CobraStrike", "ED4DefensivePosture", "ED4DownStrike", "ED4Lifesight", "ED4LionSpirit", "ED4MatrixSight", "ED4MomentumAttack", "ED4RelentlessRecovery", "ED4ResistPain"],
+                  "MasterTalents" : ["ED4AuraArmor", "ED4BurningVigor", "ED4FluidMovement", "ED4SafeThought", "ED4SecondChance", "ED4UnflinchingFortitude", "ED4VitalStrike", "ED4VitalWard"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "FreeTalents" : ["ED4Etiquette"],
+                              "Ability" : "Karma on tests to recall or gain new knowledge",
+                              "DisciplineTalents" : ["ED4AvoidBlow", "ED4BodyControl", "ED4Research", "ED4ThreadWeavingMeditationWeaving", "ED4UnarmedCombat"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4Awareness"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on tests where they behave politely,courteously and sincerely",
+                              "DisciplineTalents" : ["ED4WoundBalance"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4WholenessOfBody"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Meditation, Karma on active defenses and defense improving tests",
+                              "DisciplineTalents" : ["ED4SteelThought"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"MyDef" : "+2"},
+                              "DisciplineTalents" : ["ED4SpotArmorFlaw"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4AstralSight"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"MyDef" : "+3"},
+                              "DisciplineTalents" : ["ED4SecondAttack"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Answers Within, Karma on Recovery",
+                              "DisciplineTalents" : ["ED4EideticMemory"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"PhDef" : "+2", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4SpiritStrike"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Initaitive",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4CriticalHit"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"MyDef" : "+4", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4EtherealWeapon"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "One With Creation",
+                              "Modifiers" : {"PhDef" : "+3", "RecTest" : "+1", "KarmaStep" : "+1"},
+                              "DisciplineTalents" : ["ED4SoulAegis"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"MyDef" : "+5", "MyArm" :"+2" },
+                              "DisciplineTalents" : ["ED4SnapKick"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"SoDef" : "+2", "Ini" : "+3"},
+                              "DisciplineTalents" : ["ED4MultiStrike"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4Shadow",
+                  "Name" : "Shadow",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-35.html'>Shadow</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "5",
+                  "ImportantAtt" : ["Cha", "Dex", "Per"],
+                  "NoviceTalents" : ["ED4AnticipateBlow", "ED4CallMissile", "ED4DangerSense", "ED4FirstImpression", "ED4GreatLeap", "ED4ImpressiveDisplay", "ED4LongShot", "ED4MeleeWeapons", "ED4Taunt", "ED4WinningSmile"],
+                  "JourneymanTalents" : ["ED4AstralSight", "ED4ColdPurify", "ED4EvidenceAnalysis", "ED4FireHeal", "ED4IronConstitution", "ED4LionHeart", "ED4ResistTaunt", "ED4SpotArmorFlaw", "ED4SteelyStare", "ED4WaterfallSlam"],
+                  "WardenTalents" : ["ED4Chameleon", "ED4CriticalHit", "ED4DefensivePosture", "ED4Echolocation", "ED4Lifesight", "ED4RelentlessRecovery", "ED4ResistTaunt", "ED4SecondWeapon", "ED4SwiftKick", "ED4Undermine"],
+                  "MasterTalents" : ["ED4AlleyCatApproach", "ED4AstralPocket", "ED4MatrixSight", "ED4Netherwalk", "ED4SecondChance", "ED4SoulAegis", "ED4VitalStrike", "ED4WittyRepartee"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "FreeTalents" : ["ED4ShadowBlades"],
+                              "Ability" : "Karma on CHA-based tests when not being entirely truthful",
+                              "DisciplineTalents" : ["ED4AvoidBlow", "ED4Awareness", "ED4ThreadWeavingShadowWeaving", "ED4ThrowingWeapons", "ED4StealthyStride"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4SurpriseStrike"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Initiative",
+                              "DisciplineTalents" : ["ED4ConcealObject"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4MysticAim"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Shadow Throw, Karma on damage with throwing weapons at minimum-size limit",
+                              "DisciplineTalents" : ["ED4SpotArmorFlaw"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4BankShot"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4BlindFire"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"PhDef" : "+3"},
+                              "DisciplineTalents" : ["ED4SecondShot"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Shadow Bound, Karma on Recovery",
+                              "DisciplineTalents" : ["ED4EtherealWeapon"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"SoDef" : "+2", "RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4SpiritStrike"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Attacks with throwing weapons at minimum-size limit",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4BeguilingBlade"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"PhDef" : "+4", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4NoShadowThrow"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Shadow Step",
+                              "Modifiers" : {"SoDef" : "+3", "KarmaStep" : "+1", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4ImpossibleHide"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"PhDef" : "+5", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4Snapshot"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "Ini" : "+3"},
+                              "DisciplineTalents" : ["ED4ViciousWound"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4SpiritRider",
+                  "Name" : "Spirit Rider",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2018/12/earthdawn-4-anatomy-of-discipline-32.html'>Spirit Rider</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "7",
+                  "ImportantAtt" : ["Dex", "Per", "Wil"],
+                  "NoviceTalents" : ["ED4AnticipateBlow", "ED4AvoidBlow", "ED4Awareness", "ED4DangerSense", "ED4Maneuver", "ED4ShieldBash", "ED4Sprint", "ED4SureMount", "ED4TigerSpring", "ED4WoundBalance"],
+                  "JourneymanTalents" : ["ED4ArmorMount", "ED4FearsomeCharge", "ED4GracefulExit", "ED4LionHeart", "ED4MountAttack", "ED4SpiritDevelopment", "ED4SpiritDurability", "ED4SpotArmorFlaw", "ED4SteelyStare", "ED4TemperFlesh"],
+                  "WardenTalents" : ["ED4Banish", "ED4CriticalHit", "ED4IronConstitution", "ED4LifeCheck", "ED4LionSpirit", "ED4MatrixSight", "ED4OrbitingSpy", "ED4ResistPain", "ED4SpiritHold", "ED4SummonAllySpirits"],
+                  "MasterTalents" : ["ED4AuraArmor", "ED4ChampionChallenge", "ED4DefensivePosture", "ED4SecondChance", "ED4UnflinchingFortitude", "ED4ViciousWound", "ED4VitalStrike", "ED4VitalWard"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+
+                              "DisciplineTalents" : ["ED4Charge", "ED4MeleeWeapons", "ED4SpiritMount", "ED4TrickRiding", "ED4ThreadWeavingSpiritWeaving"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4SteelThought"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Attacks while charging",
+                              "DisciplineTalents" : ["ED4AstralSight"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4SpiritTalk"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Spirit Sense, Karma on Damage while mounted",
+                              "DisciplineTalents" : ["ED4EnhanceBoundSpirit"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4WheelingAttack"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4WheelingDefense"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"MyDef" : "+2"},
+                              "DisciplineTalents" : ["ED4DoubleCharge"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Guardian Spirit, Karma on Recovery",
+                              "DisciplineTalents" : ["ED4EtherealWeapon"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"PhDef" : "+3", "RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4RelentlessRecovery"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma once/turn on test while in contact with mount",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4MomentumAttack"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"MyDef" : "+4", "MyArm" : "+2"},
+                              "DisciplineTalents" : ["ED4SpiritStrike"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Twin Soul",
+                              "Modifiers" : {"PhDef" : "+4", "Ini" : "+1", "KarmaStep" : "+1"},
+                              "DisciplineTalents" : ["ED4Netherwalk"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"MyDef" : "+4", "RecTest" :"+2" },
+                              "DisciplineTalents" : ["ED4SoulAegis"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"SoDef" : "+2", "MyArm" : "+3"},
+                              "DisciplineTalents" : ["ED4MultiCharge"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4Raider",
+                  "Name" : "Raider",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-34.html'>Raiders</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "7",
+                  "ImportantAtt" : ["Cha", "Dex", "Str"],
+                  "NoviceTalents" : ["ED4AirSpeaking", "ED4AvoidBlow", "ED4Climbing", "ED4DangerSense", "ED4Navigation", "ED4ShieldBash", "ED4SureMount", "ED4ThrowingWeapons", "ED4TrickRiding", "ED4UnarmedCombat"],
+                  "JourneymanTalents" : ["ED4Distract", "ED4FirstImpression", "ED4IronConstitution", "ED4Leadership", "ED4LionHeart", "ED4SecondWeapon", "ED4Sprint", "ED4SwiftKick", "ED4Tactics", "ED4TigerSpring"],
+                  "WardenTalents" : ["ED4AirDance", "ED4ImpressiveDisplay", "ED4LastingImpression", "ED4LifeCheck", "ED4LionSpirit", "ED4RelentlessRecovery", "ED4ResistPain", "ED4ResistTaunt", "ED4StormShield", "ED4VitalWard"],
+                  "MasterTalents" : ["ED4AuraArmor", "ED4ChampionChallenge", "ED4CriticalHit", "ED4EagleEye", "ED4SecondChance", "ED4TemperFlesh", "ED4Undermine", "ED4WeaponBreaker"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "DisciplineTalents" : ["ED4BattleShout",  "ED4Fireblood", "ED4MeleeWeapons", "ED4ThreadWeavingRaidWeaving", "ED4WildernessSurvival"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4GreatLeap"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Recovery",
+                              "DisciplineTalents" : ["ED4WoundBalance"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4FireHeal"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Overwhelming Force, Karma with large mele or throwing weapon",
+                              "DisciplineTalents" : ["ED4BattleBellow"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4SteelyStare"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4DownStrike"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"PhDef" : "+3"},
+                              "DisciplineTalents" : ["ED4MomentumAttack"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Strength of the Sky, Karma to intimidate or cause fear",
+                              "Modifiers" : {"BldDam" : "+1", "Str" : "+3"},
+                              "DisciplineTalents" : ["ED4BurningVigor"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"SoDef" : "+2", "Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4UnflinchingFortitude"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Attack against fearful or intimidated target",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4VitalStrike"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"PhDef" : "+4", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4SecondAttack"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Stormcall",
+                              "Modifiers" : {"SoDef" : "+3", "KarmaStep" : "+1", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4Thunderstruck"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"PhDef" : "+5", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4ViciousWound"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "RecTest" : "+3"},
+                              "DisciplineTalents" : ["ED4BloodofDeathsSea"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4RiverRaider",
+                  "Name" : "River Raider",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-34.html'>Raiders</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "7",
+                  "ImportantAtt" : ["Cha", "Dex", "Str"],
+                  "NoviceTalents" : ["ED4AirSpeaking", "ED4AvoidBlow", "ED4DangerSense", "ED4PilotBoat", "ED4ReadRiver", "ED4ShieldBash", "ED4Sailing", "ED4Swimming", "ED4ThrowingWeapons", "ED4UnarmedCombat", "ED4WildernessSurvival"],
+                  "JourneymanTalents" : ["ED4Distract", "ED4FirstImpression", "ED4IronConstitution", "ED4Leadership", "ED4LionHeart", "ED4SecondWeapon", "ED4Sprint", "ED4SwiftKick", "ED4Tactics", "ED4TigerSpring"],
+                  "WardenTalents" : ["ED4FluidMovement", "ED4ImpressiveDisplay", "ED4LastingImpression", "ED4LifeCheck", "ED4LionSpirit", "ED4RelentlessRecovery", "ED4ResistPain", "ED4ResistTaunt", "ED4VitalWard", "ED4WaterfallSlam"],
+                  "MasterTalents" : ["ED4AuraArmor", "ED4ChampionChallenge", "ED4CriticalHit", "ED4EagleEye", "ED4SecondChance", "ED4TemperFlesh", "ED4Undermine", "ED4WeaponBreaker"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "DisciplineTalents" : ["ED4BattleShout",  "ED4Climbing", "ED4Fireblood", "ED4MeleeWeapons", "ED4ThreadWeavingRaidWeaving"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4GreatLeap"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Recovery",
+                              "DisciplineTalents" : ["ED4WoundBalance"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4FireHeal"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Overwhelming Force, Karma with large mele or throwing weapon",
+                              "DisciplineTalents" : ["ED4BattleBellow"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4SteelyStare"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4DownStrike"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"PhDef" : "+3"},
+                              "DisciplineTalents" : ["ED4MomentumAttack"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Strength of the River, Karma to intimidate or cause fear",
+                              "Modifiers" : {"BldDam" : "+1", "Str" : "+3"},
+                              "DisciplineTalents" : ["ED4BurningVigor"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"SoDef" : "+2", "Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4UnflinchingFortitude"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Attack against fearful or intimidated target",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4VitalStrike"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"PhDef" : "+4", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4SecondAttack"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Rivercall",
+                              "Modifiers" : {"SoDef" : "+3", "KarmaStep" : "+1", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4ChillingStrike"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"PhDef" : "+5", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4ViciousWound"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "RecTest" : "+3"},
+                              "DisciplineTalents" : ["ED4BloodofDeathsSea"]
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4SeaRaider",
+                  "Name" : "Sea Raider",
+                  "Reference" : "<a href='https://pandagaminggrove.blogspot.com/2019/03/earthdawn-4e-anatomy-of-discipline-34.html'>Raiders</a>",
+                  "Unofficial" : "True",
+                  "Durability" : "7",
+                  "ImportantAtt" : ["Cha", "Dex", "Str"],
+                  "NoviceTalents" : ["ED4AirSpeaking", "ED4AvoidBlow", "ED4DangerSense", "ED4Navigation", "ED4Sailing", "ED4ShieldBash", "ED4Swimming", "ED4ThrowingWeapons", "ED4UnarmedCombat", "ED4WildernessSurvival"],
+                  "JourneymanTalents" : ["ED4Distract", "ED4FirstImpression", "ED4IronConstitution", "ED4Leadership", "ED4LionHeart", "ED4SecondWeapon", "ED4Sprint", "ED4SwiftKick", "ED4Tactics", "ED4TigerSpring"],
+                  "WardenTalents" : ["ED4AirDance", "ED4ImpressiveDisplay", "ED4LastingImpression", "ED4LifeCheck", "ED4LionSpirit", "ED4RelentlessRecovery", "ED4ResistPain", "ED4ResistTaunt", "ED4StormShield", "ED4VitalWard"],
+                  "MasterTalents" : ["ED4AuraArmor", "ED4ChampionChallenge", "ED4CriticalHit", "ED4EagleEye", "ED4SecondChance", "ED4TemperFlesh", "ED4Undermine", "ED4WeaponBreaker"],
+                  "Circles" : 
+                  [
+                        {
+                              "Circle" : "1",
+                              "DisciplineTalents" : ["ED4BattleShout","ED4Climbing",   "ED4Fireblood", "ED4MeleeWeapons", "ED4ThreadWeavingRaidWeaving"]
+                        },
+                        {
+                              "Circle" : "2",
+                              "Modifiers" : {"PhDef" : "+1"},
+                              "DisciplineTalents" : ["ED4GreatLeap"]
+                        },
+                        {
+                              "Circle" : "3",
+                              "Ability" : "Karma on Recovery",
+                              "DisciplineTalents" : ["ED4WoundBalance"]
+                        },
+                        {
+                              "Circle" : "4",
+                              "Modifiers" : {"SoDef" : "+1"},
+                              "DisciplineTalents" : ["ED4FireHeal"]
+                        },
+                        {
+                              "Circle" : "5",
+                              "Ability" : "Overwhelming Force, Karma with large mele or throwing weapon",
+                              "DisciplineTalents" : ["ED4BattleBellow"]
+                        },
+                        {
+                              "Circle" : "6",
+                              "Modifiers" : {"PhDef" : "+2"},
+                              "DisciplineTalents" : ["ED4SteelyStare"]
+                        },
+                        {
+                              "Circle" : "7",
+                              "Modifiers" : {"RecTest" : "+1"},
+                              "DisciplineTalents" : ["ED4DownStrike"]
+                        },
+                        {
+                              "Circle" : "8",
+                              "Modifiers" : {"PhDef" : "+3"},
+                              "DisciplineTalents" : ["ED4MomentumAttack"]
+                        },
+                        {
+                              "Circle" : "9",
+                              "Ability" : "Strength of the Sky, Karma to intimidate or cause fear",
+                              "Modifiers" : {"BldDam" : "+1", "Str" : "+3"},
+                              "DisciplineTalents" : ["ED4BurningVigor"]
+                        },
+                        {
+                              "Circle" : "10",
+                              "Modifiers" : {"SoDef" : "+2", "Ini" : "+1"},
+                              "DisciplineTalents" : ["ED4UnflinchingFortitude"]
+                        },
+                        {
+                              "Circle" : "11",
+                              "Ability" : "Karma on Attack against fearful or intimidated target",
+                              "Modifiers" : {"MyDef" : "+1"},
+                              "DisciplineTalents" : ["ED4VitalStrike"]
+                        },
+                        {
+                              "Circle" : "12",
+                              "Modifiers" : {"PhDef" : "+4", "RecTest" : "+2"},
+                              "DisciplineTalents" : ["ED4SecondAttack"]
+                        },
+                        {
+                              "Circle" : "13",
+                              "Ability" : "Stormcall",
+                              "Modifiers" : {"SoDef" : "+3", "KarmaStep" : "+1", "MyArm" : "+1"},
+                              "DisciplineTalents" : ["ED4Thunderstruck"]
+                        },
+                        {
+                              "Circle" : "14",
+                              "Modifiers" : {"PhDef" : "+5", "Ini" : "+2"},
+                              "DisciplineTalents" : ["ED4ViciousWound"]
+                        },
+                        {
+                              "Circle" : "15",
+                              "Modifiers" : {"MyDef" : "+2", "RecTest" : "+3"},
+                              "DisciplineTalents" : ["ED4BloodofDeathsSea"]
+                        }
+                  ]
+            }
+      ],
+      "Equipment":
+      [
+                  {"ID" : "PandaSpectralLenses", "Name" : "Astrally Filtered Spectral Lenses", "Reference" : "Panda", "Type" : "Thread Item", "BaseType" : "Clothing", "Cost" : "", "Weight" : "",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "1"}]},
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "2"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "1"}], "MyArm" : "1"},
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "3"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "MyArm" : "1"},
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "4"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "MyArm" : "1"},
+                              "Effect" : "The wearer gains the Astrally Filtered Spectral Lenses ability. The wearer reduces the Difficulty Modifier to astral sensing from corruption by one region type (e.g., Corrupt to Tainted) until the end of the next round.",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "5"}
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "MyArm" : "1"},
+                              "Effect" : "The wearer gains the Astrally Filtered Spectral Lenses ability. The wearer reduces the Difficulty Modifier to astral sensing from corruption by one region type (e.g., Corrupt to Tainted) until the end of the next round. <br /> As a Free Action, the wearer gains a +2 to a test against a target’s Mystic Defense; the wearer must have astrally sensed the target. If the test uses the spell stored in the goggles’ spell matrix, it does not cost Strain.",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "6"}
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "MyArm" : "1"},
+                              "Effect" : "The wearer gains the Astrally Filtered Spectral Lenses ability. The wearer reduces the Difficulty Modifier to astral sensing from corruption by one region type (e.g., Corrupt to Tainted) until the end of the next round. <br /> As a Free Action, the wearer gains a +2 to a test against a target’s Mystic Defense; the wearer must have astrally sensed the target. If the test uses the spell stored in the goggles’ spell matrix, it does not cost Strain.",
+                              "BonusTalent" : {"ID" : "ED4EnhancedMatrix", "Rank" : "7"}
+                        },
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "MyArm" : "1"},
+                              "Effect" : "The wearer gains the Astrally Filtered Spectral Lenses ability. The wearer reduces the Difficulty Modifier to astral sensing from corruption by two region type (e.g., Corrupt to Tainted) until the end of the next round. <br /> As a Free Action, the wearer gains a +4 to a test against a target’s Mystic Defense; the wearer must have astrally sensed the target. If the test uses the spell stored in the goggles’ spell matrix, it does not cost Strain.",
+                              "BonusTalent" : {"ID" : "ED4EnhacedMatrix", "Rank" : "8"}
+                        }
+                  ]
+            },
+            {"ID" : "PandaOtherworldlyInk", "Name" : "Otherworldly Ink", "Reference" : "Panda", "Type" : "Thread Item", "BaseType" : "Adventuring", "Cost" : "", "Weight" : "",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "12",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "BonusTalent" : {"MyDef" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"MyDef" : "1", "MyArm" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"MyDef" : "2", "MyArm" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"MyDef" : "2", "MyArm" : "2"}
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"MyDef" : "2", "MyArm" : "2"},
+                              "Effect" : "The owner may choose one of their talents and receive a tattoo using the new tool they crafted. This tattoo is somehow representative of the talent. The owner takes 1 permanent Blood Magic Damage, and can spend 1 Strain to spend an additional Karma Point on tests using the selected talent. The owner cannot receive multiple tattoos to replicate this effect and the selected talent cannot be changed."
+                        }
+                  ]
+            }
+      ]
+}            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

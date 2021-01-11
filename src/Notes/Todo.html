@@ -1,0 +1,91 @@
+<h3>Plans:</h3>
+<h4>Known issues: </h4>
+<li>There are several weaknesses to browser caching I am not sure exactly what to do about, except asking the user to clear their cache, which is not really satisfying.</li>
+<li>Resist Pain (Talent / Skill that allows to ignore the effect of Wounds) not implemented</li>
+<li>Wholeness of Body talent (Monk) https://pandagaminggrove.blogspot.com/2020/04/earthdawn-4e-anatomy-of-discipline-25.html</li>
+<li>Journeyman is missing </li>
+<li>Unflinching Fortitude (Wound Thr + Rank)</li>
+<li>Morphism Talent (Journeyman Rank 5) not implemented</li>
+<li>Multidisciplining. When an optional Talent, from a Discipline or Path moves to a Discipline Talent due to the character taking another Discipline, the cost of the existing ranks can change. Perhaps I can store the old cost when it gets updated? (Sebastian)</li>
+<li>Devotions that alter stats not done</li>
+
+<h4>Layout suggestions: </h4>
+<li>The free points located in the bottom right corner of the window is the last place people look. I recommend moving the counter into the Header of the table. So it would say "25 Points" or "8 Free" and count down (Brett Bowen, same thought by Matthew Holtz)</li>
+<li>Legend Points Award / misc spent interface like in 2step (Matthew Holtz)</li>
+<li>Links to explanations for the more esotheric artisan skills (Jean-Baptiste Faure)</li>s
+<li>Step / Dice table as a second tab on the play thinger?</li>
+
+<h4>Features underway: </h4>
+<li>Journeyman missing several special case functions to get implemented. </li>
+<li>Matrix Share</li>
+<li>Portrait: Text that fades when the Portrait URL is incorrect</li>
+<li>A code overhaul. I have a few issues; cases of not following my own naming scheme, I haven't kept track of what modifiers and bonus are implemented, and I want to have that. Perhap some of the object structure would benefit from a glance too. </li>
+
+<h4>Situational:</h4>
+<li>Social attack Modifiers</li>
+<li>Base Attribute Modifiers - UI made but hidden. This feature will likely be postponed for later.</li>
+<li>Range</li>
+
+<h4>Later versions:</h4>
+<li>Edit Equipment </li>
+<li>Edit Thread Items </li>
+
+<h4>Planned features: </h4>
+<li>Warden circle optional attribute increases - to be implemented like blood magic, with requirements?. </li>
+<li>Item weight _and size_ by race</li>
+<li>Rules and content from other sources</li>
+<li>Validate</li>
+<li>Editions</li>
+<li>1879</li>
+<li>Random NPC</li>
+<li>Some way for the user to create and modify contents; thread items, races, Disciplines etc, with an offer to volounteer those to the program</li>
+<li>Compressed NPC sheet</li>
+<li>Some place to jot down languages spoken and written</li>
+<li>Checkmark for subtracting means when buying items (Matthew Holtz)</li>
+<li>Masks</li>
+<li>Language versions? German seems high on the request list; if nothing else for the names of in-game things =P</li>
+
+<h4>Planned options:</h4>
+<li>Attribute Increase (Missing validate part)</li>
+<li>AllTalentsToAdvance (Validate)</li>
+<li>Options from the Panda blog</li>
+<li>Defensive stance not penalising Avoid Blow 'and other defensive actions'. This one's really not well defined in the rulebook; I need a better definition of it to implement, or make Another option to give the user the ability to choose. It's also marred by some Talents being both defensive And offensive .. </li>
+<li>Is taking a Recovery test an action?</li>
+
+<h4>Possible future features:</h4>
+<li>Craftsman skill like artisan &amp; Knowledge?</li>
+<li>LocalStorage system </li>
+<li>Some kind of shorthand instructions? </li>
+<li>Combos </li>
+<li>Default Skill Table (etherial, Svenn)</li>
+<li>Half magic (Under hver Discipline?)</li>
+<li>Sort Talents by name option</li>
+<li>Stand alone downloadable version - https://github.com/jiahaog/nativefier looks promising. </li>
+<li>Dice roller</li>
+<li>Locations for items</li>
+<li>Translations. German: https://www.earthdawn-wiki.de/Wiki.jsp?page=EDGlossar</li>
+<li>First play mode - like a wizard, following the steps in the PG. First choose a Discipline, then choose a Race, etc. </li>
+<li>Info thinger for each Talent, Skill and basically anything that uses LP; show what LP are used on that item, and how the final step (if any) is calculated</li>
+<li>LP log, meaning every single LP gain needs to be an entry that is justified in some way</li>
+<li>Better printability, without the page structure. https://getfireshot.com/api.php, https://www.sitepoint.com/css-printer-friendly-pages/ - PDF JS library seems to be the way to go. https://www.codexworld.com/convert-html-to-pdf-using-javascript-jspdf/</li>
+<li>BuyMoreOptionalMatrices Option  false // If true, allow a spellcaster to use as many of their talent options as they like to buy matrices.</li>
+<li>Suggest for Passions, details and Traits</li>
+<li>The option to excempt 'defensive actions' from the Defensive Stance steps penalty. Trouble is, it doesn't define what a 'defensive action' is other than mentioning Avoid Blow, and it's ambiguous. </li>
+
+
+            {"ID" : "ED4PJourneyman",                 "Name" : "Journeyman",                       "Reference" : "MP200",      "Type" : "Path",                       "Step" : "-",                    "Attribute" : "",    "Action" : "NA",                    "Strain" : "0",              "Skill Use" : "No"},
+
+
+            {"ID" : "ED4ThreadWeavingJourneyman",               "Name" : "Journeyman [Path]",                       "Reference" : "MP298",       "Talent" : "ED4ThreadWeaving",          "RequiredRank" : "5",  "Requirements" : [{"Type" : "Talent", "ID" : "ED4Versatility", "Rank" : "5"}, {"Type" : "Race", "ID" : "ED4Human"}, {"Type" : "Ordeal", "Text" : "Must complete a Journeyman ordeal (not tested)"}],                                                                                                                    "Restrictions" : [{"Type" : "Discipline", "ID" : "Any", "Circle" : "5"}],                                                                                                                                  "Cost" : "500",                                                                                                                        "Type" : "Path",                   "Description" : "The adept performs the initiation ritual and weaves a thread to the Journeyman pattern, taking 2 Blood Magic Damage, and gains Journeyman at rank 1. "}, 
+
+
+
+
+
+
+
+
+
+
+
+

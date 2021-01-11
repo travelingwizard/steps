@@ -1,0 +1,77 @@
+Defined modifier abbreviations: 
+-------------------------------
+Carry : Carrying capacity
+WndTh : Wound Threshold
+PhArm : Physical Armor
+MyArm : Mystical Armor
+PhShd : Physical Shield
+MyShd : Mystical Shield
+PhDef : Physical Defense
+MyDef : Mystic Defense
+SoDef : Social Defense
+Ini : Initiative
+
+Unc 
+Dth
+
+IniPen : Initiative Penalty
+RecTest : Recoverytest / day
+
+Dex
+DexStep (etc)
+
+BldDam: Blood Damage
+
+---
+Defined requirements: 
+
+DexMin
+StrMin
+
+---
+Books:
+
+PG : Player's Guide
+GG : Game Master's Guide
+
+
+
+---- 
+
+Defined action types: 
+Attack Boost 
+Communication 
+Companion Boost 
+Crowd Control 
+Damage Boost 
+Damage Transfer 
+Defense Boost 
+Disguise 
+Dodge 
+Extra melee attack 
+Extra Melee Attack 
+Extra Ranged Attack 
+Fear Attack 
+Forge 
+Healing 
+Health Boost 
+Illusion 
+Initiative Boost 
+Investigation 
+Local Spell Inhibitor 
+Matrix 
+Melee Attack 
+Misc 
+Movement 
+Mystic Attack 
+Potential Defense Boost
+Ranged Attack 
+Research 
+Social Combat 
+Summoning 
+Tracking 
+Will Boost 
+
+-----
+node.js?
+electron.js?

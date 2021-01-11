@@ -1,0 +1,272 @@
+{
+      "ID" : "ElvenNations",
+      "Books" : "Earthdawn 4th Edition Elven Nations",
+      "Description" : "Earthdawn 4 Elven Nations data for the Steps project",
+      "version" : "1",
+      "by" : "João Isidro & Lars Gottlieb 2020",
+
+      "Races" : 
+      [
+            {"ID" : "ED4BloodElf", "Name" : "Blood Elf", "Dex" : "11", "Str" : "10", "Tou" : "8", "Per" : "11", "Wil" : "12", "Cha" : "11", "Move" : "14", "Karma" : "4", "oneHdMin" : "1", "oneHdMax" : "3", "twoHdMin" : "4", "twoHdMax" : "6", "Abilities":"Low-Light Vision, Longing, Pain Resistance, Protected, Thorned", "BonusTalent" : "", "Modifiers" : {"RecTest":"-1"}, "Mature" : "Early 20s", "Lifespan" : "300", "Height" : "Over 6'", "Weight" : "150lbs", "Names" : ["Aeraias", "Beshar", "Caluath", "Dremnin", "Eirdeth", "Eytherian", "Fithvael", "Gaelin", "Hareth", "Iathi", "Jaren", "Kermanthil", "Luevia", "Maralan", "Nai’ara", "Noarethal", "Pyrail", "Rhyvain", "Siluath", "Tiathar", "Tyrnea", "Uthwyn", "Vilmir", "Yalathael", "Zydan"]}
+      ],
+
+      "Equipment" :
+      [
+            {           
+                  "ID" : "ED4ArrowsoftheThundercloudJourneyman", "Name" : "Arrows of the Thundercloud (Journeyman)", "Reference" : "EN p272", "Type" : "Thread Item", "BaseType" : "Arrows", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +1 to Attack tests when they fire it"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +1 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack, +1 to Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. Thunderclap (see text)"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap (see text)"
+                        }
+                  ]
+            },
+            {           
+                  "ID" : "ED4ArrowsoftheThundercloudWarden", "Name" : "Arrows of the Thundercloud (Warden)", "Reference" : "EN p272", "Type" : "Thread Item", "BaseType" : "Arrows", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "14",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +1 to Attack tests when they fire it"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +1 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "3",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack, +1 to Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. Thunderclap (see text)"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap (see text)"
+                        },
+                        {
+                              "Rank" : "7",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap, Lightning Bolt (see text)"
+                        },
+                        {
+                              "Rank" : "8",
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap, Lightning Bolt (see text)"
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4BloodthornShield", "Name" : "Bloodthorn Shield", "Reference" : "EN p273", "Type" : "Thread Item", "BaseType" : "Shield", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
+                  "SpellDefense" : "12",
+                  "PhRating" : "1", "MyRating" : "2", "IniPen" : "2", 
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"PhRating" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"PhRating" : "1", "MyRating" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"PhRating" : "1", "MyRating" : "1"},
+                              "Effect" : "The owner gains the Blood Fortify ability, see EN p274"
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "1"},
+                              "Effect" : "The owner gains the Blood Fortify ability, see EN p274"
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"},
+                              "Effect" : "The owner gains the Blood Fortify ability, see EN p274"
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"PhRating" : "2", "MyRating" : "2"},
+                              "Effect" : "The owner gains the Blood Fortify ability, see EN p274; it now provides +2 Physical and Mystic Defense"
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4WyrmWoodBlade", "Name" : "Wyrm Wood Blade", "Reference" : "EN p274-5", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200/300",
+                  "SpellDefense" : "12",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "2"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        },
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to protect Blood Wood, the sword is Damage Step 10 and gains +2 to Attack tests with the sword. If the owner pledged to heal Blood Wood, they gain +1 Recovery test and +2 to Initiative tests when wielding the sword."
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4CrimsonMail", "Name" : "Crimson Mail", "Reference" : "EN p276-7", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "13",
+                  "PhArm" : "6", "MyArm" : "1", "IniPen" : "2", 
+                  "Forgeable" : "Armor",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"MyArm" : "1"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"MyArm" : "1", "PhArm" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"MyArm" : "1", "PhArm" : "1"},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"MyArm" : "1", "PhArm" : "1", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"MyArm" : "2", "PhArm" : "1", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"MyArm" : "2", "PhArm" : "1", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "1"}, {"ID" : "ED4Fireblood", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"MyArm" : "2", "PhArm" : "2", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "2"}, {"ID" : "ED4Fireblood", "Modifier" : "1"}]},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        },{
+                              "Rank" : "8",
+                              "Modifiers" : {"MyArm" : "3", "PhArm" : "2", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "2"}, {"ID" : "ED4Fireblood", "Modifier" : "2"}]},
+                              "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4StormwardStaff", "Name" : "Stormward Staff", "Reference" : "EN p277", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "100",
+                  "SpellDefense" : "12",
+                  "DmgStep" : "4", 
+                  "StrMin" : "6", 
+                  "DexMin" : "7", 
+                  "Size" : "5", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "4",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "4"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "5",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "5"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                        },
+                        {
+                              "Rank" : "6",
+                              "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "6"},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "2"}]}
+                        }
+                  ]
+            }      
+      ]
+}
+
+
+
+
+
+
+
+
+
+
