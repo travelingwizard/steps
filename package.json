@@ -1,8 +1,8 @@
 {
   "name": "steps",
   "productName": "steps",
-  "version": "1.0.08",
-  "description": "An interactive character sheet for Earthdawn, 4th Edition. Version 1.0.08",
+  "version": "0.08.01",
+  "description": "An interactive character sheet for Earthdawn, 4th Edition. Version 1β8",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,8 +12,8 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "mward",
-  "license": "MIT",
+  "author": "Lars Gottlieb and Matthew Ward",
+  "license": "Lars Gottlieb polite request to play along license.",
   "config": {
     "forge": {
       "packagerConfig": {},
