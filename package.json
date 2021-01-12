@@ -1,8 +1,8 @@
 {
   "name": "steps",
   "productName": "steps",
-  "version": "0.08.01",
-  "description": "An interactive character sheet for Earthdawn, 4th Edition. Version 1β8",
+  "version": "0.09.01",
+  "description": "An interactive character sheet for Earthdawn, 4th Edition. Version 1β09",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
