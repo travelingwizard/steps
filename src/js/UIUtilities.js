@@ -160,7 +160,8 @@ UI.BuildDisciplineLine = function(index)
                 previousOptGroupLabel = "Unofficial"
                 $thisOptgroup = $("<optgroup>", {label : previousOptGroupLabel});
             }
-            $thisOptgroup.append($('<option>', {value:Library.Disciplines[i].ID, text:Library.Disciplines[i].Name}));
+            if (Character.Disciplines.find(o => o.ID == Library.Disciplines[i].ID) == undefined || Library.Disciplines[i].ID == Character.Disciplines[index].ID)
+                $thisOptgroup.append($('<option>', {value:Library.Disciplines[i].ID, text:Library.Disciplines[i].Name}));
         }
         if ($thisOptgroup != undefined)
             $select.append($thisOptgroup.clone());
@@ -573,6 +574,9 @@ UI.BuildThreadTargetSelect = function(thisMagicIndex, threadCount, thisThreadInd
     
     $returner.append($('<option>', {value:"Empty", text:"(Not Selected)"}));
 
+    if (Character.Magic[thisMagicIndex].Threads == undefined)
+        Character.Magic[thisMagicIndex].Threads = [];
+
     if (threadCount == 1 || (Character.Magic[thisMagicIndex].Threads[thisThreadIndex].Target == "PhDef" || Character.Magic[thisMagicIndex].Threads.find(o => o.Target == "PhDef") == undefined))
         $returner.append($('<option>', {value:"PhDef", text: Library.GetFullName("PhDef")}));
     if (threadCount == 1 || (Character.Magic[thisMagicIndex].Threads[thisThreadIndex].Target == "MyDef" || Character.Magic[thisMagicIndex].Threads.find(o => o.Target == "MyDef") == undefined))
@@ -623,6 +627,36 @@ function fetchHeader(url, wch)
         return er.message;
     }
 }
+
+UI.Shuffle = function(array) 
+{
+    let clone = [...array];
+
+    for (let i = clone.length - 1; i > 0; i--) 
+    {
+        const j = Math.floor(Math.random() * (i + 1));
+        [clone[i], clone[j]] = [clone[j], clone[i]];
+    }
+    return clone;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

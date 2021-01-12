@@ -806,21 +806,21 @@
                   [
                         {
                               "Rank" : "1",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "5"}, {"ID" : "ED4Riposte", "Modifier" : "5"}]}
                         },
                         {
                               "Rank" : "2",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "5"}, {"ID" : "ED4Riposte", "Modifier" : "5"}]},
                               "Effect" : "Glows like a Light Quartz at will"
                         },
                         {
                               "Rank" : "3",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "5"}, {"ID" : "ED4Riposte", "Modifier" : "5"}]},
                               "Effect" : "Glows like a Light Quartz at will. Cutting the Red Tape (Sustained): +3 to any test against bureaucracy"
                         },
                         {
                               "Rank" : "4",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "1"}, {"ID" : "ED4Riposte", "Modifier" : "1"}]},
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4MeleeWeapons", "Modifier" : "5"}, {"ID" : "ED4Riposte", "Modifier" : "5"}]},
                               "Effect" : "Glows like a Light Quartz at will. Cutting the Red Tape (Sustained): +4 to any test against bureaucracy, +4 to any test to catch a person lying"
                         }
                   ]
@@ -853,12 +853,12 @@
                         },
                         {
                               "Rank" : "5",
-                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "+2"},
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "2"},
                               "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
                         },
                         {
                               "Rank" : "6",
-                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "+2", "MyRating" : "+2"},
+                              "Modifiers" : {"IniPen" : "-2", "Talents" : [{"ID" : "ED4AstralSight", "Modifier" : "2"}], "PhRating" : "2", "MyRating" : "2"},
                               "Effect" : "1 strain: When looking through the shield, +3 to Astral Sight for the purpose of determining how currupt Astral Space is in the area"
                         }
                   ]

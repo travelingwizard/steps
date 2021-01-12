@@ -25,7 +25,7 @@ let pregens =
 
         "Race" : "ED4Windling",
 
-        "PortraitURL" : "./img/portraits/Dox.jpg",
+        "PortraitURL" : "./img/Portraits/Dox.jpg",
 
         "attributePoints" : 25,
 
@@ -820,7 +820,7 @@ let pregens =
         "Options" : {"FirstWoundFree" : "true", "Books" : "All"}
     },
 
-    Acasta : 
+    AcastaOld : 
     {
         "Basic" : 
         {
@@ -941,7 +941,760 @@ let pregens =
         ],
         "Options" : {"FirstWoundFree" : "true", "Books" : "All"}
     },
-
+    Acasta:
+    {
+        "Basic": {
+            "Name": "Acasta",
+            "Player": "Mads",
+            "Gender": "",
+            "Age": "",
+            "Height": "",
+            "Weight": "",
+            "Hair": "",
+            "Skin": "",
+            "Eyes": "",
+            "Passion": "",
+            "Traits": "",
+            "Description": "Speak: Orzet; Obsidiman; Sperethiel (Elvisk); Throalisk (Dwarf)"
+        },
+        "Race": "ED4Obsidiman",
+        "attributePoints": 25,
+        "Attributes": {
+            "Dex": {
+                "Buildpoints": 0,
+                "Increases": 0
+            },
+            "Str": {
+                "Buildpoints": 0,
+                "Increases": 0
+            },
+            "Tou": {
+                "Buildpoints": 0,
+                "Increases": 0
+            },
+            "Per": {
+                "Buildpoints": 12,
+                "Increases": 3
+            },
+            "Wil": {
+                "Buildpoints": 12,
+                "Increases": 0
+            },
+            "Cha": {
+                "Buildpoints": 1,
+                "Increases": 0
+            }
+        },
+        "LegendPoints": 180000,
+        "Disciplines": [
+            {
+                "Order": "1",
+                "ID": "ED4Illusionist",
+                "Circle": "8",
+                "OptionalTalentsChosen": [
+                    {
+                        "Circle": "1",
+                        "ID": "ED4StandardMatrix"
+                    },
+                    {
+                        "Circle": "2",
+                        "ID": "ED4AstralSight"
+                    },
+                    {
+                        "Circle": "3",
+                        "ID": "ED4MimicVoice"
+                    },
+                    {
+                        "Circle": "4",
+                        "ID": "ED4DeadFall"
+                    },
+                    {
+                        "Circle": "5",
+                        "ID": "ED4EnhancedMatrix"
+                    },
+                    {
+                        "Circle": "6",
+                        "ID": "ED4DispelMagic"
+                    },
+                    {
+                        "Circle": "7",
+                        "ID": "ED4SteelThought"
+                    },
+                    {
+                        "Circle": "8",
+                        "ID": "ED4Awareness"
+                    }
+                ]
+            }
+        ],
+        "Talents": [
+            {
+                "Order": "0",
+                "ID": "ED4EnhancedMatrix",
+                "Rank": "8",
+                "Freerank": "0",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Free",
+                "FreeTalent": "0",
+                "debug": "Stacking Free Matrix, Swapped",
+                "UID": "5b6d113c-7ae6-4e67-adc0-c9198d2b9f3e",
+                "Step": "-",
+                "Cost": 0
+            },
+            {
+                "Order": "1",
+                "ID": "ED4StandardMatrix",
+                "Rank": "8",
+                "Freerank": "0",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Free",
+                "FreeTalent": "1",
+                "debug": "Stacking Free Matrix",
+                "UID": "5c4aa23c-3803-4603-b687-eba0400e96cd",
+                "Step": "-",
+                "Cost": 0
+            },
+            {
+                "Order": "2",
+                "ID": "ED4FalseSight",
+                "Rank": 8,
+                "Freerank": "0",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "UID": "86d59733-72c8-4b5d-a220-980b7949827b",
+                "Step": 15,
+                "Cost": 8700
+            },
+            {
+                "Order": "3",
+                "ID": "ED4FirstImpression",
+                "Rank": 8,
+                "Freerank": "1",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "UID": "12952905-8700-434f-8191-9c079f44cf9b",
+                "Step": 13,
+                "Cost": 8600
+            },
+            {
+                "Order": "4",
+                "ID": "ED4Patterncraft",
+                "Rank": 8,
+                "Freerank": "1",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "UID": "f220d8e7-3872-4df9-b708-b707275d1e4d",
+                "Step": 16,
+                "Cost": 8600
+            },
+            {
+                "Order": "5",
+                "ID": "ED4Spellcasting",
+                "Rank": "8",
+                "Freerank": "3",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "Debug": "undefined Thread Item Merge",
+                "UID": "64dab23d-cd60-426b-a027-1b12155b24fc",
+                "Step": 22,
+                "Cost": 8100
+            },
+            {
+                "Order": "6",
+                "ID": "ED4ThreadWeavingIllusionism",
+                "Rank": 8,
+                "Freerank": "3",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "Debug": "undefined Thread Item Merge",
+                "UID": "243af651-e9a5-4762-9bf3-f7839bd01e95",
+                "Step": 17,
+                "Cost": 8100
+            },
+            {
+                "Order": "7",
+                "ID": "ED4StandardMatrix",
+                "Rank": "6",
+                "Freerank": "0",
+                "Source": "Illusionist 1",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "1",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "TalentPointsUseable": "True",
+                "UID": "04141551-acac-4f6e-8d09-a100b3292857",
+                "Spell": "ED4ITrueMissiles",
+                "Step": "-",
+                "Cost": 3200
+            },
+            {
+                "Order": "8",
+                "ID": "ED4TrueSight",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 2",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "2",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "ef82a08a-84a9-4917-9032-71db7b43b8c5",
+                "Step": "-",
+                "Cost": 8700
+            },
+            {
+                "Order": "9",
+                "ID": "ED4AstralSight",
+                "Rank": "6",
+                "Freerank": "0",
+                "Source": "Illusionist 2",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "2",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "85843f60-9ad5-439c-b353-cc42d34f6e68",
+                "Step": 19,
+                "Cost": 3200
+            },
+            {
+                "Order": "10",
+                "ID": "ED4Conversation",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 3",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "3",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "c42c5736-6a85-4a56-abf8-6073442a1c26",
+                "Step": 13,
+                "Cost": 8700
+            },
+            {
+                "Order": "11",
+                "ID": "ED4MimicVoice",
+                "Rank": "3",
+                "Freerank": "0",
+                "Source": "Illusionist 3",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "3",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "d17fb89a-c7d1-47fc-a3fa-bc021ee019e5",
+                "Step": 8,
+                "Cost": 600
+            },
+            {
+                "Order": "12",
+                "ID": "ED4DisguiseSelf",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 4",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "4",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "ab1e5487-8351-49b4-913a-1f47093db3fa",
+                "Step": 16,
+                "Cost": 8700
+            },
+            {
+                "Order": "13",
+                "ID": "ED4DeadFall",
+                "Rank": "6",
+                "Freerank": "0",
+                "Source": "Illusionist 4",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "4",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "55110eb6-006d-4cb5-b0ba-55355f164fbf",
+                "Step": 13,
+                "Cost": 3200
+            },
+            {
+                "Order": "14",
+                "ID": "ED4PowerMask",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 5",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "5",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "fc59629c-e6fe-4021-8df9-fce57c13315e",
+                "Step": 15,
+                "Cost": 14100
+            },
+            {
+                "Order": "15",
+                "ID": "ED4EnhancedMatrix",
+                "Rank": "5",
+                "Freerank": "0",
+                "Source": "Illusionist 5",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "5",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "941a6edb-390e-40dd-90fe-4fafadd961a3",
+                "Spell": "ED4IPhantomFireball",
+                "Step": "-",
+                "Cost": 3100
+            },
+            {
+                "Order": "16",
+                "ID": "ED4Willforce",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 6",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "6",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "f01f44a0-200a-4613-823a-034aae97c3fb",
+                "Step": 20,
+                "Cost": 14100
+            },
+            {
+                "Order": "17",
+                "ID": "ED4DispelMagic",
+                "Rank": "6",
+                "Freerank": "0",
+                "Source": "Illusionist 6",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "6",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "167b6385-6fb5-40f4-8b12-2a83a2f79692",
+                "Step": 13,
+                "Cost": 5200
+            },
+            {
+                "Order": "18",
+                "ID": "ED4Hypnotize",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 7",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "7",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "0e611948-f09d-44d2-8d02-a9135eeb800a",
+                "Step": 13,
+                "Cost": 14100
+            },
+            {
+                "Order": "19",
+                "ID": "ED4SteelThought",
+                "Rank": "6",
+                "Freerank": "0",
+                "Source": "Illusionist 7",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "7",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "e9daee0f-dc0c-49a3-a50f-6da5686cec4d",
+                "Step": 13,
+                "Cost": 5200
+            },
+            {
+                "Order": "20",
+                "ID": "ED4HoldThread",
+                "Rank": 8,
+                "Freerank": 0,
+                "Source": "Illusionist 8",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "8",
+                "Type": "Discipline",
+                "FirstLearnt": 0,
+                "UID": "1fee4113-6b17-44a2-af6a-a38d0232e103",
+                "Step": 15,
+                "Cost": 14100
+            },
+            {
+                "Order": "21",
+                "ID": "ED4Awareness",
+                "Rank": 3,
+                "Freerank": 0,
+                "Source": "Illusionist 8",
+                "DisciplineId": "ED4Illusionist",
+                "Circle": "8",
+                "Type": "Optional",
+                "Debug": "New Optional Talent ",
+                "FirstLearnt": 0,
+                "UID": "e5ca2770-0b2d-43ad-8167-9b6eb4f2e19c",
+                "Step": 11,
+                "Cost": 1000
+            },
+            {
+                "Order": "22",
+                "ID": "ED4EnhancedMatrix",
+                "Rank": "1",
+                "Freerank": "0",
+                "Source": "Enhanced Matrix Object",
+                "DisciplineId": "",
+                "Circle": "",
+                "Type": "Item",
+                "UID": "3b82b18d-bb2f-4d35-96d1-e8cac4721cc2",
+                "Step": "-",
+                "Cost": 0
+            },
+            {
+                "Order": "23",
+                "ID": "ED4EnhancedMatrix",
+                "Rank": "1",
+                "Freerank": "0",
+                "Source": "Robes of Night",
+                "DisciplineId": "",
+                "Circle": "",
+                "Type": "Item",
+                "UID": "3b82b18d-bb2f-4d35-96d1-e8cac4721cc2",
+                "Step": "-",
+                "Cost": 0
+            }
+        ],
+        "Knacks": [
+            {
+                "ID": "ED4SpellcastingBefuddle",
+                "Step": 16
+            },
+            {
+                "ID": "ED4SpellcastingCourage",
+                "Step": 16
+            },
+            {
+                "ID": "ED4SpellcastingStutter",
+                "Step": 16
+            },
+            {
+                "ID": "ED4SpellcastingDoubt",
+                "Step": 16
+            },
+            {
+                "ID": "ED4SpellcastingFluster",
+                "Step": 16
+            }
+        ],
+        "Skills": [
+            {
+                "ID": "ED4Artisan",
+                "Name": "Rune Carving",
+                "Rank": "1",
+                "Freerank": "1",
+                "Category": "Artisan",
+                "Cost": 0,
+                "Step": 6
+            },
+            {
+                "ID": "ED4Artisan",
+                "Name": "Entertainer",
+                "Rank": "2",
+                "Freerank": "1",
+                "Category": "Artisan",
+                "Cost": 300,
+                "Step": 7
+            },
+            {
+                "ID": "ED4Knowledge",
+                "Name": "Magic",
+                "Rank": "3",
+                "Freerank": "2",
+                "Category": "Knowledge",
+                "Cost": 500,
+                "Step": 11
+            },
+            {
+                "ID": "ED4Alchemy",
+                "Rank": "2",
+                "Freerank": "2",
+                "Category": "General",
+                "Cost": 0,
+                "Step": 10
+            },
+            {
+                "ID": "ED4Bribery",
+                "Rank": "2",
+                "Freerank": "2",
+                "Category": "General",
+                "Cost": 0,
+                "Step": 7
+            },
+            {
+                "ID": "ED4Disguise",
+                "Rank": "2",
+                "Freerank": "2",
+                "Category": "General",
+                "Cost": 0,
+                "Step": 10
+            },
+            {
+                "ID": "ED4SpeakLanguage",
+                "Rank": "4",
+                "Freerank": "3",
+                "Category": "General",
+                "Cost": 800,
+                "Step": 12
+            },
+            {
+                "ID": "ED4ReadWriteLanguage",
+                "Rank": "1",
+                "Freerank": "1",
+                "Category": "General",
+                "Cost": 0,
+                "Step": 9
+            }
+        ],
+        "Spells": [
+            {
+                "ID": "ED4IAssuringTouch"
+            },
+            {
+                "ID": "ED4IBestFace"
+            },
+            {
+                "ID": "ED4ICloak"
+            },
+            {
+                "ID": "ED4IDisaster"
+            },
+            {
+                "ID": "ED4IEphemeralBolt"
+            },
+            {
+                "ID": "ED4IFunWithDoors"
+            },
+            {
+                "ID": "ED4ITrueEphemeralBolt"
+            },
+            {
+                "ID": "ED4ITrust"
+            },
+            {
+                "ID": "ED4IMindFog"
+            },
+            {
+                "ID": "ED4IPhantomFlame"
+            },
+            {
+                "ID": "ED4IFogofJeer"
+            },
+            {
+                "ID": "ED4IPhantomWarrior"
+            },
+            {
+                "ID": "ED4IClarionCall"
+            },
+            {
+                "ID": "ED4IUnmask"
+            },
+            {
+                "ID": "ED4IIllusion"
+            },
+            {
+                "ID": "ED4IPhantomFireball",
+                "defaultEffect": 25
+            },
+            {
+                "ID": "ED4IIllusoryMissiles"
+            },
+            {
+                "ID": "ED4ITrueMissiles",
+                "defaultEffect": 24
+            },
+            {
+                "ID": "ED4IDancingDragon"
+            },
+            {
+                "ID": "ED4ISilentStampede"
+            }
+        ],
+        "Equipment": [
+            {
+                "ID": "BloodPebble",
+                "Name": "",
+                "Count": "1",
+                "InUse": "Yes",
+                "MyForge": "2",
+                "Type": "Armor"
+            },
+            {
+                "ID": "Quarterstaff",
+                "Name": "Staff of office",
+                "Count": "1",
+                "InUse": "Yes",
+                "Type": "Melee Weapon",
+                "DamageStep": 11
+            },
+            {
+                "ID": "ESFPhedresHarlequinMask",
+                "Name": "",
+                "Count": "1",
+                "InUse": "Yes",
+                "Rank": "1",
+                "Cost": 1300,
+                "Type": "Thread Item"
+            },
+            {
+                "ID": "ED4EnhancedMatrixObject",
+                "Name": "Ring",
+                "Count": "1",
+                "InUse": "Yes",
+                "Rank": "1",
+                "Cost": 200,
+                "Type": "Thread Item"
+            },
+            {
+                "ID": "ED4ThreadWand",
+                "Type": "Thread Item",
+                "Count": "1",
+                "InUse": "Yes",
+                "Rank": "2",
+                "Cost": 300
+            },
+            {
+                "ID": "ESFRobesOfNight",
+                "Type": "Thread Item",
+                "Count": "1",
+                "InUse": "Yes",
+                "Rank": "1",
+                "Cost": 500
+            },
+            {
+                "ID": "BoosterPotion",
+                "Type": "Healing Aid",
+                "Count": "3",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "ESFPotionofEnvigoration",
+                "Type": "Healing Aid",
+                "Count": "2",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "HealingPotion",
+                "Type": "Healing Aid",
+                "Count": "1",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "SalveofClosure",
+                "Type": "Healing Aid",
+                "Count": "1",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "KelixsPoultice",
+                "Type": "Healing Aid",
+                "Count": "1",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "LastChanceSalve",
+                "Type": "Healing Aid",
+                "Count": "1",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "Silver",
+                "Type": "Valuable",
+                "Count": "2688",
+                "InUse": "Yes"
+            },
+            {
+                "ID": "AdventuringKit",
+                "Type": "Adventuring",
+                "Count": "1",
+                "InUse": "Yes"
+            }
+        ],
+        "Options": {
+            "FirstWoundFree": "true",
+            "Books": "All",
+            "StepDice": "ED4",
+            "Attributepoints": "25",
+            "Talentpoints": "8",
+            "KnowledgeSkillpoints": "2",
+            "ArtisanSkillpoints": "1",
+            "SpeakSkillpoints": "2",
+            "ReadSkillpoints": "1",
+            "FreeSkillpoints": "8",
+            "SkillFreeRanksLimit": "Novice",
+            "Spellpoints": "PERstep",
+            "FreeMatricesStack": "false",
+            "CasterCircle5Bonus": "false",
+            "SpellsCostLP": "4ed",
+            "RangedAggressive": "false",
+            "Durability": "Best",
+            "AllTalentsToAdvance": "No",
+            "MaxAttributeIncrease": "3",
+            "AttributeIncrease": "Costs",
+            "DiscBonusesStack": "Highest"
+        },
+        "Paths": [],
+        "Damage": 0,
+        "Wounds": 0,
+        "PortraitURL": "./img/portraits/Empty.jpg",
+        "Magic": [
+            {
+                "ID": "ED4GroupTruePattern",
+                "Threads": [
+                    {
+                        "Target": "PhDef",
+                        "Rank": 5
+                    },
+                    {
+                        "Target": "f01f44a0-200a-4613-823a-034aae97c3fb",
+                        "Rank": 5
+                    },
+                    {
+                        "Target": "Dur",
+                        "Rank": 5
+                    },
+                    {
+                        "Target": "85843f60-9ad5-439c-b353-cc42d34f6e68",
+                        "Rank": 5
+                    },
+                    {
+                        "Target": "64dab23d-cd60-426b-a027-1b12155b24fc",
+                        "Rank": 5
+                    }
+                ],
+                "Target": "De Velsignede Opdagelsesrejsende",
+                "Applicable": "Yes"
+            }
+        ]
+    },
     Grrhardt : 
     {
         "Basic" : 
@@ -2609,10 +3362,10 @@ let pregens =
 
         "Magic" : 
         [
-            {"ID" : "ED4MinorPatternItem",            "Target" : "A small lump"},
-            {"ID" : "ED4MajorPatternItem",            "Target" : "Of green putty"},
-            {"ID" : "ED4CorePatternItem",             "Target" : "I found in my left armpit"},
-            {"ID" : "ED4GroupTruePattern",            "Target" : "The Down and Out"},
+            {"ID" : "ED4MinorPatternItem", "Target" : "A small lump",                "Threads": [{"Target": "Empty", "Rank": "0"}]},
+            {"ID" : "ED4MajorPatternItem", "Target" : "Of green putty",              "Threads": [{"Target": "Empty", "Rank": "0"}]},
+            {"ID" : "ED4CorePatternItem",  "Target" : "I found in my left armpit",   "Threads": [{"Target": "Empty", "Rank": "0"}]},
+            {"ID" : "ED4GroupTruePattern",            "Target" : "The Down and Out", "Threads": [{"Target": "Empty", "Rank": "0"}, {"Target": "Empty", "Rank": "0"}, {"Target": "Empty", "Rank": "0"}, {"Target": "Empty", "Rank": "0"}, {"Target": "Empty", "Rank": "0"}]},
             {"ID" : "ED4BloodPeace",                  "Target" : "King Varulus III"},
             {"ID" : "ED4BloodPeaceKept",              "Target" : "War itself"},
             {"ID" : "ED4BloodPeaceBroken",            "Target" : "Dis"},
@@ -11367,6 +12120,29 @@ let Blank4ed = new function()
         "StepDice"                 : "ED4"
     };
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

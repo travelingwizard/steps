@@ -119,7 +119,6 @@ select.value,
 {
     grid-column: 2 / 5;
 
-/*    border-right: 1px solid black;*/
     border-bottom: 1px solid black;
 }
 
@@ -188,7 +187,6 @@ select.value,
     grid-column: 1 / 4;
 
     border-left: 1px solid black;
-/*    border-right: 1px solid black;*/
     border-bottom: 1px solid black;
 
     display:flex;
@@ -204,6 +202,11 @@ select.value,
     border-bottom: 1px solid black;
 }
 
+#Matrix
+{
+    grid-column: 1 / 6;
+}
+
 #StepDice
 {
     grid-column: 1 / 6;
@@ -212,15 +215,11 @@ select.value,
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
-#Matrix
-{
-    grid-column: 1 / 6;
-}
 
 #DiscTalentTable
 {
     border-bottom: 1px solid black;
-}
+} 
 
 .title, .title_subtext
 {
@@ -526,7 +525,6 @@ table, tr, td, th
 
 .shaded,
 #AttributeTable tr:first-child,
-/*#HealthTable tr:nth-child(odd),*/
 .ability_table tr:nth-child(odd), 
 .stepdice_table tr:nth-child(odd), 
 .talents_table tr:nth-child(odd), 
@@ -584,10 +582,11 @@ table, tr, td, th
 .skill_table tr td:nth-child(11)
  {width: 10%;}
 
-#MagicTable tr th {text-align: center}
-#MagicTable tr td {text-align: center}
-#MagicTable tr th:nth-child(6) {text-align: left}
-#MagicTable tr td:nth-child(6) {text-align: left}
+#MagicTable tr th {text-align: center;}
+#MagicTable tr td {text-align: center; vertical-align: top;}
+#MagicTable tr th:nth-child(6) {text-align: left;}
+#MagicTable tr td:nth-child(6) {text-align: left;}
+.magicTarget
 
 
 /*.TalentFreeRankInput, .TalentRankInput*/

@@ -15,6 +15,10 @@ let UI = new function()
         if (theme == "papyrus")
             theme = "1";
 
+
+        if (isNaN(theme) || 0 > parseInt(theme) || parseInt(theme) >= Library.Themes.length)
+            theme = 0;
+
         this.theme = theme;
 
         $("html").removeClass("grey");
@@ -348,7 +352,7 @@ let UI = new function()
     this.PushPortrait = function()
     {
         if (Character.PortraitURL == undefined)
-            Character.PortraitURL = "./img/portraits/Empty.jpg";
+            Character.PortraitURL = "./img/Portraits/Empty.jpg";
 
         UI.imageExists(Character.PortraitURL, function(exists) 
         {
@@ -356,7 +360,7 @@ let UI = new function()
                 $("#Portrait").attr('src', Character.PortraitURL);
             else 
             {  
-                $("#Portrait").attr('src', "./img/portraits/Empty.jpg");
+                $("#Portrait").attr('src', "./img/Portraits/Empty.jpg");
                 console.log("'" + Character.PortraitURL + "' appears to be an invalid image url )o:");
             }
         });
@@ -1007,6 +1011,25 @@ let UI = new function()
 
                     if (requirements != "" || restrictions != "")
                         extraLine = (requirements + " " +  restrictions).trim();
+
+                    if (libKnack.Effect != undefined && libKnack.Effect != "")
+                         extraLine += (" Effect: " + libKnack.Effect).trim();
+
+                    if (libKnack.SpecialSpellAccess != undefined)
+                    {
+                        let builder = "";
+                        let SpellSplit = libKnack.SpecialSpellAccess.split(',');
+                        for (let j = 0; j < SpellSplit.length; j++) 
+                        {
+                            let LibSpell = Library.GetSpell(SpellSplit[j].trim());
+                            if (j != 0)
+                                builder += ", ";
+                            builder += LibSpell.Name + " (" + Library.GetDiscipline(LibSpell.Discipline).Name + ")";
+                        }
+                        if (extraLine != "")
+                            extraLine += ", ";
+                        extraLine += "Spells: " + builder;
+                    }
 
                     $line.append($("<td>", {"id" : "KnackAction"     + thisKnackIndex, "html" : (libKnack.Action != undefined ? libKnack.Action : "&nbsp;")}));
                     $line.append($("<td>", {"id" : "KnackStrain"     + thisKnackIndex, "html" : (libKnack.Strain != undefined ? libKnack.Strain : "&nbsp;"), "class": "talentSlim"}));
