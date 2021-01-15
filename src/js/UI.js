@@ -1577,11 +1577,15 @@ let UI = new function()
                  || (Character.Options.SkillFreeRanksLimit == "Warden"     && (libSkill.Cost == "Novice" || libSkill.Cost == "Journeyman" || libSkill.Cost == "Warden")))
                     $FreeRankCell.append(UI.BuildNumbersSelect(0, 3, Character.Skills[i].Freerank, "SkillFreeRank" + i, "skillFreeRank hideInPlay"));
                 else 
-                    $FreeRankCell.html("&nbsp;");
+                    $FreeRankCell.html("-");
 
                 $line.append($FreeRankCell);
                 
-                $RankCell.append(UI.BuildNumbersSelect(0, 10, Character.Skills[i].Rank, "SkillRank" + i, "skillRank"));
+                if (Character.Skills[i].ID != "Empty")
+                    $RankCell.append(UI.BuildNumbersSelect(0, 10, Character.Skills[i].Rank, "SkillRank" + i, "skillRank"));
+                else
+                    $RankCell.html("-");                       
+
                 $line.append($RankCell);
 
                 let thisStep, thisAttribute = "-";
