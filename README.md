@@ -1,6 +1,6 @@
 # Steps
 An interactive character sheet for Earthdawn, 4th edition
-Steps Version 1β08
+Steps Version 1β09
 
 [Release version 1β09 Download and Install](https://github.com/travelingwizard/steps/releases/tag/0.09.01)
  
