@@ -167,7 +167,7 @@ let CharacterManager = new function()
 					if (thisRank != undefined)
 						for (let RankModifierKey in thisRank.Modifiers) 
 							if (thisRank.Modifiers.hasOwnProperty(RankModifierKey)) 
-								if (RankModifierKey.toLowerCase() == "phdef")
+								if (RankModifierKey.toLowerCase() == "phdef" || RankModifierKey.toLowerCase() == "phrating")
 									bonus += parseInt(thisRank.Modifiers[RankModifierKey]);
 				}
 
@@ -176,10 +176,8 @@ let CharacterManager = new function()
 			for (let i = 0; i < Character.Magic.length; i++) 
 				if (Character.Magic[i].ID != "Empty" && Character.Magic[i].Threads != undefined)
 					for (let j = 0; j < Character.Magic[i].Threads.length; j++) 
-					{
 						if (Character.Magic[i].Applicable == "Yes" && Character.Magic[i].Threads[j].Target == "PhDef")
 							bonus += parseInt(Character.Magic[i].Threads[j].Rank);
-					}
 
 		this.Buffer.PhDefBonus = bonus;
 		return bonus;
@@ -203,11 +201,8 @@ let CharacterManager = new function()
 		for (let i = 0; i < Character.Equipment.length; i++) 
 			if (Character.Equipment[i].ID != "Empty" && Character.Equipment[i].InUse == "Yes")
 				if (Library.GetEquipment(Character.Equipment[i].ID).Type == "Shield" || Library.GetEquipment(Character.Equipment[i].ID).Type == "Thread Item")
-				{
 					if (!isNaN(Library.GetEquipment(Character.Equipment[i].ID).MyRating))
 						bonus += parseInt(Library.GetEquipment(Character.Equipment[i].ID).MyRating);
-					break;
-				}
 
 		// Thread Items
 		for (let i = 0; i < Character.Equipment.length; i++) 
@@ -220,7 +215,7 @@ let CharacterManager = new function()
 					if (thisRank != undefined)
 						for (let RankModifierKey in thisRank.Modifiers) 
 							if (thisRank.Modifiers.hasOwnProperty(RankModifierKey)) 
-								if (RankModifierKey.toLowerCase() == "mydef")
+								if (RankModifierKey.toLowerCase() == "mydef" || RankModifierKey.toLowerCase() == "myrating")
 									bonus += parseInt(thisRank.Modifiers[RankModifierKey]);
 				}
 
@@ -1061,9 +1056,13 @@ let CharacterManager = new function()
 						if (thisRank != undefined && thisRank.Modifiers != undefined && thisRank.Modifiers.PhysicalAttack != undefined)
 							talentBonus += parseInt(thisRank.Modifiers.PhysicalAttack);
 
-						if (["Unarmed Damage Buff", "Melee Damage Buff"].includes(libTalent.Type))
-							if (thisRank != undefined && thisRank.Modifiers != undefined && thisRank.Modifiers.PhysicalDamage != undefined)
-								talentBonus += parseInt(thisRank.Modifiers.PhysicalDamage);
+					if (["Unarmed Damage Buff", "Melee Damage Buff"].includes(libTalent.Type))
+						if (thisRank != undefined && thisRank.Modifiers != undefined && thisRank.Modifiers.PhysicalDamage != undefined)
+							talentBonus += parseInt(thisRank.Modifiers.PhysicalDamage);
+
+					if (["Melee Attack", "Extra melee attack", "Extra Mounted Attacks", "Extra Melee Attacks"].includes(libTalent.Type))
+						if (thisRank != undefined && thisRank.Modifiers != undefined && thisRank.Modifiers.CCAttack != undefined)
+							talentBonus += parseInt(thisRank.Modifiers.CCAttack);
 				}
 
 		// Blood / thread Magic
@@ -2308,8 +2307,6 @@ let CharacterManager = new function()
 			Character.Questor.Ranks.length = rank;
 	}
 
-	this.RebuildDevotionList = function(){}
-
 	// Attributes
 	this.SetAttributePoints = function(attributeAbbreviation, value)
 	{
@@ -2416,9 +2413,8 @@ let CharacterManager = new function()
 					for (let j = 0; j < Character.Talents.length; j++) 
 						if (Character.Talents[j].Type == "Optional" &&  Character.Talents[j].DisciplineId.includes(Character.Disciplines[i].ID))
 							Character.Disciplines[i].OptionalTalentsChosen.push({"Circle" : (circle++) + "", "ID" : Character.Talents[j].ID});
-					}
 				}
-
+			}
 
 		// Build new talent list:
 		let NewList = [], index = 0;
@@ -2721,7 +2717,7 @@ let CharacterManager = new function()
 
 					// Guid
 					if (NewList[thisNewTalentIndex].FreeTalent == Character.Talents[thisOldTalentIndex].FreeTalent)
-						if (Character.Talents[thisOldTalentIndex].UID == undefined)
+						if (Character.Talents[thisOldTalentIndex].UID == undefined || NewList[thisNewTalentIndex].ID == "Empty")
 							NewList[thisNewTalentIndex].UID = uuidv4();
 						else
 							NewList[thisNewTalentIndex].UID = Character.Talents[thisOldTalentIndex].UID;
@@ -2734,8 +2730,42 @@ let CharacterManager = new function()
 			}
 
 		Character.Talents = NewList;
+
+/*		for (let thisTalentIndex = 0; thisTalentIndex < Character.Talents.length; thisTalentIndex++)
+			if (Character.Talents[thisTalentIndex].Ranks == undefined)
+			{
+				Character.Talents[thisTalentIndex].Ranks = [];
+				for (let i=0 ; i<Character.Talents[thisTalentIndex].Rank ; i++)
+					Character.Talents[thisTalentIndex].Ranks.push({Rank : i+1, Source : Character.Talents[thisTalentIndex].Source})
+			}*/
 	};
 
+/*	this.ReworkTalentList = function()
+	{
+		// Mark old talents for deletion
+		for (var i = 0; i < Character.Talents.length; i++) 
+			Character.Talents[i].marked = true;
+
+		// Race		
+		
+		// Disciplines
+		// Free
+		// Discipline
+		// Optional
+
+		// Paths
+
+		// Versatility
+
+		// Go through, unset the mark for wanted talents, add new ones
+
+		// Resolve the marks
+	}
+
+	this.AddTalent = function(talentIndex, talentID)
+	{
+
+	}*/
 
 	this.SetTalent = function(thisTalentIndex, newTalentID, isVersatility, tier)
 	{
@@ -2766,7 +2796,6 @@ let CharacterManager = new function()
 		Character.Talents[thisTalentIndex].VersatilityTier = tier;
 		Character.Versatility[Character.Talents[thisTalentIndex].VersatilityRank].Tier = tier;
 	};
-
 	
 	this.SetTalentFreeRank = function(thisTalentIndex, newFreeRank)
 	{
@@ -2778,9 +2807,9 @@ let CharacterManager = new function()
 
 		Character.Talents[thisTalentIndex].Freerank = parseInt(newFreeRank);
 
-		if (Character.Talents[thisTalentIndex].Rank < Character.Talents[thisTalentIndex].Freerank)
+		if (Character.Talents[thisTalentIndex].Rank < newFreeRank)
 		{
-			Character.Talents[thisTalentIndex].Rank = Character.Talents[thisTalentIndex].Freerank;
+			this.SetTalentRank(thisTalentIndex, newFreeRank);
 			UI.UpdateTalentRank(thisTalentIndex);
 		}
 	};
@@ -2797,9 +2826,9 @@ let CharacterManager = new function()
 
 		if (Character.Talents[thisTalentIndex].TalentPointsUseable == "True")
 		{
-			if (Character.Talents[thisTalentIndex].Rank < Character.Talents[thisTalentIndex].Freerank)
+			if (newRank < Character.Talents[thisTalentIndex].Freerank)
 			{
-				Character.Talents[thisTalentIndex].Freerank = Character.Talents[thisTalentIndex].Rank;
+				this.SetTalentFreeRank(thisTalentIndex, newRank);
 				UI.UpdateTalentFreeRank(thisTalentIndex);
 			}
 		}
@@ -3411,7 +3440,7 @@ let CharacterManager = new function()
 		}
 
 		// Disciplines - advancement 
-		// Circle advancement
+		// Circle advancement 
 		// Talent Points
 		// - Talent points in Talents chosen via versatilty; the Talent must also be chosen through the use of free points. 
 		// Skill points

@@ -447,3 +447,20 @@
             {"ID" : "ED4PatterncraftED4AlterLife[Fauna]", "Name" : "Alter Life [Fauna]", "Reference" : "IO239", "Talent" : "ED4Patterncraft", "RequiredRank" : "5",  "Requirements" : [], "Restrictions" : [{"Type" : "Discipline", "ID" : "ED4Nethermancer", "Circle" : "5"}, {"Type" : "Discipline", "ID" : "ED4Shaman", "Circle" : "5"}], "Step" : "Rank+PER", "Attribute" : "PER", "Description" : "The adept can use Patterncraft to create altered plantlife."}
       ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

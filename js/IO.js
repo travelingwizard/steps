@@ -5,7 +5,7 @@ let IO = new function()
 {
     "use strict";
         
-    this.BookList = 
+/*    this.BookList = 
     [
         {"ID" : "Core",         "Loaded" : "False", "FileName" : "./Data/ED4/Core.json"}, 
         {"ID" : "MysticPaths",  "Loaded" : "False", "FileName" : "./Data/ED4/MysticPaths.json"}, 
@@ -24,7 +24,7 @@ let IO = new function()
         {"ID" : "EdCOption", "Loaded" : "False", "FileName" : "./Data/EdCOptionStepDice.json"}, 
         {"ID" : "ED3",       "Loaded" : "False", "FileName" : "./Data/ED3StepDice.json"}, 
         {"ID" : "ED4",       "Loaded" : "False", "FileName" : "./Data/ED4StepDice.json"}
-    ];
+    ];*/
 
     this.StartLoading = function()
     {
@@ -32,31 +32,53 @@ let IO = new function()
 
         Library.PopulateFibonacci();
 
-        for (let i = 0; i < this.StepDiceList.length; i++) 
-            $.getJSON(this.StepDiceList[i].FileName, function(json, success)
+        this.LoadSystemJson();
+
+    };
+
+    this.LoadSystemJson = function()
+    {
+        $.getJSON("./Data/System.json", function(json, success)
+        {
+            Library.StepDiceList = json.StepDiceList;
+            Library.BookList     = json.BookList;
+
+            Library.Abbreviations = json.Abbreviations;
+            Library.Options       = json.Options;
+            Library.Themes        = json.Themes;
+            Library.Portraits     = json.Portraits;
+
+            IO.LoadStepDice();
+        });
+    }
+
+    this.LoadStepDice = function()
+    {
+        for (let i = 0; i < Library.StepDiceList.length; i++) 
+            $.getJSON(Library.StepDiceList[i].FileName, function(json, success)
             {
                 Library.StepDiceTables.push({"ID" : json.ID, "json" : json.Table});
-                IO.StepDiceList.find(o => o.ID == json.ID).Loaded = (success == "success");
+                Library.StepDiceList.find(o => o.ID == json.ID).Loaded = (success == "success");
                 console.log("Stepdice json " + json.ID + " loaded");
 
                 IO.StepDiceComplete();
             }
         );
-    };
+    }
 
     this.StepDiceComplete = function()
     {
-        if (this.StepDiceList.find(o => o.Loaded == "False") == undefined)
+        if (Library.StepDiceList.find(o => o.Loaded == "False") == undefined)
             this.LoadBooks();
     };
 
     this.LoadBooks = function()
     {
-        for (let i = 0; i < this.BookList.length; i++) 
-            $.getJSON(this.BookList[i].FileName, function(json, success)
+        for (let i = 0; i < Library.BookList.length; i++) 
+            $.getJSON(Library.BookList[i].FileName, function(json, success)
             {
                 Library.Books.push({"ID" : json.ID, "json" : json});
-                IO.BookList.find(o => o.ID == json.ID).Loaded = (success == "success");
+                Library.BookList.find(o => o.ID == json.ID).Loaded = (success == "success");
                 console.log("Book json " + json.ID + " loaded");
 
                 IO.BooksComplete();
@@ -66,7 +88,7 @@ let IO = new function()
 
     this.BooksComplete = function()
     {
-        if (this.BookList.find(o => o.Loaded == "False") == undefined)
+        if (Library.BookList.find(o => o.Loaded == "False") == undefined)
         {
             Library.SortBooks();
             this.LoadSheet();
@@ -98,6 +120,8 @@ let IO = new function()
         {
             console.log("Grabbing pregen " + pregens[selectedCharacter].Basic.Name);
             Character = JSON.parse(JSON.stringify(pregens[selectedCharacter]));
+
+            this.FixGuidProblem();  
         }
         else
         {
@@ -126,7 +150,7 @@ let IO = new function()
         $("#SituationDamage").val(Character.Damage);
         $("#SituationWound").val(Character.Wounds);
 
-        if(IO.qs("papyrus") != undefined)
+        if(IO.qs("papyrus") != undefined) 
             UI.SetTheme("1");
         else
             if (IO.qs("theme") != null)                    
@@ -141,7 +165,6 @@ let IO = new function()
 
     this.MergeOptions = function()
     {
-
         if (Character.Options == undefined)
             Character.Options = [];
 
@@ -179,7 +202,7 @@ let IO = new function()
         }
 
         // Max 4 MB allowed
-        let max_size_allowed = 4*1024*1024;
+        let max_size_allowed = 4 * 1024 * 1024;
         if(file.size > max_size_allowed) 
         {
             alert('Error : Exceeded size 2MB');
@@ -215,10 +238,8 @@ let IO = new function()
         });
 
         // read as text file
-
         reader.readAsText(file);
     };
-
 
     this.GrabCharacterFromFile = function(fromFile)
     {
@@ -227,6 +248,8 @@ let IO = new function()
         UI.Charactertouched = false;
 
         Character = fromFile;
+
+        this.FixGuidProblem();  
 
         if (Character.Options == undefined)
             Character.Options = [];
@@ -257,6 +280,29 @@ let IO = new function()
         $("#content").scrollTop(0);
         UI.PushCharacter();
     };
+
+    this.FixGuidProblem = function()
+    {
+        // Up to beta9, there was a problem with generating guids that meant all optional talents got the same guid (!)
+        if (Character.StepsVersion != undefined && Character.StepsVersion >= 902) 
+            return;
+
+        let fixcount = 0;
+
+        for (var i = 0; i < Character.Talents.length; i++) 
+        {
+            let GuidGroup = Character.Talents.filter(o => o.UID == Character.Talents[i].UID);
+            if (GuidGroup.length > 1)
+                for (var i = 1; i < GuidGroup.length; i++) 
+                {
+                    GuidGroup[i].UID = uuidv4();
+                    fixcount++;
+                }
+        }
+
+        if (fixcount > 0)
+            console.log("Guid problems fixed; " + fixcount + " problems fixed");
+    }
 
     this.download = function(content, fileName, contentType) 
     {

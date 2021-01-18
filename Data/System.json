@@ -1,0 +1,433 @@
+ {
+      "ID" : "System",
+      "Books" : "System",
+      "Description" : "Earthdawn 4 System data for the Steps project",
+      "version" : "1",
+      "by" : "Lars Gottlieb, 2018-20",
+
+      "StepDiceList" :
+      [
+            {"ID" : "Ed12C",     "Loaded" : "False", "FileName" : "./Data/Ed12CStepDice.json"}, 
+            {"ID" : "EdCOption", "Loaded" : "False", "FileName" : "./Data/EdCOptionStepDice.json"}, 
+            {"ID" : "ED3",       "Loaded" : "False", "FileName" : "./Data/ED3StepDice.json"}, 
+            {"ID" : "ED4",       "Loaded" : "False", "FileName" : "./Data/ED4StepDice.json"}
+      ],
+
+      "BookList" :
+      [
+            {"ID" : "Core",         "Loaded" : "False", "FileName" : "./Data/ED4/Core.json"}, 
+            {"ID" : "MysticPaths",  "Loaded" : "False", "FileName" : "./Data/ED4/MysticPaths.json"}, 
+            {"ID" : "ElvenNations", "Loaded" : "False", "FileName" : "./Data/ED4/ElvenNations.json"}, 
+            {"ID" : "Travar",       "Loaded" : "False", "FileName" : "./Data/ED4/Travar.json"}, 
+            {"ID" : "Iopos",        "Loaded" : "False", "FileName" : "./Data/ED4/Iopos.json"}, 
+            {"ID" : "Questors",     "Loaded" : "False", "FileName" : "./Data/ED4/Questors.json"}, 
+            {"ID" : "LarsGottlieb", "Loaded" : "False", "FileName" : "./Data/ED4/LarsGottlieb.json"},
+            {"ID" : "Sebastian",    "Loaded" : "False", "FileName" : "./Data/ED4/Sebastian.json"},
+            {"ID" : "Panda",        "Loaded" : "False", "FileName" : "./Data/ED4/Panda.json"}
+      ],
+
+      "Abbreviations" :
+      [
+            {"Abbreviation" : "Carry",          "FullName" : "Carrying Capacity"},
+            {"Abbreviation" : "Uncon",          "FullName" : "Unconsciousness Rating"},
+            {"Abbreviation" : "Death",          "FullName" : "Death Rating"},
+            {"Abbreviation" : "WndTh",          "FullName" : "Wound Threshold"},
+            {"Abbreviation" : "Wound",          "FullName" : "Wound Threshold"},
+            {"Abbreviation" : "MysticalAmor",   "FullName" : "Mystical Armor"},
+            {"Abbreviation" : "Dex",            "FullName" : "Dexterity"},
+            {"Abbreviation" : "Str",            "FullName" : "Strength"},
+            {"Abbreviation" : "Tou",            "FullName" : "Toughness"},
+            {"Abbreviation" : "Tgh",            "FullName" : "Toughness"},
+            {"Abbreviation" : "Per",            "FullName" : "Perception"},
+            {"Abbreviation" : "Wil",            "FullName" : "Willpower"},
+            {"Abbreviation" : "Cha",            "FullName" : "Charisma"},
+            {"Abbreviation" : "Wnd",            "FullName" : "Wound Threshold"},
+            {"Abbreviation" : "PhArm",          "FullName" : "Physical Armor"},
+            {"Abbreviation" : "PhDef",          "FullName" : "Physical Defense"},
+            {"Abbreviation" : "MyArm",          "FullName" : "Mystical Armor"},
+            {"Abbreviation" : "MyDef",          "FullName" : "Mystical Defense"},
+            {"Abbreviation" : "SoDef",          "FullName" : "Social Defense"},
+            {"Abbreviation" : "Dur",            "FullName" : "Durability"},
+            {"Abbreviation" : "RecTest",        "FullName" : "Recovery Test"},
+            {"Abbreviation" : "RecStep",        "FullName" : "Recovery Step"},
+            {"Abbreviation" : "Ini",            "FullName" : "Initiative"},
+            {"Abbreviation" : "KarmaStep",      "FullName" : "Karma Step"},
+            {"Abbreviation" : "PhShd",          "FullName" : "Physical Shield"},
+            {"Abbreviation" : "MyShd",          "FullName" : "Mystical Shield"},
+            {"Abbreviation" : "PhRating",       "FullName" : "Physical Rating"},
+            {"Abbreviation" : "MyRating",       "FullName" : "Mystical Rating"},
+            {"Abbreviation" : "IniPen",         "FullName" : "Initiative Penalty"},
+            {"Abbreviation" : "Shatter",        "FullName" : "Shatter Threshold"},
+            {"Abbreviation" : "BldDam",         "FullName" : "Blood Magic Damage"},
+            {"Abbreviation" : "DmgStep",        "FullName" : "Damage Step"},
+            {"Abbreviation" : "WpnSz",          "FullName" : "Weapon Size the user can wield"},
+            {"Abbreviation" : "MvmtRate",       "FullName" : "Movement Rate"},
+            {"Abbreviation" : "CCDamage",       "FullName" : "Close Combat Damage"},
+            {"Abbreviation" : "KarmaCircle",    "FullName" : "Effective Karma Circle"},
+            {"Abbreviation" : "PhysicalDamage", "FullName" : "Physical Damage"},
+            {"Abbreviation" : "PhysicalAttack", "FullName" : "Physical Attack"},
+            {"Abbreviation" : "DevRq",          "FullName" : "Devotion Required"},
+            {"Abbreviation" : "DevAb",          "FullName" : "Devotion Ability"},  
+            {"Abbreviation" : "CCAttack",       "FullName" : "Close Combat Attack"}  
+      ],
+      "Options" :
+      [
+            {
+                  "Name" : "Books", 
+                  "Type" : "Datasources",
+                  "Text" : "Books",
+                  "Group" : "Basics",
+                  "All" : 
+                  {
+                        "Official" :
+                        [
+                              {"ID" :  "Core",         "Description" : "Core Rules", "Default" : "true", "Required" : "true"}, 
+                              {"ID" :  "ElvenNations", "Description" : "Elven Nations"}, 
+                              {"ID" :  "Travar",       "Description" : "Travar - The Merchant City"}, 
+                              {"ID" :  "Questors",     "Description" : "Questors"},
+                              {"ID" :  "MysticPaths",  "Description" : "Mystic Paths"}, 
+                              {"ID" :  "Iopos",        "Description" : "Iopos - Lair of Deceit"} 
+                        ],
+                        "Unofficial":
+                        [
+                              {"ID" :  "Panda",          "Description" : "Panda's Gaming Grove"},
+                              {"ID" :  "Sebastian",      "Description" : "Sebastian's campaigns", "Requires" : "MysticPaths"},
+                              {"ID" :  "LarsGottlieb",   "Description" : "Lars Gottlieb's campaigns"}
+                        ]
+                  }
+            },
+            {
+                  "Name" : "StepDice", 
+                  "Type" : "String",
+                  "Text" : "Step / Dice table",
+                  "Group" : "Basics",
+                  "Values" :
+                  [
+                        {"ID" :  "Ed12C",     "Description" : "Earthdawn 1st / 2nd / Classic Editions "},
+                        {"ID" :  "EdCOption", "Description" : "Earthdawn Classic step 14 Option"},
+                        {"ID" :  "ED3",       "Description" : "Earthdawn 3rd Edition"},
+                        {"ID" :  "ED4",       "Description" : "Earthdawn 4th Edition" , "Default" : "true"}
+                  ]
+            },
+            {     "Name" : "Attributepoints",      "Type" : "Number", "Group" : "Character Creation", "Text" : "Attribute points",             "min" : "0", "max" : "90",  "Default" : "25"},
+            {     "Name" : "Talentpoints",         "Type" : "Number", "Group" : "Character Creation", "Text" : "Talent points ",               "min" : "0", "max" : "20",  "Default" : "8"},
+            {     "Name" : "KnowledgeSkillpoints", "Type" : "Number", "Group" : "Character Creation", "Text" : "Knowledge skill points",       "min" : "0", "max" : "9",   "Default" : "2"},
+            {     "Name" : "ArtisanSkillpoints",   "Type" : "Number", "Group" : "Character Creation", "Text" : "Artisan skill ponts",          "min" : "0", "max" : "9",   "Default" : "1"},
+            {     "Name" : "SpeakSkillpoints",     "Type" : "Number", "Group" : "Character Creation", "Text" : "Speak Language points",        "min" : "0", "max" : "9",   "Default" : "2"},
+            {     "Name" : "ReadSkillpoints",      "Type" : "Number", "Group" : "Character Creation", "Text" : "Read / Write Language points", "min" : "0", "max" : "9",   "Default" : "1"},
+            {
+                  "Name" : "FreeSkillpoints", 
+                  "Type" : "String",
+                  "Text" : "General skill points",
+                  "Group" : "Character Creation", 
+                  "Values" :
+                  [
+                        {"ID" :  "1",      "Description" :  "1"},
+                        {"ID" :  "2",      "Description" :  "2"},
+                        {"ID" :  "3",      "Description" :  "3"},
+                        {"ID" :  "4",      "Description" :  "4"},
+                        {"ID" :  "5",      "Description" :  "5"},
+                        {"ID" :  "6",      "Description" :  "6"},
+                        {"ID" :  "7",      "Description" :  "7"},
+                        {"ID" :  "8",      "Description" :  "8", "Default" : "true"},
+                        {"ID" :  "9",      "Description" :  "9"},
+                        {"ID" : "10",      "Description" : "10"},
+                        {"ID" : "11",      "Description" : "11"},
+                        {"ID" : "12",      "Description" : "12"},
+                        {"ID" : "13",      "Description" : "13"},
+                        {"ID" : "14",      "Description" : "14"},
+                        {"ID" : "15",      "Description" : "15"},
+                        {"ID" : "16",      "Description" : "16"},
+                        {"ID" : "17",      "Description" : "17"},
+                        {"ID" : "18",      "Description" : "18"},
+                        {"ID" : "19",      "Description" : "19"},
+                        {"ID" : "20",      "Description" : "20"},
+                        {"ID" : "ChaStep", "Description" : "Base Charisma Step"}
+                  ]
+            },
+            {
+                  "Name" : "SkillFreeRanksLimit", 
+                  "Type" : "String",
+                  "Text" : "Skill Points can be used up to",
+                  "Group" : "Character Creation", 
+                  "Values" :
+                  [
+                        {"ID" : "Novice",      "Description" : "Novice Tier", "Default" : "true"},
+                        {"ID" : "Journeyman",  "Description" : "Journeyman Tier"},
+                        {"ID" : "Warden",      "Description" : "Warden Tier"},
+                        {"ID" : "Master",      "Description" : "Master Tier"}
+                  ]
+            },
+            {
+                  "Name" : "Spellpoints", 
+                  "Type" : "String",
+                  "Text" : "Spell points",
+                  "Group" : "Character Creation", 
+                  "Values" :
+                  [
+                        {"ID" :  "0",      "Description" :  "0"},
+                        {"ID" :  "1",      "Description" :  "1"},
+                        {"ID" :  "2",      "Description" :  "2"},
+                        {"ID" :  "3",      "Description" :  "3"},
+                        {"ID" :  "4",      "Description" :  "4"},
+                        {"ID" :  "5",      "Description" :  "5"},
+                        {"ID" :  "6",      "Description" :  "6"},
+                        {"ID" :  "7",      "Description" :  "7"},
+                        {"ID" :  "8",      "Description" :  "8"},
+                        {"ID" :  "9",      "Description" :  "9"},
+                        {"ID" : "10",      "Description" : "10"},
+                        {"ID" : "11",      "Description" : "11"},
+                        {"ID" : "12",      "Description" : "12"},
+                        {"ID" : "13",      "Description" : "13"},
+                        {"ID" : "14",      "Description" : "14"},
+                        {"ID" : "15",      "Description" : "15"},
+                        {"ID" : "16",      "Description" : "16"},
+                        {"ID" : "17",      "Description" : "17"},
+                        {"ID" : "18",      "Description" : "18"},
+                        {"ID" : "19",      "Description" : "19"},
+                        {"ID" : "20",      "Description" : "20"},
+                        {"ID" : "PERstep", "Description" : "Base Perception Step", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "FreeMatricesStack", 
+                  "Type" : "String",
+                  "Group" : "Spellcaster advancement", 
+                  "Text" : "Free matrices stack",
+                  "Values" :
+                  [
+                        {"ID" :  "true",  "Description" : "Yes"},
+                        {"ID" :  "false", "Description" : "No", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "CasterCircle5Bonus", 
+                  "Type" : "String",
+                  "Group" : "Spellcaster advancement", 
+                  "Text" : "Spellcaster circle 5 stack",
+                  "Values" :
+                  [
+                        {"ID" :  "true",  "Description" : "Yes"},
+                        {"ID" :  "false", "Description" : "No", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "SpellsCostLP", 
+                  "Type" : "String",
+                  "Text" : "Spell Legend Points cost",
+                  "Group" : "Spellcaster advancement", 
+                  "Values" :
+                  [
+                        {"ID" :  "Free",  "Description" : "Spells are free"},
+                        {"ID" :  "4ed",   "Description" : "Fibonacci", "Default" : "true"},
+                        {"ID" :  "1Prog", "Description" : "1 free each circle, Circle x 100LP "},
+                        {"ID" :  "2ed",   "Description" : "2 free each circle, Circle x 100LP "},
+                        {"ID" :  "1Fib",  "Description" : "1 free each circle, Fibonacci"},
+                        {"ID" :  "2Fib",  "Description" : "2 free each circle, Fibonacci"}
+                  ] 
+            },
+            {
+                  "Name" : "FirstWoundFree", 
+                  "Type" : "String",
+                  "Text" : "First wound is free",
+                  "Group" : "Combat", 
+                  "Values" :
+                  [
+                        {"ID" :  "true",  "Description" : "True"},
+                        {"ID" :  "false", "Description" : "False", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "RangedAggressive", 
+                  "Type" : "String",
+                  "Text" : "Aggressive stance for ranged stats ",
+                  "Group" : "Combat", 
+                  "Values" :
+                  [
+                        {"ID" :  "true",  "Description" : "True"},
+                        {"ID" :  "false", "Description" : "False", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "Durability", 
+                  "Type" : "String",
+                  "Text" : "Durability",
+                  "Group" : "Advancement", 
+                  "Values" :
+                  [
+                        {"ID" :  "1st",  "Description" : "First Discipline"},
+                        {"ID" :  "Best", "Description" : "Highest per Circle", "Default" : "true"}
+                  ]
+            },
+            {
+                  "Name" : "AllTalentsToAdvance", 
+                  "Type" : "String",
+                  "Text" : "Talents to advance",
+                  "Group" : "Advancement", 
+                  "Values" :
+                  [
+                        {"ID" :  "No",     "Description" : "Ignore Optional Talents", "Default" : "true"},
+                        {"ID" :  "AsText", "Description" : "Choose a Talent to ignore per Circle"},
+                        {"ID" :  "Strict", "Description" : "All Talents count"}
+                  ],
+                  "disabled" : "disabled"
+            },
+            {     "Name" : "MaxAttributeIncrease", "Type" : "Number", "Group" : "Advancement", "Text" : "Max attribute increase", "min" : "0", "max" : "9", "Default" : "3"},
+            {
+                  "Name" : "AttributeIncrease", 
+                  "Type" : "String",
+                  "Text" : "Attribute Increase",
+                  "Group" : "Advancement", 
+                  "Values" :
+                  [
+                        {"ID" :  "Costs", "Description" : "Costs Legend", "Default" : "true"},
+                        {"ID" :  "1per",  "Description" : "Costs Legend, one per Circle"},
+                        {"ID" :  "Free",  "Description" : "Free, one per Circle"}
+                  ],
+                  "disabled" : "disabled"
+            },
+            {
+                  "Name" : "DiscBonusesStack", 
+                  "Type" : "String",
+                  "Text" : "Discipline Circle Bonuses with more than one Discipline",
+                  "Group" : "Advancement", 
+                  "Values" :
+                  [
+                        {"ID" :  "Highest", "Description" : "Only highest between Disciplines apply", "Default" : "true"},
+                        {"ID" :  "Stack",   "Description" : "Stack between Disciplines"}
+                  ]
+            }
+      ],
+      "Themes" :
+      [
+            {"ID" : "0",  "Name" : "Simple",                         "Default" : "true"},
+            {"ID" : "1",  "Name" : "Stained",                        "img" : "./img/1.jpg",  "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "2",  "Name" : "Foam",                           "img" : "./img/2.jpg",  "Scaling" : "50%",  "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "3",  "Name" : "Lightning",                      "img" : "./img/3.jpg",  "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "blue"},
+            {"ID" : "4",  "Name" : "Spring",                         "img" : "./img/4.jpg",  "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "green"},
+            {"ID" : "5",  "Name" : "Roses",                          "img" : "./img/5.jpg",  "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "beige"},
+            {"ID" : "6",  "Name" : "Concrete",                       "img" : "./img/6.jpg",  "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "7",  "Name" : "Stone",                          "img" : "./img/7.jpg",  "Scaling" : "100%", "Transparency" : ".8", "AccentBackground" : "dark"},
+            {"ID" : "8",  "Name" : "Paving",                         "img" : "./img/8.jpg",  "Scaling" : "100%", "Transparency" : ".8", "AccentBackground" : "beige"},
+            {"ID" : "9",  "Name" : "Sand",                           "img" : "./img/9.jpg",  "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "10", "Name" : "Dirt",                           "img" : "./img/10.jpg", "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "11", "Name" : "Salomone Marble (Willow)",       "img" : "./img/11.jpg", "Scaling" : "100%", "Transparency" : ".7", "AccentBackground" : "beige", "Willow" : "willow"},
+            {"ID" : "12", "Name" : "Emperador Marble",               "img" : "./img/12.jpg", "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"},
+            {"ID" : "13", "Name" : "Seafoam",                        "img" : "./img/13.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "teal"},
+            {"ID" : "14", "Name" : "Absolute Black Marble (Willow)", "img" : "./img/14.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "dark", "Willow" : "willow"},
+            {"ID" : "15", "Name" : "Ocean Black Marble",             "img" : "./img/15.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "dark"},
+            {"ID" : "16", "Name" : "Black Soapstone Marble (Roman)", "img" : "./img/16.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "dark", "roman" : "roman"},
+            {"ID" : "17", "Name" : "Carrara White Marble",           "img" : "./img/17.jpg", "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "grey"},
+            {"ID" : "18", "Name" : "Calacatta White Marble (Roman)", "img" : "./img/18.jpg", "Scaling" : "100%", "Transparency" : ".7", "AccentBackground" : "grey", "roman" : "roman"},
+            {"ID" : "19", "Name" : "Fur",                            "img" : "./img/19.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "beige"},
+            {"ID" : "20", "Name" : "White Fur",                      "img" : "./img/20.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "beige"},
+            {"ID" : "21", "Name" : "Leather",                        "img" : "./img/21.jpg", "Scaling" : "100%", "Transparency" : ".9", "AccentBackground" : "beige"},
+            {"ID" : "22", "Name" : "Green Scaly",                    "img" : "./img/22.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "green"},
+            {"ID" : "23", "Name" : "Fire",                           "img" : "./img/23.jpg", "Scaling" : "50%",  "Transparency" : ".7", "AccentBackground" : "beige"},
+            {"ID" : "24", "Name" : "Books",                          "img" : "./img/24.jpg", "Scaling" : "50%",  "Transparency" : ".8", "AccentBackground" : "beige"},
+            {"ID" : "25", "Name" : "Snow",                           "img" : "./img/25.jpg", "Scaling" : "50%",  "Transparency" : ".8", "AccentBackground" : "blue"},
+            {"ID" : "26", "Name" : "Mossy Tree bark",                "img" : "./img/26.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "green"},
+            {"ID" : "27", "Name" : "Multicolor Brick wall",          "img" : "./img/27.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "beige"},
+            {"ID" : "28", "Name" : "Clouds",                         "img" : "./img/28.jpg", "Scaling" : "50%",  "Transparency" : ".8", "AccentBackground" : "blue"},
+            {"ID" : "29", "Name" : "Meadow",                         "img" : "./img/29.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "green"},
+            {"ID" : "30", "Name" : "Ivy",                            "img" : "./img/30.jpg", "Scaling" : "50%",  "Transparency" : ".9", "AccentBackground" : "green"},
+            {"ID" : "31", "Name" : "Papyrus",                        "img" : "./img/31.jpg", "Scaling" : "100%", "Transparency" : ".6", "AccentBackground" : "beige"}
+      ],
+      "Portraits" :
+      [
+            {"ID" : "0",  "Name" : "Sade1",                 "Artist" : "Sade",              "Races" : "Troll",              "img" : "Sade1"},
+            {"ID" : "1",  "Name" : "Sade2",                 "Artist" : "Sade",              "Races" : "Drake",              "img" : "Sade2"},
+            {"ID" : "2",  "Name" : "Sade3",                 "Artist" : "Sade",              "Races" : "Elf Windling",       "img" : "Sade3"},
+            {"ID" : "3",  "Name" : "Sade4",                 "Artist" : "Sade",              "Races" : "Human Ork Troll",    "img" : "Sade4"},
+            {"ID" : "4",  "Name" : "Sade5",                 "Artist" : "Sade",              "Races" : "Troll",              "img" : "Sade5"},
+            {"ID" : "5",  "Name" : "Sade6",                 "Artist" : "Sade",              "Races" : "Troll",              "img" : "Sade6"},
+            {"ID" : "6",  "Name" : "Sade7",                 "Artist" : "Sade",              "Races" : "Elf",                "img" : "Sade7"},
+            {"ID" : "7",  "Name" : "Sade8",                 "Artist" : "Sade",              "Races" : "Dwarf",              "img" : "Sade8"},
+            {"ID" : "8",  "Name" : "Sade9",                 "Artist" : "Sade",              "Races" : "Human Elf",          "img" : "Sade9"},
+            {"ID" : "9",  "Name" : "Sade10",                "Artist" : "Sade",              "Races" : "Ork",                "img" : "Sade10"},
+            {"ID" : "10", "Name" : "Sade11",                "Artist" : "Sade",              "Races" : "Human Dwarf",        "img" : "Sade11"},
+            {"ID" : "11", "Name" : "Sade12",                "Artist" : "Sade",              "Races" : "Ork",                "img" : "Sade12"},
+            {"ID" : "12", "Name" : "Sade13",                "Artist" : "Sade",              "Races" : "Human Elf Dwarf",    "img" : "Sade13"},
+            {"ID" : "13", "Name" : "Sade14",                "Artist" : "Sade",              "Races" : "Human Elf Dwarf",    "img" : "Sade14"},
+            {"ID" : "14", "Name" : "Sade15",                "Artist" : "Sade",              "Races" : "Dwarf Elf",          "img" : "Sade15"},
+            {"ID" : "15", "Name" : "Sade16",                "Artist" : "Sade",              "Races" : "Windling",           "img" : "Sade16"},
+            {"ID" : "16", "Name" : "Sade17",                "Artist" : "Sade",              "Races" : "Dwarf Elf",          "img" : "Sade17"},
+            {"ID" : "17", "Name" : "Sade18",                "Artist" : "Sade",              "Races" : "Human Dwarf",        "img" : "Sade18"},
+            {"ID" : "18", "Name" : "Sade19",                "Artist" : "Sade",              "Races" : "Human Elf",          "img" : "Sade19"},
+            {"ID" : "19", "Name" : "Sade20",                "Artist" : "Sade",              "Races" : "Dwarf Human",        "img" : "Sade20"},
+            {"ID" : "20", "Name" : "Sade21",                "Artist" : "Sade",              "Races" : "Human",              "img" : "Sade21"},
+            {"ID" : "21", "Name" : "Sade22",                "Artist" : "Sade",              "Races" : "Elf",                "img" : "Sade22"},
+            {"ID" : "22", "Name" : "Sade23",                "Artist" : "Sade",              "Races" : "Human Dwarf",        "img" : "Sade23"},
+            {"ID" : "23", "Name" : "Sade24",                "Artist" : "Sade",              "Races" : "Human",              "img" : "Sade24"},
+            {"ID" : "24", "Name" : "Sade25",                "Artist" : "Sade",              "Races" : "Human Elf",          "img" : "Sade25"},
+            {"ID" : "25", "Name" : "Sade26",                "Artist" : "Sade",              "Races" : "Human Elf Windling", "img" : "Sade26"},
+            {"ID" : "26", "Name" : "Sade27",                "Artist" : "Sade",              "Races" : "Windling",           "img" : "Sade27"},
+            {"ID" : "27", "Name" : "Sade28",                "Artist" : "Sade",              "Races" : "Ork",                "img" : "Sade28"},
+            {"ID" : "28", "Name" : "Sade29",                "Artist" : "Sade",              "Races" : "Human Dwarf",        "img" : "Sade29"},
+            {"ID" : "29", "Name" : "Sade30",                "Artist" : "Sade",              "Races" : "Human Elf",          "img" : "Sade30"},
+            {"ID" : "30", "Name" : "Sade31",                "Artist" : "Sade",              "Races" : "Elf",                "img" : "Sade31"},
+            {"ID" : "31", "Name" : "Sade32",                "Artist" : "Sade",              "Races" : "Human Elf Dwarf",    "img" : "Sade32"},
+            {"ID" : "32", "Name" : "Sade33",                "Artist" : "Sade",              "Races" : "Elf Windling Dwarf", "img" : "Sade33"},
+            {"ID" : "33", "Name" : "Sade34",                "Artist" : "Sade",              "Races" : "Ork",                "img" : "Sade34"},
+            {"ID" : "34", "Name" : "Sade35",                "Artist" : "Sade",              "Races" : "Human",              "img" : "Sade35"},
+            {"ID" : "35", "Name" : "Sade36",                "Artist" : "Sade",              "Races" : "Troll Ork",          "img" : "Sade36"},
+            {"ID" : "36", "Name" : "Sade37",                "Artist" : "Sade",              "Races" : "Dwarf",              "img" : "Sade37"},
+            {"ID" : "37", "Name" : "Sade38",                "Artist" : "Sade",              "Races" : "Ork",                "img" : "Sade38"},
+            {"ID" : "38", "Name" : "Sade39",                "Artist" : "Sade",              "Races" : "Human Dwarf",        "img" : "Sade39"},
+            {"ID" : "39", "Name" : "Sade40",                "Artist" : "Sade",              "Races" : "Human Elf Dwarf",    "img" : "Sade40"},
+            {"ID" : "40", "Name" : "Sade41",                "Artist" : "Sade",              "Races" : "Drake",              "img" : "Sade41"},
+            {"ID" : "41", "Name" : "Sade42",                "Artist" : "Sade",              "Races" : "Human",              "img" : "Sade42"},
+            {"ID" : "42", "Name" : "Sade43",                "Artist" : "Sade",              "Races" : "Human Elf Dwarf",    "img" : "Sade43"},
+            {"ID" : "43", "Name" : "elfo",                  "Artist" : "Rafael Winniger",   "Races" : "Windling",           "img" : "elfo_by_comic_ray_dd80zqr"},
+            {"ID" : "44", "Name" : "Up to no good",         "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "up_to_no_good_by_comic_ray_dbzulin"},
+            {"ID" : "45", "Name" : "Zaedja",                "Artist" : "Rafael Winniger",   "Races" : "Troll",              "img" : "Zaedja"},
+            {"ID" : "46", "Name" : "Windling Scout",        "Artist" : "Rafael Winniger",   "Races" : "Windling",           "img" : "Windling Scout"},
+            {"ID" : "47", "Name" : "Tee-Express",           "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Tee-Express"},
+            {"ID" : "48", "Name" : "T'skrang Wizard",       "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "T'skrang Wizard"},
+            {"ID" : "49", "Name" : "T'skrang Sword Master", "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "T'skrang Sword Master"},
+            {"ID" : "50", "Name" : "T'skrang Phenotypes_4", "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "T'skrang Phenotypes_4"},
+            {"ID" : "51", "Name" : "T'skrang Phenotypes_3", "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "T'skrang Phenotypes_3"},
+            {"ID" : "52", "Name" : "T'althak",              "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "T'althak"},
+            {"ID" : "53", "Name" : "Skyrim Argonian",       "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "Skyrim Argonian"},
+            {"ID" : "54", "Name" : "Schamanin Ophelia",     "Artist" : "Rafael Winniger",   "Races" : "Dwarf Human",        "img" : "Schamanin Ophelia"},
+            {"ID" : "55", "Name" : "Samuel",                "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Samuel"},
+            {"ID" : "56", "Name" : "Samuel Beizknecht",     "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Samuel Beizknecht"},
+            {"ID" : "57", "Name" : "Ophelia",               "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Ophelia"},
+            {"ID" : "58", "Name" : "Ophelia redesign",      "Artist" : "Rafael Winniger",   "Races" : "Dwarf Human",        "img" : "Ophelia redesign"},
+            {"ID" : "59", "Name" : "Ophelia Klauenhand",    "Artist" : "Rafael Winniger",   "Races" : "Dwarf Human",        "img" : "Ophelia Klauenhand"},
+            {"ID" : "60", "Name" : "Obsidiman Wizard",      "Artist" : "Rafael Winniger",   "Races" : "Obsidiman",          "img" : "Obsidiman Wizard"},
+            {"ID" : "61", "Name" : "Obsidiman Bust",        "Artist" : "Rafael Winniger",   "Races" : "Obsidiman",          "img" : "Obsidiman Bust"},
+            {"ID" : "62", "Name" : "Magnus",                "Artist" : "Rafael Winniger",   "Races" : "Elf",                "img" : "Magnus"},
+            {"ID" : "63", "Name" : "Ludovicus",             "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "Ludovicus"},
+            {"ID" : "64", "Name" : "Jordh",                 "Artist" : "Rafael Winniger",   "Races" : "Elf",                "img" : "Jordh"},
+            {"ID" : "65", "Name" : "Indra",                 "Artist" : "Rafael Winniger",   "Races" : "Human Dwarf",        "img" : "Indra"},
+            {"ID" : "66", "Name" : "Gimman herausgeputzt",  "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Gimman herausgeputzt"},
+            {"ID" : "67", "Name" : "Frahalla",              "Artist" : "Rafael Winniger",   "Races" : "Elf",                "img" : "Frahalla"},
+            {"ID" : "68", "Name" : "Elfo Redesigns",        "Artist" : "Rafael Winniger",   "Races" : "Windling",           "img" : "Elfo Redesigns"},
+            {"ID" : "69", "Name" : "Cartoon Argonian",      "Artist" : "Rafael Winniger",   "Races" : "T'Skrang",           "img" : "Cartoon Argonian"},
+            {"ID" : "70", "Name" : "Ashir",                 "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Ashir"},
+            {"ID" : "71", "Name" : "Ashir Farnrüstung",     "Artist" : "Rafael Winniger",   "Races" : "Human",              "img" : "Ashir Farnrüstung"},
+            {"ID" : "72", "Name" : "Andra",                 "Artist" : "Rafael Winniger",   "Races" : "Elf",                "img" : "Andra"},
+            {"ID" : "73", "Name" : "troubadour",            "Artist" : "Maike Gerstenkorn", "Races" : "Troll",              "img" : "troubadour"},
+            {"ID" : "74", "Name" : "tiermeister",           "Artist" : "Maike Gerstenkorn", "Races" : "Ork",                "img" : "tiermeister"},
+            {"ID" : "75", "Name" : "Schwertmeister",        "Artist" : "Maike Gerstenkorn", "Races" : "Ork",                "img" : "Schwertmeister"},
+            {"ID" : "76", "Name" : "Magier",                "Artist" : "Maike Gerstenkorn", "Races" : "Ork",                "img" : "Magier"},
+            {"ID" : "77", "Name" : "Luftpirat",             "Artist" : "Maike Gerstenkorn", "Races" : "Troll",              "img" : "Luftpirat"},
+            {"ID" : "78", "Name" : "kundschafter",          "Artist" : "Maike Gerstenkorn", "Races" : "Troll",              "img" : "kundschafter"},
+            {"ID" : "79", "Name" : "Geisterbeschwörer",     "Artist" : "Maike Gerstenkorn", "Races" : "Troll",              "img" : "Geisterbeschworer"},
+            {"ID" : "80", "Name" : "dieb",                  "Artist" : "Maike Gerstenkorn", "Races" : "Ork",                "img" : "dieb"}
+      ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,14 +5,21 @@ let Library = new function()
 {
     "use strict";
 
+    this.BookList = [];
+    this.StepDiceList = [];
+
     this.Books = [];
     this.StepDiceTables = [];
+
+    this.Abbreviations = [];
+    this.Options = [];
+    this.Themes = [];
+    this.Portraits = [];
 
     this.Fibonacci = [];
 
     this.StepDice = [];  
 
-    this.Abbreviations = [];
     this.Attributes = []; 
     this.AttributeCost = [];
     this.Races = [];
@@ -30,9 +37,6 @@ let Library = new function()
 
     this.Doctrines = [];
     this.Devotions = [];
-
-    this.Options = [];
-    this.Themes = [];
 
     this.VersatilityTiers = [];
 
@@ -54,9 +58,6 @@ let Library = new function()
 
     this.GrabBooks = function(books)
     {
-        this.Options = [];  
-
-        this.Abbreviations = [];
         this.Attributes = []; 
         this.AttributeCost = [];
         this.Races = [];
@@ -75,9 +76,6 @@ let Library = new function()
         this.Doctrines = [];
         this.Devotions = [];
 
-        this.Options = [];  
-        this.Themes = [];
-
         // Unfold 'official' and 'unofficial'
         if (books.includes("Official"))
             books += " Core MysticPaths ElvenNations Travar Iopos Questors"; // Add book files as they're added.
@@ -94,10 +92,6 @@ let Library = new function()
             if (books.includes(this.Books[i].ID) || books.toLowerCase().includes("all"))
             {
                 console.log("Grabbing " + this.Books[i].json.Books);
-
-                if (this.Books[i].json.Abbreviations != undefined)
-                    for (let j = 0; j < this.Books[i].json.Abbreviations.length; j++) 
-                        this.Abbreviations.push(this.Books[i].json.Abbreviations[j]);
 
                 if (this.Books[i].json.Attributes != undefined)
                     for (let j = 0; j < this.Books[i].json.Attributes.length; j++) 
@@ -158,13 +152,6 @@ let Library = new function()
                 if (this.Books[i].json.Devotions != undefined)
                     for (let j = 0; j < this.Books[i].json.Devotions.length; j++) 
                         this.Devotions.push(this.Books[i].json.Devotions[j]);
-
-                if (this.Books[i].json.Options != undefined)
-                    this.Options = this.Books[i].json.Options;
-
-                if (this.Books[i].json.Themes != undefined)
-                    for (let j = 0; j < this.Books[i].json.Themes.length; j++) 
-                        this.Themes.push(this.Books[i].json.Themes[j]);
             }
 
         this.Races = this.Races.sort(function(a,b) {if (a.Unofficial != b.Unofficial) if (a.Unofficial == undefined) return -1; else return 1; return (a.Name > b.Name ? 1 : -1);});
@@ -206,10 +193,13 @@ let Library = new function()
         // Check Knacks
         for (let i = 0; i < this.Knacks.length; i++) 
         {
+            // Check ID's 
+            let idCount = this.Knacks.filter(o => o.ID == this.Knacks[i].ID).length;
+            if (idCount > 1) 
+                console.log("Attention! There are " + idCount + " Knacks with the ID " + this.Knacks[i].ID);
+
             if (this.GetTalent(this.Knacks[i].Talent) == undefined && this.Knacks[i].Talent != "ED4ThreadWeaving" && this.Knacks[i].Talent != "ED4PTailDancer")
-            {
                 console.log("Attention! Knack " + this.Knacks[i].ID + " doesn't have a well-defined Talent " + this.Knacks[i].Talent);
-            }
 
             // Check Requirements and Restrictions too. 
             for (let j =0; j < this.Knacks[i].Requirements.length; j++)
@@ -304,6 +294,11 @@ let Library = new function()
         // Disciplines
         for (let thisDisciplineIndex = 0; thisDisciplineIndex < this.Disciplines.length; thisDisciplineIndex ++) 
         {
+            // Check ID's 
+            let idCount = this.Disciplines.filter(o => o.ID == this.Disciplines[thisDisciplineIndex].ID).length;
+            if (idCount > 1) 
+                console.log("Attention! There are " + idCount + " Disciplines with the ID " + this.Disciplines[thisDisciplineIndex].ID);
+
             for (let thisTalentIndex = 0; thisTalentIndex < this.Disciplines[thisDisciplineIndex].NoviceTalents.length; thisTalentIndex++)
                 if (this.GetTalent(this.Disciplines[thisDisciplineIndex].NoviceTalents[thisTalentIndex]) == undefined)
                     console.log("Attention! Discipline " + this.Disciplines[thisDisciplineIndex].Name + " has a bum Novice Talent reference: " + this.Disciplines[thisDisciplineIndex].NoviceTalents[thisTalentIndex])
@@ -337,6 +332,11 @@ let Library = new function()
         // Paths
         for (let thisPathIndex = 0; thisPathIndex < this.Paths.length; thisPathIndex++)
         {
+            // Check ID's 
+            let idCount = this.Paths.filter(o => o.ID == this.Paths[thisPathIndex].ID).length;
+            if (idCount > 1) 
+                console.log("Attention! There are " + idCount + " Paths with the ID " + this.Paths[thisPathIndex].ID);
+
             // Check path talent
             if (this.GetTalent(this.Paths[thisPathIndex].Talent) == undefined)
                 console.log("Attention! Path " + this.Paths[thisPathIndex].Name + " has a mistake in the Path Talent link: " + this.Paths[thisPathIndex].Talent);
@@ -359,6 +359,11 @@ let Library = new function()
         // Questors
         for (let thisDoctrineIndex = 0; thisDoctrineIndex < this.Doctrines.length; thisDoctrineIndex++)
         {
+            // Check ID's 
+            let idCount = this.Doctrines.filter(o => o.ID == this.Doctrines[thisDoctrineIndex].ID).length;
+            if (idCount > 1) 
+                console.log("Attention! There are " + idCount + " Doctrines with the ID " + this.Doctrines[thisDoctrineIndex].ID);
+
             for (let thisDevotionIndex = 0; thisDevotionIndex < this.Doctrines[thisDoctrineIndex].FollowerDevotions.length; thisDevotionIndex++)
             {
                 let thisDevotion = this.Devotions.find(o => o.ID == this.Doctrines[thisDoctrineIndex].FollowerDevotions[thisDevotionIndex]);
@@ -386,6 +391,15 @@ let Library = new function()
         for (let thisDevotionIndex = 0; thisDevotionIndex < this.Devotions.length; thisDevotionIndex++)
             if(this.Devotions[thisDevotionIndex].Used != true && this.Devotions[thisDevotionIndex].ID != "ED4Questor")
                 console.log("Attention! Devotion " + this.Devotions[thisDevotionIndex].Name + " appears to not be used by any Questors?");
+
+        // Equipment
+        for (let thisEqIndex = 0; thisEqIndex < this.Equipment.length; thisEqIndex++)
+        {
+            // Check ID's 
+            let idCount = this.Equipment.filter(o => o.ID == this.Equipment[thisEqIndex].ID).length;
+            if (idCount > 1) 
+                console.log("Attention! There are " + idCount + " Equipment with the ID " + this.Equipment[thisEqIndex].ID);
+        }
 
         console.log("Library integrity check complete");
     }
@@ -521,7 +535,7 @@ let Library = new function()
         start = parseInt(start + "");
         end   = parseInt(end   + "");
 
-        if(start > end || start < 1 || 30 < end)
+        if(start > end || start < 1 || 30 <= end)
         {
             console.log("FibonacciSum(" + start + "," + end + "): Parameters out of range or order");
             return 0;
@@ -703,6 +717,33 @@ let Library = new function()
         return this.Themes.find(o => o.ID === id+""); 
     };
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

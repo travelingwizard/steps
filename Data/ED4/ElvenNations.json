@@ -36,11 +36,11 @@
                         },
                         {
                               "Rank" : "5",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. Thunderclap (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. The owner gains the Thunderclap special maneuver (see text)"
                         },
                         {
                               "Rank" : "6",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. The owner gains the Thunderclap special maneuver (see text)"
                         }
                   ]
             },
@@ -68,19 +68,19 @@
                         },
                         {
                               "Rank" : "5",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. Thunderclap (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +2 to Attack and Damage tests when they fire it. <br/> The owner gains the Thunderclap special maneuver (see text)."
                         },
                         {
                               "Rank" : "6",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br/> The owner gains the Thunderclap special maneuver (see text)."
                         },
                         {
                               "Rank" : "7",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap, Lightning Bolt (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br/> The owner gains the Thunderclap special maneuver (see text). <br/> The owner gains the Lightning Bolt special maneuver (see text)"
                         },
                         {
                               "Rank" : "8",
-                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. Thunderclap, Lightning Bolt (see text)"
+                              "Effect" : "24 hours after being placed in the quiver, a standard elven warbow arrow transforms into an Arrow of the Thundercloud and the owner gains +3 to Attack, +2 to Damage tests when they fire it. <br/> The owner gains the upgraded Thunderclap special maneuver (see text). <br/> The owner gains the Lightning Bolt special maneuver (see text)"
                         }
                   ]
             },
@@ -122,8 +122,8 @@
                   ]
             },
             {
-                  "ID" : "ED4WyrmWoodBlade", "Name" : "Wyrm Wood Blade", "Reference" : "EN p274-5", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
-                  "BaseLPCost" : "200/300",
+                  "ID" : "ED4WyrmWoodBladeJ", "Name" : "Wyrm Wood Blade (Journeyman)", "Reference" : "EN p274-5", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "200",
                   "SpellDefense" : "12",
                   "DmgStep" : "5", 
                   "StrMin" : "12", 
@@ -142,11 +142,11 @@
                         },
                         {
                               "Rank" : "3",
-                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"}
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"}
                         },
                         {
                               "Rank" : "4",
-                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"},
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
                               "Effect" : "The owner gains +1 to Attack tests with the sword."
                         },
                         {
@@ -156,21 +156,111 @@
                         },
                         {
                               "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4WyrmWoodBladeWH", "Name" : "Wyrm Wood Blade (Warden + Heal)", "Reference" : "EN p274-5", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "15",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "2"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
                               "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword."
+                        },
+                        {
+                              "Rank" : "5",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        },
+                        {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "1"},
                               "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
                         },
                         {
                               "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to heal Blood Wood, the sword gains the Forest’s Life ability."
+                        },
+                        {
+                              "Rank" : "8",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "2", "RecTest" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to heal Blood Wood, the sword gains the Forest’s Life ability."
+                        }
+                  ]
+            },
+            {
+                  "ID" : "ED4WyrmWoodBladeWP", "Name" : "Wyrm Wood Blade (Warden + Protect)", "Reference" : "EN p274-5", "Type" : "Thread Item", "BaseType" : "Melee Weapon", "Cost" : "", "Weight" : "0",        
+                  "BaseLPCost" : "300",
+                  "SpellDefense" : "15",
+                  "DmgStep" : "5", 
+                  "StrMin" : "12", 
+                  "DexMin" : "0", 
+                  "Size" : "3", 
+                  "Forgeable" : "Weapon",
+                  "Ranks" : 
+                  [
+                        {
+                              "Rank" : "1",
+                              "Modifiers" : {"DmgStep" : "2"}
+                        },
+                        {
+                              "Rank" : "2",
+                              "Modifiers" : {"DmgStep" : "2", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "3",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"}
+                        },
+                        {
+                              "Rank" : "4",
+                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword."
+                        },
+                        {
+                              "Rank" : "5",
                               "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
                               "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
                         },
                         {
+                              "Rank" : "6",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275."
+                        },
+                        {
+                              "Rank" : "7",
+                              "Modifiers" : {"DmgStep" : "4", "Ini" : "1"},
+                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to protect Blood Wood, the blade turns a ruddy hue and gains the Thirsty Thorns ability; see EN p275."
+                        },
+                        {
                               "Rank" : "8",
-                              "Modifiers" : {"DmgStep" : "3", "Ini" : "1"},
-                              "Effect" : "The owner gains +1 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to protect Blood Wood, the sword is Damage Step 10 and gains +2 to Attack tests with the sword. If the owner pledged to heal Blood Wood, they gain +1 Recovery test and +2 to Initiative tests when wielding the sword."
+                              "Modifiers" : {"DmgStep" : "5", "Ini" : "1"},
+                              "Effect" : "The owner gains +2 to Attack tests with the sword, and the Woodland Sentinel ability; see EN p275.<br />If the owner pledged to protect Blood Wood, the blade turns a ruddy hue and gains the Thirsty Thorns ability; see EN p275."
                         }
                   ]
-            },
+            },            
             {
                   "ID" : "ED4CrimsonMail", "Name" : "Crimson Mail", "Reference" : "EN p276-7", "Type" : "Thread Item", "BaseType" : "Armor", "Cost" : "", "Weight" : "0",        
                   "BaseLPCost" : "300",
@@ -211,7 +301,8 @@
                               "Rank" : "7",
                               "Modifiers" : {"MyArm" : "2", "PhArm" : "2", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "2"}, {"ID" : "ED4Fireblood", "Modifier" : "1"}]},
                               "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
-                        },{
+                        },
+                        {
                               "Rank" : "8",
                               "Modifiers" : {"MyArm" : "3", "PhArm" : "2", "Talents" : [{"ID" : "ED4WoodSkin", "Modifier" : "2"}, {"ID" : "ED4Fireblood", "Modifier" : "2"}]},
                               "Effect" : "The owner gains the Crimson Resistance ability; see EN p276."
@@ -235,26 +326,31 @@
                         },
                         {
                               "Rank" : "2",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}]},
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
                         },
                         {
                               "Rank" : "3",
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]},
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
                         },
                         {
                               "Rank" : "4",
                               "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "4"},
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "1"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]},
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
                         },
                         {
                               "Rank" : "5",
                               "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "5"},
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "1"}]},
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
                         },
                         {
                               "Rank" : "6",
                               "BonusTalent" : {"ID" : "ED4StandardMatrix", "Rank" : "6"},
-                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "2"}]}
+                              "Modifiers" : {"Talents" : [{"ID" : "ED4Spellcasting", "Modifier" : "2"}, {"ID" : "ED4ThreadWeaving", "Modifier" : "2"}]},
+                              "Effect" : " The owner gains the ability  Storm Shelter; see EN p277"
                         }
                   ]
             }      

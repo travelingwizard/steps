@@ -17,8 +17,6 @@ UI.ShowOptionsDialogue = function()
     let $builder = $("<div>",    {"class" : "optionsWrapper"});
     $builder.append($("<h1>", {text : "Options", "class" : "dialogueHeader"}));
     
-//    $builder.append($("<p>", {text : "INCOMPLETE", "style" : "position: absolute;z-index:-1;top:0;bottom:0;left:0;right:0;font-size:216pt;-webkit-text-stroke: 3px #d8d8d8; color: transparent;"}));
-
     // Themes
     let $themeWrapper = $("<div>", {"id" : "ThemeWrapper", "class" : "themeWrapper"}); 
     $themeWrapper.append($("<span>", {"html" : "Theme :"}));
@@ -353,25 +351,51 @@ UI.ChoosePortraitURL = function()
 {
     let $builder = $("<div>", {"class" : "ChoosePortraitURLWrapper"});
  
-    $builder.append($("<h3>", {"text" : "Choose portrait", "style" : "width:100%; text-align:center;"}));
+    $builder.append($("<h2>", {"text" : "Choose portrait", "style" : "width:100%; text-align:center;"}));
 
     let $left  = $("<div>", {"class" : "portraitsLeftWrapper"});
     let $right = $("<div>", {"class" : "portraitsRightWrapper"});
 
     $left.append($("<h4>", {"text" : "Paste in your portrait URL: "}));
-    $left.append($("<input>", {"id" : "PortraitURLCandidate", "type" : "text", "value" : (Character.PortraitURL != undefined ? Character.PortraitURL : ""), "style" : "border-bottom: 1px solid black;width:55vw; text-align: left;text-align-last: left; padding: .2vw;"}));
-    $left.append($("<div>", {"id" : "TestPortraitURL", "class" : "menuButton", "style" : "display: inline-block;", "html" : ">>", "onClick" : "UI.TestPortraitURL();"}));
+    $left.append($("<input>", {"id" : "PortraitURLCandidate", "type" : "text", "value" : (Character.PortraitURL != undefined ? Character.PortraitURL : ""), "style" : "border-bottom: 1px solid black;width:55vw; text-align: left;text-align-last: left; padding: .1vw;"}));
+    $left.append($("<div>", {"id" : "TestPortraitURL", "class" : "menuButton", "style" : "display: inline-block; margin-top: 0;", "html" : ">>", "onClick" : "UI.TestPortraitURL();"}));
 
-    $left.append($("<h4>", {"text" : "Or choose a preset: "}));
-
-    let $thumbsWrapper = $("<div>", {"class" : "thumbsWrapper"});
-    for (let i = 1; i <= 43; i++) 
+    // Find races
+    let RaceList = [];
+    for (let i = 0; i < Library.Portraits.length; i++) 
     {
-        let $thumbWrapper = $("<div>", {"class" : "portraitThumbnail", id : "thumb" + i});
-        $thumbWrapper.append($("<img>", {"src" : "./img/portraits/Thumb"+i+".jpg"}));
+        let TheseRaces = Library.Portraits[i].Races.split(' ');
+        for (let j = 0; j < TheseRaces.length; j++)
+            if (!RaceList.includes(TheseRaces[j]))
+                RaceList.push(TheseRaces[j]);
+    }
+    RaceList.sort();
+    let $select   = $("<select>", { "id" : "RaceFilter", "class" : "", "style" : "border: 1px solid black; align: right"});
+    $select.append ($("<option>", {"value" : "Empty", "text" : "All"}));
+    
+    for (let i = 0; i < RaceList.length; i++)
+        $select.append ($("<option>", {"value" : RaceList[i], "text" : RaceList[i]}));    
+
+    if (RaceList.includes(Library.GetRace(Character.Race).Name))
+        $select.val(Library.GetRace(Character.Race).Name);
+
+    let $presetHeaderWrapper = $("<div>", {"style" : "width: 100%;"})
+    let $presetHeader = $("<h4>", {"html" : "Or choose a preset", "style" : "float: left;"})
+    let $presetFilterLabel = $("<span>", {"html" : " Filter ", "style" : "float : right;"})
+
+    $presetFilterLabel.append($select);
+    $presetHeaderWrapper.append($presetHeader);
+    $presetHeaderWrapper.append($presetFilterLabel);
+    $left.append($presetHeaderWrapper);
+
+    let ShuffledPortraits = UI.Shuffle(Library.Portraits);
+    let $thumbsWrapper = $("<div>", {"class" : "thumbsWrapper"});
+    for (let i = 0; i < ShuffledPortraits.length; i++) 
+    {
+        let $thumbWrapper = $("<div>", {"class" : "portraitThumbnail", id : "thumb" + ShuffledPortraits[i].ID});
+        $thumbWrapper.append($("<img>", {"src" : "./img/Portraits/Thumbs/" + ShuffledPortraits[i].img + ".jpg"}));
         $thumbsWrapper.append($thumbWrapper);
     }
-//    $thumbsWrapper.append($("<div>", {id : "DoxThumb", "class" : "portraitThumbnail", "html": "<img src='./img/portraits/ThumbDox.jpg'></img>"}));
     
     $left.append($thumbsWrapper);
     $builder.append($left);
@@ -390,13 +414,21 @@ UI.ChoosePortraitURL = function()
 
     $("#Dialogue").append($builder);
 
-    $(".portraitThumbnail").click(function(event)
-        {
-            if ($(this).attr('id') == "DoxThumb") 
-                $("#PortraitPreview").prop("src", "./img/portraits/Dox.jpg"); 
-            else 
-                $("#PortraitPreview").prop("src", "./img/portraits/Sade" + $(this).attr('id').slice(5) + ".jpg")
-        });
+    $(".portraitThumbnail").click(function(event){ $("#PortraitPreview").prop("src", "./img/Portraits/" + Library.Portraits[parseInt($(this).attr('id').slice(5))].img + ".jpg"); });
+    $("#RaceFilter").on("input propertychange paste", this, function(event)
+    { 
+        let raceSelected = $("#RaceFilter").val();
+        if (raceSelected == "Empty")
+            for (let i = 0; i < Library.Portraits.length; i++)
+                $("#thumb"+i).show();
+        else
+            for (let i = 0; i < Library.Portraits.length; i++)
+                if(Library.Portraits[i].Races.includes(raceSelected))
+                    $("#thumb"+i).show();
+                else
+                    $("#thumb"+i).hide();
+    });
+    $select.trigger("propertychange");
 }
 
 UI.TestPortraitURL = function()

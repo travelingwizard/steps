@@ -280,9 +280,9 @@ UI.ApplySituationalStepDice = function(disable = false)
 
     if ($("#SituationWound").val() > 0)
         if (Character.Options.FirstWoundFree == "true")
-            actionMod =  -(parseInt($("#SituationWound").val()-1));
+            allTestMod =  -(parseInt($("#SituationWound").val()-1));
         else
-            actionMod =  -parseInt($("#SituationWound").val());
+            allTestMod =  -parseInt($("#SituationWound").val());
 
     if ($("#Knockeddown")[0].checked)
         actionMod -= 3;
@@ -362,8 +362,8 @@ UI.ApplySituationalStepDice = function(disable = false)
     }
     else
     {
-        $("#Ini"       ).html("("+ baseIni     + (iniModifier < 0 ? "<span style='color:red;'> " : "<span style='color:green;'> +") + iniModifier + "</span>) " + (baseIni     + iniModifier) + " / " + Library.GetDice((baseIni     + iniModifier)));
-        $("#ArmoredIni").html("("+ ModifiedIni + (iniModifier < 0 ? "<span style='color:red;'> " : "<span style='color:green;'> +") + iniModifier + "</span>) " + (ModifiedIni + iniModifier) + " / " + Library.GetDice((ModifiedIni + iniModifier)));
+        $("#Ini"       ).html("("+ baseIni     + (iniModifier < 0 ? "<span style='color:red;'> " : "<span style='color:green;'> +") + iniModifier + "</span>) " + ((baseIni     + iniModifier) > 1 ? (baseIni     + iniModifier) : 1) + " / " + Library.GetDice((baseIni     + iniModifier)));
+        $("#ArmoredIni").html("("+ ModifiedIni + (iniModifier < 0 ? "<span style='color:red;'> " : "<span style='color:green;'> +") + iniModifier + "</span>) " + ((ModifiedIni + iniModifier) > 1 ? (ModifiedIni + iniModifier) : 1) + " / " + Library.GetDice((ModifiedIni + iniModifier)));
     }
 
     // Karma

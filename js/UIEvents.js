@@ -19,12 +19,11 @@ UI.AttachEvents = function()
     $("#aboutButton").click(UI.PopUpAbout);
     $("#pregenButton").click(UI.PopUpSelectPregen);
 
-	//from https://usefulangle.com/post/193/javascript-read-local-file
+	// Adapted from https://usefulangle.com/post/193/javascript-read-local-file
 	$('#load_btn').on('change', IO.LoadCharacterFromFile); 
 
 	$(".basics").on("input propertychange paste",              this, UI.PullBasics);
 	$("#PortraitOverlay").on("click",                          this, UI.ChoosePortraitURL);
-//	$("#Description").on("input propertychange paste",         this, UI.PullDescription);	
 
 	$("#Race").on("input propertychange paste",                this, UI.PullRace);
 
@@ -167,6 +166,7 @@ UI.ApplyState = function()
 	else
 	{
 		$("#swapButton").text("Edit");
+
 		$(".hideInPlay").hide();
 
 		$("#situation").css("left", "80%");
@@ -209,8 +209,11 @@ UI.ApplyState = function()
 	}
 };
 
+
 UI.SaveClicked = function()
 {
+	Character.StepsVersion = versionNumber;
+
 	IO.download(JSON.stringify(Character, null, 4), (Character.Basic.Name == "" ? "Unnamed" : Character.Basic.Name) + '.json', 'text/plain');
 
 	UI.Charactertouched = false;
@@ -1593,6 +1596,8 @@ UI.PullMagicTarget = function()
 	let index = parseInt($(this).attr('id').slice(11));
 	CharacterManager.SetMagicTarget(index, $(this).val());
 
+    UI.Redraw();
+
 	UI.Charactertouched = true;
 };
 
@@ -1624,8 +1629,7 @@ UI.PullMagicThreadTargetSelect = function()
 	CharacterManager.SetMagicThreadTarget(magicIndex, threadIndex, $(this).val());
 
 	CharacterManager.ResetBuffer();
-	if (Character.Magic[magicIndex].Applicable == "Yes")
-	    UI.Redraw();
+    UI.Redraw();
 
 	UI.Charactertouched = true;
 };
@@ -1638,9 +1642,7 @@ UI.PullMagicThreadRank = function()
 	CharacterManager.SetMagicThreadRank(magicIndex, threadIndex, parseInt($(this).val()));
 
 	CharacterManager.ResetBuffer();
-	UI.PushLP();
-	if (Character.Magic[magicIndex].Applicable == "Yes")
-	    UI.Redraw();
+    UI.Redraw();
 
 	UI.Charactertouched = true;
 };
