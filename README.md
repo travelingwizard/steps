@@ -15,4 +15,4 @@ This project is in no way intended as a challenge to the creators [FASA Games](h
 
 Install dependencies: `npm ci`
 
-Start http server: `npm start`
+Start http server: `npm run start:web`
