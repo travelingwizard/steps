@@ -1,0 +1,23 @@
+{
+  "name": "steps",
+  "version": "1.0.0",
+  "description": "An interactive character sheet for Earthdawn, 4th edition Steps Version 1β09",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrmod/steps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrmod/steps/issues"
+  },
+  "homepage": "https://github.com/chrmod/steps#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
