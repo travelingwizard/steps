@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "definitions": {
+    "Abbreviation": {
+      "type": "object",
+      "properties": {
+        "Abbreviation": { "type": "string" },
+        "FullName": { "type": "string" }
+      },
+      "required": ["Abbreviation", "FullName"]
+    },
+    "Attribute": {
+      "type": "object",
+      "properties": {
+        "Value": { "type": "string" },
+        "Step": { "type": "string" },
+        "Defense": { "type": "string" },
+        "Carry": { "type": "string" },
+        "Uncon": { "type": "string" },
+        "Death": { "type": "string" },
+        "Wound": { "type": "string" },
+        "Recovery": { "type": "string" },
+        "MysticalArmor": { "type": "string" },
+        "Comment": { "type": "string" }
+      },
+      "required": ["Value", "Step", "Defense", "Carry", "Uncon", "Death", "Wound", "Recovery", "MysticalArmor"]
+    },
+    "AttributeCost": {
+      "type": "object",
+      "properties": {
+        "Modifier": { "type": "string" },
+        "Cost": { "type": "string" }
+      },
+      "required": ["Modifier", "Cost"]
+    },
+    "Race": {
+      "type": "object",
+      "properties": {
+        "Name": { "type": "string" },
+        "Dex": { "type": "string" },
+        "Str": { "type": "string" },
+        "Tou": { "type": "string" },
+        "Per": { "type": "string" },
+        "Wil": { "type": "string" },
+        "Cha": { "type": "string" },
+        "Move": { "type": "string" },
+        "Karma": { "type": "string" },
+        "1hdMin": { "type": "string" },
+        "1hdMax": { "type": "string" },
+        "2hdMin": { "type": "string" },
+        "2hdMax": { "type": "string" },
+        "Abilities": { "type": "string" }
+      },
+      "required": ["Name", "Dex", "Str", "Tou", "Per", "Wil", "Cha", "Move", "Karma", "Abilities"]
+    },
+    "Talent": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Type": { "type": "string" },
+        "Step": { "type": "string" },
+        "Attribute": { "type": "string" },
+        "Action": { "type": "string" },
+        "Strain": { "type": "string" },
+        "Skill Use": { "type": "string" }
+      },
+      "required": ["ID", "Name", "Reference", "Type", "Step", "Attribute", "Action", "Strain", "Skill Use"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "ID": { "type": "string" },
+    "version": { "type": "string" },
+    "by": { "type": "string" },
+    "Abbreviations": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Abbreviation" }
+    },
+    "Attributes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Attribute" }
+    },
+    "AttributeCosts": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/AttributeCost" }
+    },
+    "Races": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Race" }
+    },
+    "Talents": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Talent" }
+    }
+  },
+  "required": ["ID", "version"]
+}
