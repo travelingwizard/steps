@@ -67,6 +67,82 @@
         "Skill Use": { "type": "string" }
       },
       "required": ["ID", "Name", "Reference", "Type", "Step", "Attribute", "Action", "Strain", "Skill Use"]
+    },
+    "Knack": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Talent": { "type": "string" },
+        "RequiredRank": { "type": "string" },
+        "Requirements": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "$ref": "#/definitions/Requirement" } }
+          ]
+        },
+        "Restrictions": {
+          "oneOf": [
+            { "type": "string" },
+            { "type": "array", "items": { "$ref": "#/definitions/Restriction" } }
+          ]
+        },
+        "Step": { "type": "string" },
+        "Attribute": { "type": "string" },
+        "Action": { "type": "string" },
+        "Strain": { "type": "string" },
+        "Skill Use": { "type": "string" },
+        "Type": { "type": "string" },
+        "Effect": { "type": "string" },
+        "Description": { "type": "string" }
+      },
+      "required": ["ID", "Name", "Reference", "RequiredRank", "Requirements", "Restrictions"]
+    },
+    "Requirement": {
+      "type": "object",
+      "properties": {
+        "Type": { "type": "string" },
+        "Rank": { "type": "string" },
+        "Name": { "type": "string" },
+        "ID": { "type": "string" },
+        "Text": { "type": "string" }
+      },
+      "required": []
+    },
+    "Restriction": {
+      "type": "object",
+      "properties": {
+        "Type": { "type": "string" },
+        "ID": { "type": "string" },
+        "Circle": { "type": "string" }
+      },
+      "required": ["Type", "ID"]
+    },
+    "Skill": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Type": { "type": "string" },
+        "Step": { "type": "string" },
+        "Attribute": { "type": "string" },
+        "Action": { "type": "string" },
+        "Strain": { "type": "string" },
+        "Cost": { "type": "string" },
+        "Category": { "type": "string" }
+      },
+      "required": ["ID", "Name", "Reference", "Type", "Step", "Attribute", "Action", "Strain", "Cost", "Category"]
+    },
+    "SimpleSkill": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" }
+      },
+      "required": ["Name", "Reference"]
     }
   },
   "type": "object",
@@ -93,6 +169,22 @@
     "Talents": {
       "type": "array",
       "items": { "$ref": "#/definitions/Talent" }
+    },
+    "Knacks": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Knack" }
+    },
+    "Skills": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Skill" }
+    },
+    "ArtisanSkills": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/SimpleSkill" }
+    },
+    "KnowledgeSkills": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/SimpleSkill" }
     }
   },
   "required": ["ID", "version"]
