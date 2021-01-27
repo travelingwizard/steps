@@ -143,6 +143,85 @@
         "Reference": { "type": "string" }
       },
       "required": ["Name", "Reference"]
+    },
+    "Spell": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Type": { "type": "string" },
+        "Discipline": { "type": "string" },
+        "Circle": { "type": "string" },
+        "Threads": { "type": "string" },
+        "Weaving": { "type": "string" },
+        "Casting": { "type": "string" },
+        "Range": { "type": "string" },
+        "Duration": { "type": "string" },
+        "Effect": { "type": "string" },
+        "SuccessLevels": { "type": "string" },
+        "ExtraThreads": { "type": "string" },
+        "Description": { "type": "string" }
+      },
+      "required": ["ID", "Name", "Reference", "Type", "Discipline", "Circle", "Threads", "Weaving", "Casting", "Range", "Duration", "Effect", "SuccessLevels", "ExtraThreads", "Description"]
+    },
+    "Discipline": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Durability": { "type": "string" },
+        "ImportantAtt": { "type": "array", "items": { "type": "string" } },
+        "NoviceTalents": { "type": "array", "items": { "type": "string" } },
+        "JourneymanTalents": { "type": "array", "items": { "type": "string" } },
+        "WardenTalents": { "type": "array", "items": { "type": "string" } },
+        "MasterTalents": { "type": "array", "items": { "type": "string" } },
+        "Circles": { "type": "array", "items": { "$ref": "#/definitions/Circle" } }
+      },
+      "required": ["ID", "Name", "Durability", "ImportantAtt", "NoviceTalents", "JourneymanTalents", "Circles"]
+    },
+    "Circle": {
+      "type": "object",
+      "properties": {
+        "Circle": { "type": "string" },
+        "Ability": { "type": "string" },
+        "FreeTalents": { "type": "array", "items": { "type": "string" } },
+        "DisciplineTalents": { "type": "array", "items": { "type": "string" } },
+        "Modifiers": { "type": "object" }
+      },
+      "required": ["Circle", "DisciplineTalents"]
+    },
+    "Item": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Type": { "type": "string" },
+        "Weight": { "type": "string" },
+        "Availability": { "type": "string" },
+        "DmgStep": { "type": "string" },
+        "StrMin": { "type": "string" },
+        "Size": { "type": "string" }
+      },
+      "required": ["ID", "Name", "Type"]
+    },
+    "Magic": {
+      "type": "object",
+      "properties": {
+        "ID": { "type": "string" },
+        "Name": { "type": "string" },
+        "Reference": { "type": "string" },
+        "Threadable": { "type": "string" },
+        "MaxRank": { "type": "string" },
+        "LPBaseCost": { "type": "string" },
+        "WeaveTo": { "type": "array", "items": { "type": "string" } },
+        "Damage": { "type": "string" },
+        "Wound": { "type": "string" },
+        "Modifier": { "type": "object" }
+      },
+      "required": ["ID", "Name", "Reference"]
     }
   },
   "type": "object",
@@ -185,6 +264,22 @@
     "KnowledgeSkills": {
       "type": "array",
       "items": { "$ref": "#/definitions/SimpleSkill" }
+    },
+    "Spells": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Spell" }
+    },
+    "Disciplines": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Discipline" }
+    },
+    "Equipment": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Item" }
+    },
+    "Magic": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Magic" }
     }
   },
   "required": ["ID", "version"]
