@@ -2,7 +2,8 @@
 An interactive character sheet for Earthdawn, 4th edition
 Steps Version 1β09
 
-[Release version 1β09 Download and Install](https://github.com/travelingwizard/steps/releases/tag/0.09.01)
+[Release version 1β09 Download and Install](https://github.com/travelingwizard/steps/releases/tag/0.09.01) 
+
 [Steps User Manual](https://travelingwizardrpg.wordpress.com/home/steps-manual-009/)
 
 Made by Lars Gottlieb
